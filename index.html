@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Why DevOps? — National Training Week 2026</title>
+  <meta name="description" content="Five free live-demo webinars during National Training Week 2026. Zero to Deployed — watch one web page become global infrastructure." />
+  <!-- Material Design Icons (webfont). Swap for inline SVG later if you want zero external deps. -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --panel: #131826;
+      --panel-2: #1a2133;
+      --text: #e7ecf5;
+      --muted: #97a3ba;
+      --accent: #6ea8fe;
+      --line: #262f45;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at 50% -10%, #172038 0%, var(--bg) 55%);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+
+    /* Hero */
+    header.hero { text-align: center; padding: 72px 0 40px; }
+    .kicker {
+      display: inline-block; font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
+      color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px;
+    }
+    h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 18px 0 8px; line-height: 1.05; }
+    h1 .q { color: var(--accent); }
+    .tagline { font-size: clamp(1.05rem, 2.5vw, 1.35rem); color: var(--muted); margin: 0 auto; max-width: 640px; }
+    .dates { margin-top: 18px; font-weight: 600; }
+    .cta {
+      display: inline-flex; align-items: center; gap: 8px; margin-top: 28px;
+      background: var(--accent); color: #0b0f19; font-weight: 700; text-decoration: none;
+      padding: 14px 24px; border-radius: 999px; transition: transform .12s ease;
+    }
+    .cta:hover { transform: translateY(-2px); }
+
+    /* Sessions */
+    section { padding: 32px 0; }
+    .section-title { text-align: center; font-size: 1rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 24px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+    .card {
+      background: linear-gradient(180deg, var(--panel-2), var(--panel));
+      border: 1px solid var(--line); border-radius: var(--radius); padding: 22px;
+      display: flex; flex-direction: column; gap: 14px;
+    }
+    .day { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
+    .card h3 { margin: 0; font-size: 1.5rem; }
+    .card h3 .q { color: var(--accent); }
+    .wow { color: var(--muted); font-size: .95rem; margin: -4px 0 6px; }
+    .because { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
+    .because li { display: flex; align-items: center; gap: 12px; }
+    .because .mdi { font-size: 22px; color: var(--accent); width: 26px; text-align: center; }
+
+    /* Waitlist */
+    #waitlist { text-align: center; }
+    .panel {
+      background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 40px 24px; max-width: 620px; margin: 0 auto;
+    }
+    .panel h2 { margin: 0 0 10px; font-size: 1.8rem; }
+    .panel p { color: var(--muted); margin: 0 0 22px; }
+
+    footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 40px 0 60px; }
+    .wip { display: inline-block; margin-top: 8px; font-size: .8rem; color: #d0a24c; }
+
+    @media (prefers-reduced-motion: reduce) { .cta { transition: none; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+
+    <header class="hero">
+      <span class="kicker">Free · National Training Week 2026</span>
+      <h1>Why <span class="q">DevOps</span>?</h1>
+      <p class="tagline">Zero to Deployed — five questions, five live demos. Watch one web page become global infrastructure.</p>
+      <p class="dates">20&ndash;26 July 2026 · Online</p>
+      <a class="cta" href="#waitlist"><span class="mdi mdi-rocket-launch"></span> Join the waitlist</a>
+    </header>
+
+    <section>
+      <p class="section-title">Five live demos, one week</p>
+      <div class="grid">
+
+        <article class="card">
+          <span class="day">Mon 20 Jul</span>
+          <h3>Why <span class="q">Linux</span>?</h3>
+          <p class="wow">Live-tail a real running server — where the pros live.</p>
+          <ul class="because">
+            <li><span class="mdi mdi-server"></span> Powers everything</li>
+            <li><span class="mdi mdi-console-line"></span> Full control</li>
+            <li><span class="mdi mdi-open-source-initiative"></span> Free forever</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="day">Tue 21 Jul</span>
+          <h3>Why <span class="q">Git &amp; GitHub</span>?</h3>
+          <p class="wow">Your page goes live on the public internet in two minutes.</p>
+          <ul class="because">
+            <li><span class="mdi mdi-history"></span> Never forgets</li>
+            <li><span class="mdi mdi-account-group"></span> Team ready</li>
+            <li><span class="mdi mdi-github"></span> Career proof</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="day">Wed 22 Jul</span>
+          <h3>Why <span class="q">Docker</span>?</h3>
+          <p class="wow">One command spins up a running web server.</p>
+          <ul class="because">
+            <li><span class="mdi mdi-lan-check"></span> Works everywhere</li>
+            <li><span class="mdi mdi-truck-fast"></span> Ships anywhere</li>
+            <li><span class="mdi mdi-flash"></span> Blazingly fast</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="day">Thu 23 Jul</span>
+          <h3>Why <span class="q">Cloud</span>?</h3>
+          <p class="wow">A real server on AWS, made global with Cloudflare.</p>
+          <ul class="because">
+            <li><span class="mdi mdi-server-off"></span> No hardware</li>
+            <li><span class="mdi mdi-arrow-expand-all"></span> Scales instantly</li>
+            <li><span class="mdi mdi-earth"></span> Goes global</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <span class="day">Fri 24 Jul</span>
+          <h3>Why <span class="q">Infrastructure as Code</span>?</h3>
+          <p class="wow">Whole infrastructure built from code — then destroyed in seconds.</p>
+          <ul class="because">
+            <li><span class="mdi mdi-content-copy"></span> Perfectly repeatable</li>
+            <li><span class="mdi mdi-refresh"></span> Rebuild anytime</li>
+            <li><span class="mdi mdi-robot"></span> Fully automated</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="waitlist">
+      <div class="panel">
+        <h2>Want the full journey?</h2>
+        <p>These tasters are a preview of our DevOps bootcamp. Join the waitlist for the next intake.</p>
+        <!-- TODO: replace with the real registration form URL -->
+        <a class="cta" href="#"><span class="mdi mdi-email-fast"></span> Register your interest</a>
+      </div>
+    </section>
+
+    <footer>
+      National Training Week 2026 · Free DevOps taster series
+      <br /><span class="wip">Work in progress — poster &amp; branding not final</span>
+    </footer>
+
+  </div>
+</body>
+</html>
