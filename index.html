@@ -4,12 +4,12 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Why DevOps? &middot; National Training Week 2026 &middot; Infratify</title>
-  <meta name="description" content="Five free live-demo webinars for beginners during National Training Week 2026, 20 to 24 July. One topic a day, each answered live on Zoom: Linux, Git and GitHub, Cloud, Docker, and Infrastructure as Code. Brought by Infratify." />
+  <meta name="description" content="Five free sharing sessions for beginners during National Training Week 2026, 20 to 24 July. One topic each morning on Zoom: Linux, Git and GitHub, Cloud, Docker, and Infrastructure as Code. A short introduction to each, brought by Infratify." />
 
   <!-- Open Graph / social share -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Why DevOps? &middot; National Training Week 2026" />
-  <meta property="og:description" content="Five free live-demo webinars for beginners, 20 to 24 July 2026. Watch DevOps built live on Zoom, one topic a day. Brought by Infratify." />
+  <meta property="og:description" content="Five free sharing sessions for beginners, 20 to 24 July 2026. A short introduction to one DevOps topic each morning on Zoom. Brought by Infratify." />
   <meta property="og:image" content="https://infratify.github.io/ntw/assets/banners/docker.jpg" />
   <meta property="og:url" content="https://infratify.github.io/ntw/" />
   <meta name="twitter:card" content="summary_large_image" />
@@ -56,7 +56,7 @@
     }
     h1 { font-size: clamp(2.5rem, 7vw, 4.4rem); margin: 20px 0 10px; line-height: 1.02; letter-spacing: -.02em; }
     h1 .q { color: var(--accent); }
-    .tagline { font-size: clamp(1.05rem, 2.4vw, 1.3rem); color: var(--muted); margin: 0 auto; max-width: 640px; }
+    .tagline { font-size: clamp(1.05rem, 2.4vw, 1.3rem); color: var(--muted); margin: 0 auto; max-width: 660px; }
     .facts {
       display: flex; flex-wrap: wrap; gap: 8px 10px; justify-content: center;
       margin: 24px auto 0; max-width: 760px;
@@ -86,18 +86,17 @@
     section { padding: 40px 0; }
     .section-head { text-align: center; margin: 0 0 28px; }
     .section-head h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); margin: 0 0 6px; }
-    .section-head p { color: var(--muted); margin: 0; }
+    .section-head p { color: var(--muted); margin: 0 auto; max-width: 560px; }
 
-    /* Schedule grid of banner cards */
+    /* Schedule grid of banner cards (display tiles, not links) */
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 22px; }
     .card {
-      display: block; text-decoration: none; color: inherit;
       background: linear-gradient(180deg, var(--panel-2), var(--panel));
       border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
-      transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease;
+      transition: border-color .14s ease, box-shadow .14s ease;
       --c: var(--accent);
     }
-    .card:hover { transform: translateY(-4px); border-color: var(--c); box-shadow: var(--shadow); }
+    .card:hover { border-color: var(--c); box-shadow: var(--shadow); }
     .card img { display: block; width: 100%; height: auto; aspect-ratio: 1600 / 1000; background: var(--panel); }
     .cap { display: flex; align-items: center; gap: 12px; padding: 14px 16px 16px; border-top: 3px solid var(--c); }
     .badge {
@@ -109,18 +108,6 @@
     .cap-main { min-width: 0; }
     .cap-main h3 { margin: 0; font-size: 1.2rem; }
     .cap-main .when { color: var(--muted); font-size: .9rem; margin-top: 2px; }
-    .cap .go { margin-left: auto; color: var(--c); font-size: 1.4rem; display: inline-flex; }
-
-    /* Register panel */
-    #register .panel {
-      background:
-        radial-gradient(600px 200px at 100% 0%, rgba(58,151,230,.14), transparent 70%),
-        var(--panel);
-      border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 46px 26px; max-width: 680px; margin: 0 auto; text-align: center;
-    }
-    #register h2 { margin: 0 0 10px; font-size: clamp(1.5rem, 3.5vw, 2rem); }
-    #register p { color: var(--muted); margin: 0 auto 24px; max-width: 480px; }
 
     footer { border-top: 1px solid var(--line); margin-top: 30px; }
     footer .wrap { padding-top: 34px; padding-bottom: 54px; text-align: center; color: var(--muted); font-size: .88rem; }
@@ -147,7 +134,7 @@
     <header class="hero">
       <span class="kicker">Free &middot; National Training Week 2026</span>
       <h1>Why <span class="q">DevOps</span>?</h1>
-      <p class="tagline">Every session is a live demo you watch on screen. There is nothing to install or set up on your side.</p>
+      <p class="tagline">Five free sharing sessions for beginners, one topic each morning. You watch along on Zoom, and there is nothing for you to set up.</p>
       <div class="facts">
         <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9,10V12H7V10H9M13,10V12H11V10H13M17,10V12H15V10H17M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M9,14V16H7V14H9M13,14V16H11V14H13M17,14V16H15V14H17Z"/></svg>20 to 24 July 2026</span>
         <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"/></svg>10:30 AM (MYT)</span>
@@ -165,87 +152,71 @@
 
     <section id="schedule">
       <div class="section-head">
-        <h2>One week, five live demos</h2>
-        <p>Over the week, one plain web page grows into working cloud infrastructure.</p>
+        <h2>Five free sharing sessions</h2>
+        <p>Each one is a short walk-through of a single topic: enough to see how it works and where to start. It is an introduction, not a full course.</p>
       </div>
       <div class="grid">
 
-        <a class="card" href="#register" style="--c:#d7a521">
+        <article class="card" style="--c:#d7a521">
           <picture>
             <source srcset="assets/banners/linux.webp" type="image/webp" />
             <img src="assets/banners/linux.jpg" loading="lazy" width="1400" height="875"
-                 alt="Why Linux? Free beginner webinar on Monday 20 July 2026 at 10:30 AM on Zoom. Because Linux powers everything, gives full control, and is free forever. Instructor Ts. Ariff Azman." />
+                 alt="Why Linux? Free beginner sharing session on Monday 20 July 2026 at 10:30 AM on Zoom. Because Linux powers everything, gives full control, and is free forever. Trainer Ts. Ariff Azman." />
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">20</span><span class="m">Mon Jul</span></span>
             <span class="cap-main"><h3>Why Linux?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
-            <span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg></span>
           </div>
-        </a>
+        </article>
 
-        <a class="card" href="#register" style="--c:#d9432f">
+        <article class="card" style="--c:#d9432f">
           <picture>
             <source srcset="assets/banners/git-github.webp" type="image/webp" />
             <img src="assets/banners/git-github.jpg" loading="lazy" width="1400" height="875"
-                 alt="Why Git and GitHub? Free beginner webinar on Tuesday 21 July 2026 at 10:30 AM on Zoom. Because it never forgets, keeps teams ready, and proves your work to employers. Instructor Ts. Ariff Azman." />
+                 alt="Why Git and GitHub? Free beginner sharing session on Tuesday 21 July 2026 at 10:30 AM on Zoom. Because it never forgets, keeps teams ready, and proves your work to employers. Trainer Ts. Ariff Azman." />
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">21</span><span class="m">Tue Jul</span></span>
             <span class="cap-main"><h3>Why Git &amp; GitHub?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
-            <span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg></span>
           </div>
-        </a>
+        </article>
 
-        <a class="card" href="#register" style="--c:#e8752a">
+        <article class="card" style="--c:#e8752a">
           <picture>
             <source srcset="assets/banners/cloud.webp" type="image/webp" />
             <img src="assets/banners/cloud.jpg" loading="lazy" width="1400" height="875"
-                 alt="Why Cloud? Free beginner webinar on Wednesday 22 July 2026 at 10:30 AM on Zoom. Because it needs no hardware, scales instantly, and goes global. Instructor Ts. Ariff Azman." />
+                 alt="Why Cloud? Free beginner sharing session on Wednesday 22 July 2026 at 10:30 AM on Zoom. Because it needs no hardware, scales instantly, and goes global. Trainer Ts. Ariff Azman." />
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">22</span><span class="m">Wed Jul</span></span>
             <span class="cap-main"><h3>Why Cloud?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
-            <span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg></span>
           </div>
-        </a>
+        </article>
 
-        <a class="card" href="#register" style="--c:#2496ed">
+        <article class="card" style="--c:#2496ed">
           <picture>
             <source srcset="assets/banners/docker.webp" type="image/webp" />
             <img src="assets/banners/docker.jpg" loading="lazy" width="1400" height="875"
-                 alt="Why Docker? Free beginner webinar on Thursday 23 July 2026 at 10:30 AM on Zoom. Because it works everywhere, ships anywhere, and is fast. Instructor Ts. Ariff Azman." />
+                 alt="Why Docker? Free beginner sharing session on Thursday 23 July 2026 at 10:30 AM on Zoom. Because it works everywhere, ships anywhere, and is fast. Trainer Ts. Ariff Azman." />
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">23</span><span class="m">Thu Jul</span></span>
             <span class="cap-main"><h3>Why Docker?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
-            <span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg></span>
           </div>
-        </a>
+        </article>
 
-        <a class="card" href="#register" style="--c:#7c5cff">
+        <article class="card" style="--c:#7c5cff">
           <picture>
             <source srcset="assets/banners/infra-as-code.webp" type="image/webp" />
             <img src="assets/banners/infra-as-code.jpg" loading="lazy" width="1400" height="875"
-                 alt="Why Infrastructure as Code? Free beginner webinar on Friday 24 July 2026 at 10:00 AM on Zoom. Because it is perfectly repeatable, rebuilds anytime, and runs fully automated. Instructor Ts. Ariff Azman." />
+                 alt="Why Infrastructure as Code? Free beginner sharing session on Friday 24 July 2026 at 10:00 AM on Zoom. Because it is perfectly repeatable, rebuilds anytime, and runs fully automated. Trainer Ts. Ariff Azman." />
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">24</span><span class="m">Fri Jul</span></span>
             <span class="cap-main"><h3>Why Infra as Code?</h3><span class="when">10:00 AM &middot; Zoom</span></span>
-            <span class="go" aria-hidden="true"><svg class="ic" viewBox="0 0 24 24"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg></span>
           </div>
-        </a>
+        </article>
 
-      </div>
-    </section>
-
-    <section id="register">
-      <div class="panel">
-        <h2>Ready to go deeper?</h2>
-        <p>These five sessions are a preview of the Infratify DevOps bootcamp. If you want the full program, take a look.</p>
-        <a class="cta" href="https://ml.my/infratify-devops-bootcamp">
-          Join the DevOps bootcamp
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
-        </a>
       </div>
     </section>
 
@@ -257,7 +228,7 @@
         <a href="https://ml.my/op-tp" target="_blank" rel="noopener noreferrer">
           <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C14.21 3 16 4.79 16 7S14.21 11 12 11 8 9.21 8 7 9.79 3 12 3M16 13.54C16 14.6 15.72 17.07 13.81 19.83L13 15L13.94 13.12C13.32 13.05 12.67 13 12 13S10.68 13.05 10.06 13.12L11 15L10.19 19.83C8.28 17.07 8 14.6 8 13.54C5.61 14.24 4 15.5 4 17V21H20V17C20 15.5 18.4 14.24 16 13.54Z"/></svg>Ts. Ariff Azman</a>
       </p>
-      National Training Week 2026 &middot; Free DevOps taster series
+      National Training Week 2026 &middot; Free DevOps sharing sessions
       <p class="creds">HRD Corp Accredited Trainer &middot; MBOT Professional Technologist (PT26010105) &middot; HRD Corp Registered Training Provider</p>
     </div>
   </footer>

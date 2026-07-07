@@ -21,7 +21,8 @@ The printed-poster QR code (`ml.my/infratify-ntw`) redirects to that hub page.
 | Naming | Per-session **"Why X?"** convention (motivation-first) |
 | Brand | **Infratify** · Instructor **Ts. Ariff Azman** (Course Instructor) |
 | Credentials | HRD Corp Accredited Trainer · MBOT Professional Technologist (PT26010105) · HRD Corp Registered Training Provider |
-| Primary CTA | **Register interest / waitlist** for the next bootcamp intake |
+| Positioning | Honest, short **sharing sessions** (a short intro per topic, not a full course) |
+| Primary CTA | Single **"Join the DevOps bootcamp"** button at the top (no repeated upsell) |
 
 **The demo-is-the-proof rule:** every "Why?" is answered *by the live demo*, not argued in
 slides. Pose the painful manual way → then the tool does it live in one move. This keeps the
@@ -81,22 +82,177 @@ Fuller copy for registration detail (3 max, traceable to the outline LOs).
 - **Why Docker?** — End "works on mine" · Ship anywhere, identically · One command, live server
 - **Why Infra as Code?** — Stop clicking, start coding · Infrastructure from code · Build, configure, destroy
 
+## Course submission content
+
+Copy-paste text for the NTW / HRD Corp course submission forms. Each form has two parts:
+a **course overview** (summary, target audience, trainer, program details) and a **course
+contents** summary (topics, learning outcomes, delivery method). The trainer information,
+target audience, and delivery method are identical for all five sessions, so they are written
+once below; the per-session blocks only vary the summary, schedule, topics, and outcomes.
+
+Learning outcomes are deliberately introductory (recognise / explain / describe level). These
+are short sharing sessions, so they promise a working understanding and a starting point, not
+mastery.
+
+### Common to all five sessions
+
+**Trainer information**
+Ts. Ariff Azman (full name Ts. Ariff Bin Azman) is a DevOps trainer with Infratify, an HRD Corp
+Registered Training Provider. He is an HRD Corp Accredited Trainer and a Professional Technologist
+registered with the Malaysia Board of Technologists (MBOT), registration number PT26010105. His
+training focuses on practical DevOps skills for beginners and career-switchers, using live
+demonstrations rather than slides. Trainer profile: https://trainer.opariffazman.com
+_[Expand with years of experience, industry background, and past engagements as needed.]_
+
+**Target audience**
+Absolute beginners and career-switchers with no prior DevOps, system administration, or
+programming background. Suitable for students, working professionals considering a move into IT
+or software, and anyone curious about how modern applications are built and run. No prerequisites
+and no software setup are required; participants learn by watching the trainer work through each
+concept live.
+
+**Method of delivery**
+Online live webinar delivered over Zoom. The trainer leads the session as a live knowledge-sharing
+and demonstration: each idea is shown on screen in real time, followed by questions through the
+Zoom chat or Q&A. Participants take part by watching and asking questions; nothing needs to be
+installed on their side. Because each session is a short introduction, it concentrates on the core
+idea and a live demonstration rather than exhaustive coverage of the topic.
+
+**Program details (shared)**
+Platform: Zoom (joining link provided on registration). Fee: free, offered as part of National
+Training Week 2026. Duration: approximately 1 hour per session _[confirm actual duration]_.
+Language: _[English or Bahasa Malaysia, confirm]_. Level: beginner. Per-session dates and times
+are listed in each block below.
+
+### 1. Why Linux? (Monday, 20 July 2026, 10:30 AM MYT)
+
+**Summary**
+An introduction to Linux, the operating system that runs most of the world's servers and cloud
+platforms. In this short session the trainer shows what Linux is, why it is the standard choice
+for servers, and what it looks like to work with it on a real running machine. The goal is to
+remove the fear of the command line and show beginners why Linux is worth learning.
+
+**Topics covered**
+- What Linux is and where it runs (servers, cloud, phones, and devices)
+- Why servers run Linux: stability, control, open source, and cost
+- A first look at the Linux command line
+- Moving around files and folders without a mouse
+- Connecting to a remote server with SSH (live demonstration)
+
+**Learning outcomes**
+By the end of the session, learners will be able to:
+- Explain what Linux is and why it is so widely used on servers
+- Recognise basic command-line navigation and file commands
+- Describe how a user connects to a remote Linux server
+- Identify practical next steps for learning Linux hands-on
+
+### 2. Why Git & GitHub? (Tuesday, 21 July 2026, 10:30 AM MYT)
+
+**Summary**
+An introduction to version control with Git and collaboration with GitHub, the tools professional
+developers use to track every change and work together on code. The trainer demonstrates how Git
+records the full history of a project so nothing is ever lost, and how GitHub lets people build
+together and publish work online. The session finishes by publishing a simple page to a live
+public web address.
+
+**Topics covered**
+- The problem with saving files as "final", "final_v2", and "final_final"
+- What Git is and how it records the history of a project
+- What GitHub is and how it supports teamwork
+- Making a change, committing it, and viewing history (live demonstration)
+- Publishing a page to a live URL with GitHub (live demonstration)
+
+**Learning outcomes**
+By the end of the session, learners will be able to:
+- Explain what version control is and the problem Git solves
+- Describe the roles of Git and GitHub in a team workflow
+- Recognise a basic commit-and-history workflow
+- Understand how a GitHub profile can act as a public portfolio
+
+### 3. Why Cloud? (Wednesday, 22 July 2026, 10:30 AM MYT)
+
+**Summary**
+An introduction to cloud computing: renting computing power over the internet instead of buying
+and maintaining your own hardware. The trainer shows how a real server can be launched in the
+cloud in minutes and made available to users worldwide, and explains on-demand resources, scaling,
+and global reach in plain language.
+
+**Topics covered**
+- What "the cloud" actually is: someone else's servers, rented on demand
+- Why organisations move from owning hardware to renting cloud resources
+- Launching a real server in the cloud (live demonstration)
+- Making a service reachable to users around the world (live demonstration)
+- Cost, scaling, and security at a beginner level
+
+**Learning outcomes**
+By the end of the session, learners will be able to:
+- Explain what cloud computing is in plain terms
+- Describe the advantages of renting cloud resources over owning hardware
+- Recognise how a server is provisioned in the cloud
+- Understand the ideas of scalability and global delivery
+
+### 4. Why Docker? (Thursday, 23 July 2026, 10:30 AM MYT)
+
+**Summary**
+An introduction to containers with Docker, the technology that packages an application together
+with everything it needs so it runs the same way on any machine. The trainer demonstrates how a
+single command can start a running web server, and explains how Docker ends the familiar "but it
+works on my machine" problem.
+
+**Topics covered**
+- The "works on my machine" problem and why environments differ
+- What a container is and how Docker packages an application
+- The difference between an image and a container, at a beginner level
+- Starting a web server with a single Docker command (live demonstration)
+- Why containers make software portable and consistent
+
+**Learning outcomes**
+By the end of the session, learners will be able to:
+- Explain what Docker and containers are in plain terms
+- Describe the problem that containers solve
+- Recognise the basic idea of building and running a container
+- Understand why containers make applications portable
+
+### 5. Why Infrastructure as Code? (Friday, 24 July 2026, 10:00 AM MYT)
+
+**Summary**
+An introduction to Infrastructure as Code (IaC): describing servers and infrastructure in text
+files so they can be built, rebuilt, and destroyed automatically instead of being set up by hand.
+The trainer demonstrates how an entire environment can be created from code and then removed in
+seconds, and explains why this makes infrastructure repeatable and reliable.
+
+**Topics covered**
+- The problem with setting up infrastructure by clicking through consoles
+- What Infrastructure as Code means, with Terraform and Ansible as examples
+- Describing infrastructure in code (live demonstration)
+- Building and then destroying a full environment from code (live demonstration)
+- Why IaC makes infrastructure repeatable and automated
+
+**Learning outcomes**
+By the end of the session, learners will be able to:
+- Explain what Infrastructure as Code is and the problem it solves
+- Describe how infrastructure can be defined in text files
+- Recognise the build, rebuild, and destroy workflow
+- Understand why IaC improves repeatability and automation
+
 ## Hub page (built)
 
 `index.html` — a single static landing page, the funnel destination the poster QR points to.
 It shows:
 
 - **Week-at-a-glance schedule** — the five finalized banners as a responsive grid, each tinted with
-  its own theme colour, with an accessible day/time caption.
-- **The through-line story** (watch one page become global infrastructure).
-- **A register/waitlist CTA** (the primary funnel to the next bootcamp intake).
+  its own theme colour, with an accessible day/time caption. The cards are display tiles, not links.
+- **Honest sharing-session framing** — "a short walk-through of a single topic... an introduction,
+  not a full course" — so the page doesn't read as an upsell.
+- **One CTA** — a single "Join the DevOps bootcamp" button in the hero (the old bottom
+  "Ready to go deeper?" panel was removed).
 
 Dogfooding angle: it's a static site shipped on **GitHub Pages** via `.github/workflows/deploy.yml` —
-the exact thing demoed in *Why Git & GitHub?* and *Why Cloud?*.
+the exact thing demonstrated in *Why Git & GitHub?* and *Why Cloud?*.
 
 ## Links wired in
 
-- **Both "Join the DevOps bootcamp" CTAs** (hero + panel) go to the official bootcamp page:
+- **The hero "Join the DevOps bootcamp" CTA** goes to the official bootcamp page:
   `https://ml.my/infratify-devops-bootcamp` (redirects to `infratify.com/devops-bootcamp`).
 - **Trainer profile** is linked from the footer name: `https://ml.my/op-tp` (redirects to
   `trainer.opariffazman.com`).
