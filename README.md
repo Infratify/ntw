@@ -120,9 +120,8 @@ idea and a live demonstration rather than exhaustive coverage of the topic.
 
 **Program details (shared)**
 Platform: Zoom (joining link provided on registration). Fee: free, offered as part of National
-Training Week 2026. Duration: approximately 1 hour per session _[confirm actual duration]_.
-Language: _[English or Bahasa Malaysia, confirm]_. Level: beginner. Per-session dates and times
-are listed in each block below.
+Training Week 2026. Duration: 2 hours per session. Language: mixed (English and Bahasa Malaysia).
+Level: beginner. Per-session dates and times are listed in each block below.
 
 ### 1. Why Linux? (Monday, 20 July 2026, 10:30 AM MYT)
 
