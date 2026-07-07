@@ -94,11 +94,20 @@ It shows:
 Dogfooding angle: it's a static site shipped on **GitHub Pages** via `.github/workflows/deploy.yml` —
 the exact thing demoed in *Why Git & GitHub?* and *Why Cloud?*.
 
-## Still needed
+## Links wired in
 
-- **Real registration URL** — the "Save my seat" / "Register your interest" buttons in `index.html`
-  are placeholders (`href="#"`). Note the poster QR (`ml.my/infratify-ntw`) redirects *to this page*,
-  so the on-page button must point somewhere else: a Zoom sign-up or a lead-capture form.
+- **Both "Join the DevOps bootcamp" CTAs** (hero + panel) go to the official bootcamp page:
+  `https://ml.my/infratify-devops-bootcamp` (redirects to `infratify.com/devops-bootcamp`).
+- **Trainer profile** is linked from the footer name: `https://ml.my/op-tp` (redirects to
+  `trainer.opariffazman.com`).
+- The poster QR (`ml.my/infratify-ntw`) still lands on this hub, which then funnels to the bootcamp page.
+
+Icons are inline MDI SVGs (no external font/CDN); copy has had a humanizer pass (no em/en dashes, no emoji).
+
+## Still open
+
+- **Free-session sign-up** — if the five Zoom webinars need their own registration (separate from the
+  bootcamp), that link isn't on the page yet. Right now every CTA points at the bootcamp.
 - **Language** — copy is English; a Bahasa Malaysia version may suit the NTW crowd (outlines are in BM).
 - **Old repo** — `officialdad/ntw` was the initial scaffold host; superseded by `Infratify/ntw`. It can
   be archived/deleted separately (that Pages site is not referenced by any poster).
