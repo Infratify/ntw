@@ -1,0 +1,4 @@
+# Source design assets — kept out of the Pages repo to avoid bloat.
+# The finalized banners live in assets/banners/ as web-optimized WebP/JPG.
+*.rar
+NTW_2026_DAD/

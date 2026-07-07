@@ -3,167 +3,246 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Why DevOps? — National Training Week 2026</title>
-  <meta name="description" content="Five free live-demo webinars during National Training Week 2026. Zero to Deployed — watch one web page become global infrastructure." />
-  <!-- Material Design Icons (webfont). Swap for inline SVG later if you want zero external deps. -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@7.4.47/css/materialdesignicons.min.css" />
+  <title>Why DevOps? — National Training Week 2026 · Infratify</title>
+  <meta name="description" content="Five free live-demo webinars for absolute beginners during National Training Week 2026 (20–24 July). One question a day — Linux, Git & GitHub, Cloud, Docker, Infrastructure as Code — each answered live on Zoom. Brought by Infratify." />
+
+  <!-- Open Graph / social share -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Why DevOps? — National Training Week 2026" />
+  <meta property="og:description" content="Five free live-demo webinars for beginners, 20–24 July 2026. Watch DevOps answered live on Zoom. Brought by Infratify." />
+  <meta property="og:image" content="https://infratify.github.io/ntw/assets/banners/docker.jpg" />
+  <meta property="og:url" content="https://infratify.github.io/ntw/" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/favicon.png" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/favicon.png" />
+
   <style>
     :root {
       --bg: #0b0f19;
       --panel: #131826;
       --panel-2: #1a2133;
-      --text: #e7ecf5;
+      --text: #eef2fa;
       --muted: #97a3ba;
-      --accent: #6ea8fe;
-      --line: #262f45;
-      --radius: 14px;
+      --accent: #3a97e6;      /* Infratify blue */
+      --line: #232c42;
+      --radius: 16px;
+      --shadow: 0 12px 40px rgba(0,0,0,.45);
     }
     * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-      background: radial-gradient(1200px 600px at 50% -10%, #172038 0%, var(--bg) 55%);
+      background:
+        radial-gradient(1100px 520px at 50% -12%, #17233f 0%, transparent 60%),
+        var(--bg);
       color: var(--text);
-      line-height: 1.5;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
     }
-    .wrap { max-width: 1040px; margin: 0 auto; padding: 0 20px; }
+    .wrap { max-width: 1140px; margin: 0 auto; padding: 0 20px; }
+    a { color: inherit; }
 
     /* Hero */
-    header.hero { text-align: center; padding: 72px 0 40px; }
+    header.hero { text-align: center; padding: 68px 0 30px; }
     .kicker {
-      display: inline-block; font-size: 13px; letter-spacing: .12em; text-transform: uppercase;
-      color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 6px 14px;
+      display: inline-block; font-size: 12.5px; letter-spacing: .16em; text-transform: uppercase;
+      color: var(--accent); border: 1px solid var(--line); border-radius: 999px; padding: 7px 16px;
+      background: rgba(58,151,230,.06);
     }
-    h1 { font-size: clamp(2.4rem, 6vw, 4rem); margin: 18px 0 8px; line-height: 1.05; }
+    h1 { font-size: clamp(2.5rem, 7vw, 4.4rem); margin: 20px 0 10px; line-height: 1.02; letter-spacing: -.02em; }
     h1 .q { color: var(--accent); }
-    .tagline { font-size: clamp(1.05rem, 2.5vw, 1.35rem); color: var(--muted); margin: 0 auto; max-width: 640px; }
-    .dates { margin-top: 18px; font-weight: 600; }
+    .tagline { font-size: clamp(1.05rem, 2.4vw, 1.3rem); color: var(--muted); margin: 0 auto; max-width: 640px; }
+    .facts {
+      display: flex; flex-wrap: wrap; gap: 8px 10px; justify-content: center;
+      margin: 24px auto 0; max-width: 720px;
+    }
+    .facts span {
+      font-size: .9rem; color: var(--text); background: var(--panel-2);
+      border: 1px solid var(--line); border-radius: 999px; padding: 7px 14px;
+    }
     .cta {
-      display: inline-flex; align-items: center; gap: 8px; margin-top: 28px;
-      background: var(--accent); color: #0b0f19; font-weight: 700; text-decoration: none;
-      padding: 14px 24px; border-radius: 999px; transition: transform .12s ease;
+      display: inline-flex; align-items: center; gap: 9px; margin-top: 30px;
+      background: var(--accent); color: #06122a; font-weight: 700; text-decoration: none;
+      padding: 15px 28px; border-radius: 999px; transition: transform .12s ease, box-shadow .12s ease;
+      box-shadow: 0 8px 24px rgba(58,151,230,.35);
     }
-    .cta:hover { transform: translateY(-2px); }
+    .cta:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(58,151,230,.45); }
+    .cta.ghost { background: transparent; color: var(--text); border: 1px solid var(--line); box-shadow: none; }
+    .brought {
+      margin-top: 26px; color: var(--muted); font-size: .9rem;
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .brought b { color: var(--text); letter-spacing: .02em; }
+    .brought b span { color: var(--accent); }
 
-    /* Sessions */
-    section { padding: 32px 0; }
-    .section-title { text-align: center; font-size: 1rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin: 0 0 24px; }
-    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 18px; }
+    /* Sections */
+    section { padding: 40px 0; }
+    .section-head { text-align: center; margin: 0 0 28px; }
+    .section-head h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); margin: 0 0 6px; }
+    .section-head p { color: var(--muted); margin: 0; }
+
+    /* Schedule grid of banner cards */
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 22px; }
     .card {
+      display: block; text-decoration: none; color: inherit;
       background: linear-gradient(180deg, var(--panel-2), var(--panel));
-      border: 1px solid var(--line); border-radius: var(--radius); padding: 22px;
-      display: flex; flex-direction: column; gap: 14px;
+      border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
+      transition: transform .14s ease, border-color .14s ease, box-shadow .14s ease;
+      --c: var(--accent);
     }
-    .day { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
-    .card h3 { margin: 0; font-size: 1.5rem; }
-    .card h3 .q { color: var(--accent); }
-    .wow { color: var(--muted); font-size: .95rem; margin: -4px 0 6px; }
-    .because { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 10px; }
-    .because li { display: flex; align-items: center; gap: 12px; }
-    .because .mdi { font-size: 22px; color: var(--accent); width: 26px; text-align: center; }
-
-    /* Waitlist */
-    #waitlist { text-align: center; }
-    .panel {
-      background: var(--panel); border: 1px solid var(--line); border-radius: var(--radius);
-      padding: 40px 24px; max-width: 620px; margin: 0 auto;
+    .card:hover { transform: translateY(-4px); border-color: var(--c); box-shadow: var(--shadow); }
+    .card img { display: block; width: 100%; height: auto; aspect-ratio: 1600 / 1000; background: var(--panel); }
+    .cap { display: flex; align-items: center; gap: 12px; padding: 14px 16px 16px; border-top: 3px solid var(--c); }
+    .badge {
+      flex: 0 0 auto; text-align: center; line-height: 1.05;
+      background: var(--c); color: #06122a; font-weight: 800; border-radius: 10px; padding: 8px 10px; min-width: 58px;
     }
-    .panel h2 { margin: 0 0 10px; font-size: 1.8rem; }
-    .panel p { color: var(--muted); margin: 0 0 22px; }
+    .badge .d { font-size: 1.25rem; display: block; }
+    .badge .m { font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; }
+    .cap-main { min-width: 0; }
+    .cap-main h3 { margin: 0; font-size: 1.2rem; }
+    .cap-main .when { color: var(--muted); font-size: .9rem; margin-top: 2px; }
+    .cap .go { margin-left: auto; color: var(--c); font-size: 1.4rem; font-weight: 700; }
 
-    footer { text-align: center; color: var(--muted); font-size: .85rem; padding: 40px 0 60px; }
-    .wip { display: inline-block; margin-top: 8px; font-size: .8rem; color: #d0a24c; }
+    /* Register panel */
+    #register .panel {
+      background:
+        radial-gradient(600px 200px at 100% 0%, rgba(58,151,230,.14), transparent 70%),
+        var(--panel);
+      border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 46px 26px; max-width: 680px; margin: 0 auto; text-align: center;
+    }
+    #register h2 { margin: 0 0 10px; font-size: clamp(1.5rem, 3.5vw, 2rem); }
+    #register p { color: var(--muted); margin: 0 auto 24px; max-width: 480px; }
 
-    @media (prefers-reduced-motion: reduce) { .cta { transition: none; } }
+    footer { border-top: 1px solid var(--line); margin-top: 30px; }
+    footer .wrap { padding-top: 34px; padding-bottom: 54px; text-align: center; color: var(--muted); font-size: .88rem; }
+    footer .who { color: var(--text); font-size: 1rem; margin-bottom: 6px; }
+    footer .who b span { color: var(--accent); }
+    footer .creds { font-size: .8rem; opacity: .85; margin-top: 10px; }
+
+    @media (max-width: 520px) {
+      .grid { grid-template-columns: 1fr; }
+      header.hero { padding-top: 52px; }
+    }
+    @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto; } }
   </style>
 </head>
 <body>
   <div class="wrap">
 
     <header class="hero">
-      <span class="kicker">Free · National Training Week 2026</span>
+      <span class="kicker">Free &middot; National Training Week 2026</span>
       <h1>Why <span class="q">DevOps</span>?</h1>
-      <p class="tagline">Zero to Deployed — five questions, five live demos. Watch one web page become global infrastructure.</p>
-      <p class="dates">20&ndash;26 July 2026 · Online</p>
-      <a class="cta" href="#waitlist"><span class="mdi mdi-rocket-launch"></span> Join the waitlist</a>
+      <p class="tagline">Five questions. Five live demos. One a day &mdash; each answered live on your screen, zero setup on yours.</p>
+      <div class="facts">
+        <span>&#128197; 20&ndash;24 July 2026</span>
+        <span>&#128368; 10:30&nbsp;AM (MYT)</span>
+        <span>&#128250; Live on Zoom</span>
+        <span>&#127793; For absolute beginners</span>
+      </div>
+      <div>
+        <a class="cta" href="#register">Register your interest</a>
+      </div>
+      <p class="brought">brought by <b>INFRA<span>TIFY</span></b></p>
     </header>
 
-    <section>
-      <p class="section-title">Five live demos, one week</p>
+    <section id="schedule">
+      <div class="section-head">
+        <h2>One week, five live demos</h2>
+        <p>Watch one plain web page grow into real, global infrastructure &mdash; one session at a time.</p>
+      </div>
       <div class="grid">
 
-        <article class="card">
-          <span class="day">Mon 20 Jul</span>
-          <h3>Why <span class="q">Linux</span>?</h3>
-          <p class="wow">Live-tail a real running server — where the pros live.</p>
-          <ul class="because">
-            <li><span class="mdi mdi-server"></span> Powers everything</li>
-            <li><span class="mdi mdi-console-line"></span> Full control</li>
-            <li><span class="mdi mdi-open-source-initiative"></span> Free forever</li>
-          </ul>
-        </article>
+        <a class="card" href="#register" style="--c:#d7a521">
+          <picture>
+            <source srcset="assets/banners/linux.webp" type="image/webp" />
+            <img src="assets/banners/linux.jpg" loading="lazy" width="1400" height="875"
+                 alt="Why Linux? — free beginner webinar, Monday 20 July 2026, 10:30 AM on Zoom. Because Linux powers everything, gives full control, and is free forever. Instructor Ts. Ariff Azman." />
+          </picture>
+          <div class="cap">
+            <span class="badge"><span class="d">20</span><span class="m">Mon Jul</span></span>
+            <span class="cap-main"><h3>Why Linux?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
+            <span class="go" aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
 
-        <article class="card">
-          <span class="day">Tue 21 Jul</span>
-          <h3>Why <span class="q">Git &amp; GitHub</span>?</h3>
-          <p class="wow">Your page goes live on the public internet in two minutes.</p>
-          <ul class="because">
-            <li><span class="mdi mdi-history"></span> Never forgets</li>
-            <li><span class="mdi mdi-account-group"></span> Team ready</li>
-            <li><span class="mdi mdi-github"></span> Career proof</li>
-          </ul>
-        </article>
+        <a class="card" href="#register" style="--c:#d9432f">
+          <picture>
+            <source srcset="assets/banners/git-github.webp" type="image/webp" />
+            <img src="assets/banners/git-github.jpg" loading="lazy" width="1400" height="875"
+                 alt="Why Git & GitHub? — free beginner webinar, Tuesday 21 July 2026, 10:30 AM on Zoom. Because it never forgets, keeps teams ready, and is career proof. Instructor Ts. Ariff Azman." />
+          </picture>
+          <div class="cap">
+            <span class="badge"><span class="d">21</span><span class="m">Tue Jul</span></span>
+            <span class="cap-main"><h3>Why Git &amp; GitHub?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
+            <span class="go" aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
 
-        <article class="card">
-          <span class="day">Wed 22 Jul</span>
-          <h3>Why <span class="q">Docker</span>?</h3>
-          <p class="wow">One command spins up a running web server.</p>
-          <ul class="because">
-            <li><span class="mdi mdi-lan-check"></span> Works everywhere</li>
-            <li><span class="mdi mdi-truck-fast"></span> Ships anywhere</li>
-            <li><span class="mdi mdi-flash"></span> Blazingly fast</li>
-          </ul>
-        </article>
+        <a class="card" href="#register" style="--c:#e8752a">
+          <picture>
+            <source srcset="assets/banners/cloud.webp" type="image/webp" />
+            <img src="assets/banners/cloud.jpg" loading="lazy" width="1400" height="875"
+                 alt="Why Cloud? — free beginner webinar, Wednesday 22 July 2026, 10:30 AM on Zoom. Because it needs no hardware, scales instantly, and goes global. Instructor Ts. Ariff Azman." />
+          </picture>
+          <div class="cap">
+            <span class="badge"><span class="d">22</span><span class="m">Wed Jul</span></span>
+            <span class="cap-main"><h3>Why Cloud?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
+            <span class="go" aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
 
-        <article class="card">
-          <span class="day">Thu 23 Jul</span>
-          <h3>Why <span class="q">Cloud</span>?</h3>
-          <p class="wow">A real server on AWS, made global with Cloudflare.</p>
-          <ul class="because">
-            <li><span class="mdi mdi-server-off"></span> No hardware</li>
-            <li><span class="mdi mdi-arrow-expand-all"></span> Scales instantly</li>
-            <li><span class="mdi mdi-earth"></span> Goes global</li>
-          </ul>
-        </article>
+        <a class="card" href="#register" style="--c:#2496ed">
+          <picture>
+            <source srcset="assets/banners/docker.webp" type="image/webp" />
+            <img src="assets/banners/docker.jpg" loading="lazy" width="1400" height="875"
+                 alt="Why Docker? — free beginner webinar, Thursday 23 July 2026, 10:30 AM on Zoom. Because it works everywhere, ships anywhere, and is blazingly fast. Instructor Ts. Ariff Azman." />
+          </picture>
+          <div class="cap">
+            <span class="badge"><span class="d">23</span><span class="m">Thu Jul</span></span>
+            <span class="cap-main"><h3>Why Docker?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
+            <span class="go" aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
 
-        <article class="card">
-          <span class="day">Fri 24 Jul</span>
-          <h3>Why <span class="q">Infrastructure as Code</span>?</h3>
-          <p class="wow">Whole infrastructure built from code — then destroyed in seconds.</p>
-          <ul class="because">
-            <li><span class="mdi mdi-content-copy"></span> Perfectly repeatable</li>
-            <li><span class="mdi mdi-refresh"></span> Rebuild anytime</li>
-            <li><span class="mdi mdi-robot"></span> Fully automated</li>
-          </ul>
-        </article>
+        <a class="card" href="#register" style="--c:#7c5cff">
+          <picture>
+            <source srcset="assets/banners/infra-as-code.webp" type="image/webp" />
+            <img src="assets/banners/infra-as-code.jpg" loading="lazy" width="1400" height="875"
+                 alt="Why Infrastructure as Code? — free beginner webinar, Friday 24 July 2026, 10:00 AM on Zoom. Because it is perfectly repeatable, rebuilds anytime, and is fully automated. Instructor Ts. Ariff Azman." />
+          </picture>
+          <div class="cap">
+            <span class="badge"><span class="d">24</span><span class="m">Fri Jul</span></span>
+            <span class="cap-main"><h3>Why Infra as Code?</h3><span class="when">10:00 AM &middot; Zoom</span></span>
+            <span class="go" aria-hidden="true">&rarr;</span>
+          </div>
+        </a>
 
       </div>
     </section>
 
-    <section id="waitlist">
+    <section id="register">
       <div class="panel">
-        <h2>Want the full journey?</h2>
-        <p>These tasters are a preview of our DevOps bootcamp. Join the waitlist for the next intake.</p>
-        <!-- TODO: replace with the real registration form URL -->
-        <a class="cta" href="#"><span class="mdi mdi-email-fast"></span> Register your interest</a>
+        <h2>Turn five tasters into a career</h2>
+        <p>These free sessions are a preview of the Infratify DevOps bootcamp. Save your seat for a session &mdash; and join the waitlist for the next full intake.</p>
+        <!-- TODO: replace href="#" with the real Zoom registration / waitlist URL.
+             Note: the printed poster QR (ml.my/infratify-ntw) redirects to THIS page,
+             so this button must point somewhere else (Zoom sign-up or a lead form). -->
+        <a class="cta" href="#">Save my seat</a>
       </div>
     </section>
-
-    <footer>
-      National Training Week 2026 · Free DevOps taster series
-      <br /><span class="wip">Work in progress — poster &amp; branding not final</span>
-    </footer>
 
   </div>
+
+  <footer>
+    <div class="wrap">
+      <p class="who">Brought by <b>INFRA<span>TIFY</span></b> &middot; Instructor <b>Ts. Ariff Azman</b></p>
+      National Training Week 2026 &middot; Free DevOps taster series
+      <p class="creds">HRD Corp Accredited Trainer &middot; MBOT Professional Technologist (PT26010105) &middot; HRD Corp Registered Training Provider</p>
+    </div>
+  </footer>
 </body>
 </html>
