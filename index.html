@@ -79,24 +79,25 @@
       margin-top: 26px; color: var(--muted); font-size: .9rem;
       display: flex; align-items: center; justify-content: center; gap: 8px;
     }
-    .brought b { color: var(--text); letter-spacing: .02em; }
-    .brought b span { color: var(--accent); }
+    .logo { height: 30px; width: auto; vertical-align: middle; }
 
     /* Sections */
     section { padding: 40px 0; }
     .section-head { text-align: center; margin: 0 0 28px; }
     .section-head h2 { font-size: clamp(1.5rem, 3.5vw, 2rem); margin: 0 0 6px; }
     .section-head p { color: var(--muted); margin: 0 auto; max-width: 560px; }
+    #bootcamp .section-head { margin-bottom: 0; }
 
-    /* Schedule grid of banner cards (display tiles, not links) */
+    /* Schedule grid of banner cards, each linking to its HRDC registration page */
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); gap: 22px; }
     .card {
+      display: block; text-decoration: none; color: inherit;
       background: linear-gradient(180deg, var(--panel-2), var(--panel));
       border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden;
-      transition: border-color .14s ease, box-shadow .14s ease;
+      transition: border-color .14s ease, box-shadow .14s ease, transform .14s ease;
       --c: var(--accent);
     }
-    .card:hover { border-color: var(--c); box-shadow: var(--shadow); }
+    .card:hover, .card:focus-visible { border-color: var(--c); box-shadow: var(--shadow); transform: translateY(-2px); }
     .card img { display: block; width: 100%; height: auto; aspect-ratio: 1600 / 1000; background: var(--panel); }
     .cap { display: flex; align-items: center; gap: 12px; padding: 14px 16px 16px; border-top: 3px solid var(--c); }
     .badge {
@@ -108,11 +109,12 @@
     .cap-main { min-width: 0; }
     .cap-main h3 { margin: 0; font-size: 1.2rem; }
     .cap-main .when { color: var(--muted); font-size: .9rem; margin-top: 2px; }
+    .cap .go { margin-left: auto; color: var(--muted); font-size: 1.15rem; transition: color .14s ease; }
+    .card:hover .go, .card:focus-visible .go { color: var(--c); }
 
     footer { border-top: 1px solid var(--line); margin-top: 30px; }
     footer .wrap { padding-top: 34px; padding-bottom: 54px; text-align: center; color: var(--muted); font-size: .88rem; }
     footer .who { color: var(--text); font-size: 1rem; margin-bottom: 6px; }
-    footer .who b span { color: var(--accent); }
     footer .who a {
       color: var(--text); text-decoration-color: var(--accent); text-underline-offset: 3px;
       display: inline-flex; align-items: center; gap: 4px;
@@ -141,13 +143,7 @@
         <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M15,8V16H5V8H15M16,6H4A1,1 0 0,0 3,7V17A1,1 0 0,0 4,18H16A1,1 0 0,0 17,17V13.5L21,17.5V6.5L17,10.5V7A1,1 0 0,0 16,6Z"/></svg>Live on Zoom</span>
         <span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M2,22V20C2,20 7,18 12,18C17,18 22,20 22,20V22H2M11.3,9.1C10.1,5.2 4,6.1 4,6.1C4,6.1 4.2,13.9 9.9,12.7C9.5,9.8 8,9 8,9C10.8,9 11,12.4 11,12.4V17C11.3,17 11.7,17 12,17C12.3,17 12.7,17 13,17V12.8C13,12.8 13,8.9 16,7.9C16,7.9 14,10.9 14,12.9C21,13.6 21,4 21,4C21,4 12.1,3 11.3,9.1Z"/></svg>For absolute beginners</span>
       </div>
-      <div>
-        <a class="cta" href="https://ml.my/infratify-devops-bootcamp">
-          Join the DevOps bootcamp
-          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
-        </a>
-      </div>
-      <p class="brought">brought by <b>INFRA<span>TIFY</span></b></p>
+      <p class="brought">brought by <img class="logo" src="assets/logo-dark.svg" alt="Infratify" /></p>
     </header>
 
     <section id="schedule">
@@ -157,7 +153,7 @@
       </div>
       <div class="grid">
 
-        <article class="card" style="--c:#d7a521">
+        <a class="card" style="--c:#d7a521" href="https://nationaltrainingweek.gov.my/courseDetails?courseId=31138" target="_blank" rel="noopener noreferrer">
           <picture>
             <source srcset="assets/banners/linux.webp" type="image/webp" />
             <img src="assets/banners/linux.jpg" loading="lazy" width="1400" height="875"
@@ -165,11 +161,12 @@
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">20</span><span class="m">Mon Jul</span></span>
-            <span class="cap-main"><h3>Why Linux?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
+            <span class="cap-main"><h3>Why Linux?</h3><span class="when">10:30 AM &middot; Zoom &middot; Register on NTW</span></span>
+            <svg class="ic go" viewBox="0 0 24 24" aria-hidden="true"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
           </div>
-        </article>
+        </a>
 
-        <article class="card" style="--c:#d9432f">
+        <a class="card" style="--c:#d9432f" href="https://nationaltrainingweek.gov.my/courseDetails?courseId=31902" target="_blank" rel="noopener noreferrer">
           <picture>
             <source srcset="assets/banners/git-github.webp" type="image/webp" />
             <img src="assets/banners/git-github.jpg" loading="lazy" width="1400" height="875"
@@ -177,11 +174,12 @@
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">21</span><span class="m">Tue Jul</span></span>
-            <span class="cap-main"><h3>Why Git &amp; GitHub?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
+            <span class="cap-main"><h3>Why Git &amp; GitHub?</h3><span class="when">10:30 AM &middot; Zoom &middot; Register on NTW</span></span>
+            <svg class="ic go" viewBox="0 0 24 24" aria-hidden="true"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
           </div>
-        </article>
+        </a>
 
-        <article class="card" style="--c:#e8752a">
+        <a class="card" style="--c:#e8752a" href="https://nationaltrainingweek.gov.my/courseDetails?courseId=31904" target="_blank" rel="noopener noreferrer">
           <picture>
             <source srcset="assets/banners/cloud.webp" type="image/webp" />
             <img src="assets/banners/cloud.jpg" loading="lazy" width="1400" height="875"
@@ -189,11 +187,12 @@
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">22</span><span class="m">Wed Jul</span></span>
-            <span class="cap-main"><h3>Why Cloud?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
+            <span class="cap-main"><h3>Why Cloud?</h3><span class="when">10:30 AM &middot; Zoom &middot; Register on NTW</span></span>
+            <svg class="ic go" viewBox="0 0 24 24" aria-hidden="true"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
           </div>
-        </article>
+        </a>
 
-        <article class="card" style="--c:#2496ed">
+        <a class="card" style="--c:#2496ed" href="https://nationaltrainingweek.gov.my/courseDetails?courseId=31905" target="_blank" rel="noopener noreferrer">
           <picture>
             <source srcset="assets/banners/docker.webp" type="image/webp" />
             <img src="assets/banners/docker.jpg" loading="lazy" width="1400" height="875"
@@ -201,11 +200,12 @@
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">23</span><span class="m">Thu Jul</span></span>
-            <span class="cap-main"><h3>Why Docker?</h3><span class="when">10:30 AM &middot; Zoom</span></span>
+            <span class="cap-main"><h3>Why Docker?</h3><span class="when">10:30 AM &middot; Zoom &middot; Register on NTW</span></span>
+            <svg class="ic go" viewBox="0 0 24 24" aria-hidden="true"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
           </div>
-        </article>
+        </a>
 
-        <article class="card" style="--c:#7c5cff">
+        <a class="card" style="--c:#7c5cff" href="https://nationaltrainingweek.gov.my/courseDetails?courseId=31907" target="_blank" rel="noopener noreferrer">
           <picture>
             <source srcset="assets/banners/infra-as-code.webp" type="image/webp" />
             <img src="assets/banners/infra-as-code.jpg" loading="lazy" width="1400" height="875"
@@ -213,18 +213,30 @@
           </picture>
           <div class="cap">
             <span class="badge"><span class="d">24</span><span class="m">Fri Jul</span></span>
-            <span class="cap-main"><h3>Why Infra as Code?</h3><span class="when">10:00 AM &middot; Zoom</span></span>
+            <span class="cap-main"><h3>Why Infra as Code?</h3><span class="when">10:00 AM &middot; Zoom &middot; Register on NTW</span></span>
+            <svg class="ic go" viewBox="0 0 24 24" aria-hidden="true"><path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/></svg>
           </div>
-        </article>
+        </a>
 
       </div>
+    </section>
+
+    <section id="bootcamp" style="text-align: center;">
+      <div class="section-head">
+        <h2>Why these topics?</h2>
+        <p>These topics are some of the fundamentals knowledge to understand for the next industrial revolution in Malaysia IT sector.</p>
+      </div>
+      <a class="cta" href="https://ml.my/infratify-devops-bootcamp">
+        Join the DevOps bootcamp
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"/></svg>
+      </a>
     </section>
 
   </div>
 
   <footer>
     <div class="wrap">
-      <p class="who">Brought by <b>INFRA<span>TIFY</span></b> &middot; Trainer
+      <p class="who">Brought by <img class="logo" src="assets/logo-dark.svg" alt="Infratify" /> &middot; Trainer
         <a href="https://ml.my/op-tp" target="_blank" rel="noopener noreferrer">
           <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3C14.21 3 16 4.79 16 7S14.21 11 12 11 8 9.21 8 7 9.79 3 12 3M16 13.54C16 14.6 15.72 17.07 13.81 19.83L13 15L13.94 13.12C13.32 13.05 12.67 13 12 13S10.68 13.05 10.06 13.12L11 15L10.19 19.83C8.28 17.07 8 14.6 8 13.54C5.61 14.24 4 15.5 4 17V21H20V17C20 15.5 18.4 14.24 16 13.54Z"/></svg>Ts. Ariff Azman</a>
       </p>
