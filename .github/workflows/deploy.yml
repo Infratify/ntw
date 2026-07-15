@@ -26,14 +26,41 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - uses: pnpm/action-setup@v5
+        with:
+          version: 10
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: pnpm
+
+      - name: Install deck dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build all decks
+        run: pnpm build
+
+      - name: Compose site
+        # Stitches the static hub page together with every built deck under
+        # slides/. Assembled explicitly (not the whole repo) so node_modules,
+        # lockfiles, .git etc. never reach the deployed artifact.
+        run: |
+          mkdir -p _site/slides
+          cp index.html .nojekyll _site/
+          cp -r assets _site/assets
+          for deck in slides/*/; do
+            slug="$(basename "$deck")"
+            cp -r "$deck/dist" "_site/slides/$slug"
+          done
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Static site served from the repo root.
-          path: .
+          path: _site
 
       - name: Deploy
         id: deployment

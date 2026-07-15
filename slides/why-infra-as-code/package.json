@@ -1,0 +1,14 @@
+{
+  "name": "ntw-why-infra-as-code",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "build": "slidev build --base /ntw/slides/why-infra-as-code/",
+    "dev": "slidev --open"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.15.0",
+    "@slidev/theme-apple-basic": "^0.25.1",
+    "vue": "^3.5.32"
+  }
+}

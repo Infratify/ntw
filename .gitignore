@@ -2,3 +2,9 @@
 # The finalized banners live in assets/banners/ as web-optimized WebP/JPG.
 *.rar
 NTW_2026_DAD/
+
+# Slidev deck build output/tooling
+node_modules/
+slides/*/dist/
+slides/*/.slidev/
+_site/
