@@ -40,16 +40,16 @@ jobs:
         run: pnpm build
 
       - name: Compose site
-        # Stitches the static hub page together with every built deck under
-        # slides/. Assembled explicitly (not the whole repo) so node_modules,
-        # lockfiles, .git etc. never reach the deployed artifact.
+        # Stitches the static hub page together with every built deck
+        # (why-*/). Assembled explicitly (not the whole repo) so
+        # node_modules, lockfiles, .git etc. never reach the deployed artifact.
         run: |
-          mkdir -p _site/slides
+          mkdir -p _site
           cp index.html .nojekyll _site/
           cp -r assets _site/assets
-          for deck in slides/*/; do
+          for deck in why-*/; do
             slug="$(basename "$deck")"
-            cp -r "$deck/dist" "_site/slides/$slug"
+            cp -r "$deck/dist" "_site/$slug"
           done
 
       - name: Configure Pages

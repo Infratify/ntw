@@ -1,9 +1,9 @@
 {
-  "name": "ntw-why-cloud",
+  "name": "ntw-why-linux",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --base /ntw/slides/why-cloud/",
+    "build": "slidev build --base /ntw/why-linux/",
     "dev": "slidev --open"
   },
   "dependencies": {

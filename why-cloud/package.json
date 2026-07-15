@@ -1,9 +1,9 @@
 {
-  "name": "ntw-why-docker",
+  "name": "ntw-why-cloud",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --base /ntw/slides/why-docker/",
+    "build": "slidev build --base /ntw/why-cloud/",
     "dev": "slidev --open"
   },
   "dependencies": {

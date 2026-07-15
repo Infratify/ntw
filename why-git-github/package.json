@@ -1,9 +1,9 @@
 {
-  "name": "ntw-why-infra-as-code",
+  "name": "ntw-why-git-github",
   "type": "module",
   "private": true,
   "scripts": {
-    "build": "slidev build --base /ntw/slides/why-infra-as-code/",
+    "build": "slidev build --base /ntw/why-git-github/",
     "dev": "slidev --open"
   },
   "dependencies": {

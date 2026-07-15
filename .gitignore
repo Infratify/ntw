@@ -5,6 +5,6 @@ NTW_2026_DAD/
 
 # Slidev deck build output/tooling
 node_modules/
-slides/*/dist/
-slides/*/.slidev/
+why-*/dist/
+why-*/.slidev/
 _site/
