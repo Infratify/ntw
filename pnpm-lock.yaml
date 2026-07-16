@@ -58,6 +58,12 @@ importers:
 
   why-linux:
     dependencies:
+      '@iconify-json/logos':
+        specifier: ^1.2.11
+        version: 1.2.11
+      '@iconify-json/mdi':
+        specifier: ^1.2.3
+        version: 1.2.3
       '@slidev/cli':
         specifier: ^52.15.0
         version: 52.18.0(@nuxt/kit@3.21.8)(@types/markdown-it@14.1.2)(@types/node@22.20.1)(@vue/compiler-sfc@3.5.39)(lightningcss@1.32.0)(markdown-it@14.3.0)(postcss@8.5.19)(rolldown@1.1.5)
@@ -280,6 +286,12 @@ packages:
 
   '@iconify-json/carbon@1.2.24':
     resolution: {integrity: sha512-b7u/eTWE3xFa7UXlRJBSEm6At1y6+F0P3imBEip5/8QeRzouxVjBf80Y2xnu1GYsFo9MYlHA0bZfxxMd5givfw==}
+
+  '@iconify-json/logos@1.2.11':
+    resolution: {integrity: sha512-fOo4pGEatuyuCFNL+cwquYMa2Im0oJHRHV7lt/Qqs5Ode/lPImHCQcfTtPzZj7qYMPb/h8YHN3TG54uEowrjNQ==}
+
+  '@iconify-json/mdi@1.2.3':
+    resolution: {integrity: sha512-O3cLwbDOK7NNDf2ihaQOH5F9JglnulNDFV7WprU2dSoZu3h3cWH//h74uQAB87brHmvFVxIOkuBX2sZSzYhScg==}
 
   '@iconify-json/ph@1.2.2':
     resolution: {integrity: sha512-PgkEZNtqa8hBGjHXQa4pMwZa93hmfu8FUSjs/nv4oUU6yLsgv+gh9nu28Kqi8Fz9CCVu4hj1MZs9/60J57IzFw==}
@@ -3779,6 +3791,14 @@ snapshots:
       hono: 4.12.30
 
   '@iconify-json/carbon@1.2.24':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/logos@1.2.11':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/mdi@1.2.3':
     dependencies:
       '@iconify/types': 2.0.0
 

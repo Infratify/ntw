@@ -1,40 +1,90 @@
 ---
 theme: apple-basic
-background: https://cover.sli.dev
-title: Why Linux? — National Training Week 2026
-class: text-center
-transition: fade-out
+title: Why Linux? · National Training Week 2026
+info: |
+  ## Why Linux?
+  National Training Week 2026 · Infratify
 mdc: true
 download: false
 lineNumbers: false
-info: |
-  ## Why Linux?
-  National Training Week 2026 — Infratify
 highlighter: shiki
 drawings:
   persist: false
 fonts:
   sans: Poppins
+  mono: JetBrains Mono
+transition: slide-left
+src: ./pages/title.md
 ---
 
-<script setup>
-const base = import.meta.env.BASE_URL
-</script>
+---
+src: ./pages/trainer.md
+---
 
-<div class="flex justify-center mb-8">
-<img :src="`${base}logo-dark.svg`" class="h-10" alt="Infratify" />
-</div>
+---
+src: ./pages/plan.md
+---
 
-# Why Linux?
+---
+src: ./pages/what-is-linux.md
+---
 
-<div class="mt-6 text-lg opacity-60">
-Monday 20 July 2026 &middot; 10:30 AM MYT
-</div>
+---
+src: ./pages/stack.md
+---
 
-<div class="mt-8 text-xl opacity-80">
-powers everything &middot; full control &middot; free forever
-</div>
+---
+src: ./pages/everywhere.md
+---
 
-<div class="mt-6 text-lg opacity-80">
-<i>Ts. Ariff Azman &middot; Infratify</i>
-</div>
+---
+src: ./pages/every-tap.md
+---
+
+---
+src: ./pages/demo-ssh.md
+---
+
+---
+src: ./pages/click-vs-type.md
+---
+
+---
+src: ./pages/eight-commands.md
+---
+
+---
+src: ./pages/pipes.md
+---
+
+---
+src: ./pages/free.md
+---
+
+---
+src: ./pages/demo-toybox.md
+---
+
+---
+src: ./pages/rm0.md
+---
+
+---
+src: ./pages/ai-terminal.md
+---
+
+---
+src: ./pages/demo-agent.md
+---
+
+---
+src: ./pages/proof.md
+---
+
+---
+src: ./pages/start-tonight.md
+---
+
+---
+src: ./pages/thanks.md
+---

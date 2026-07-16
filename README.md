@@ -34,7 +34,7 @@ A viewer who attends all five watches one plain web page become global infrastru
 
 | Day | Session | Time (MYT) | Banner theme | Live-demo wow moment |
 | --- | --- | --- | --- | --- |
-| **Mon 20 Jul** | **Why Linux?** | 10:30 AM | gold/black | live-tail a running server — "this is where pros live" |
+| **Mon 20 Jul** | **Why Linux?** | 10:30 AM | gold/black | FOSS rapid-fire (weather, world map, QR codes in the terminal) + an AI agent coding live over free-tier models |
 | **Tue 21 Jul** | **Why Git & GitHub?** | 10:30 AM | red | the page goes live on the public internet in 2 min |
 | **Wed 22 Jul** | **Why Cloud?** | 10:30 AM | orange | a real server on AWS, global via Cloudflare |
 | **Thu 23 Jul** | **Why Docker?** | 10:30 AM | Docker blue | one command → running web server |
