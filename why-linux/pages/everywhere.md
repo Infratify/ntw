@@ -52,8 +52,7 @@ transition: slide-left
 </div>
 
 <div v-click="5" class="mark-safe mt-10 text-center text-lg opacity-85">
-You've been a Linux user for years.
-<span v-mark="{ at: 5, color: '#d97706', type: 'underline' }">You just never saw a login screen.</span>
+You've used Linux for years <span v-mark="{ at: 5, color: '#d97706', type: 'underline' }">without ever seeing a login screen</span>.
 </div>
 
 <!--

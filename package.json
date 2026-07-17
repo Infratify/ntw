@@ -5,6 +5,7 @@
   "type": "module",
   "packageManager": "pnpm@10.20.0",
   "scripts": {
-    "build": "pnpm -r run build"
+    "build": "pnpm -r run build",
+    "lint:decks": "node scripts/lint-deck.mjs"
   }
 }

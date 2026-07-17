@@ -16,8 +16,7 @@ clicks: 3
 </div>
 
 <div v-click="3" class="mark-safe mt-12 text-center text-lg opacity-85">
-A WhatsApp text, a TikTok video, your banking app.
-Each answer comes from <span v-mark="{ at: 3, color: '#d97706', type: 'underline' }">a Linux machine you'll never see</span>.
+Every WhatsApp text ends at <span v-mark="{ at: 3, color: '#d97706', type: 'underline' }">a Linux machine you'll never see</span>.
 </div>
 
 <!--

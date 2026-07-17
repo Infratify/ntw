@@ -64,12 +64,11 @@ transition: slide-left
 </div>
 
 <div v-click="1" class="text-center text-base opacity-80">
-An operating system, like Windows and macOS. Born in 1991, built in the open. <b>Nobody owns it.</b>
+An operating system <b>nobody owns</b>, born 1991.
 </div>
 
 <div v-click="2" class="mark-safe mt-3 text-center text-base opacity-80">
-Distros are its flavours. Same engine, different body.
-Today runs on <span v-mark="{ at: 3, color: '#d97706', type: 'highlight' }">Ubuntu</span>.
+Distros are its flavours; today runs on <span v-mark="{ at: 3, color: '#d97706', type: 'highlight' }">Ubuntu</span>.
 </div>
 
 <!--

@@ -19,8 +19,7 @@ transition: slide-left
 </div>
 
 <div v-click="3" class="mark-safe mt-8 text-center text-lg opacity-85">
-Watch the log while it works: <code>mkdir</code>, <code>cat</code>, pipes.
-<span v-mark="{ at: 3, color: '#7c3aed', type: 'underline' }">Your eight commands, just faster.</span>
+Watch the log; it runs <span v-mark="{ at: 3, color: '#7c3aed', type: 'underline' }">your eight commands</span>, just faster.
 </div>
 
 <!--

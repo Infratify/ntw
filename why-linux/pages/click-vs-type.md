@@ -21,15 +21,15 @@ transition: slide-left
   <div class="px-5 py-4 space-y-4 text-sm">
     <div v-click="1" class="flex items-center gap-3">
       <mdi-menu class="text-lg text-gray-400 flex-shrink-0" />
-      <span>you can only do what the menus offer</span>
+      <span>only what the menus offer</span>
     </div>
     <div v-click="2" class="flex items-center gap-3">
       <mdi-cursor-default-click class="text-lg text-gray-400 flex-shrink-0" />
-      <span>renaming 50 files means 50 sad clicks</span>
+      <span>50 files, 50 clicks</span>
     </div>
     <div v-click="3" class="flex items-center gap-3">
       <mdi-history class="text-lg text-gray-400 flex-shrink-0" />
-      <span>no way to save or replay what you did</span>
+      <span>no save, no replay</span>
     </div>
   </div>
 </div>
@@ -58,8 +58,7 @@ transition: slide-left
 </div>
 
 <div v-click="4" class="mark-safe mt-8 text-center text-lg opacity-85">
-And remember: our server has no mouse.
-For a server, <span v-mark="{ at: 4, color: '#d97706', type: 'underline' }">typing is the only option</span>.
+Our server has no mouse; <span v-mark="{ at: 4, color: '#d97706', type: 'underline' }">typing is the only way in</span>.
 </div>
 
 <!--

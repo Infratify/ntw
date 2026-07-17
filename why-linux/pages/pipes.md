@@ -26,15 +26,13 @@ transition: fade-out
 
 </div>
 
-<div v-click="3" class="mark-safe mt-8 text-center text-base opacity-85">
-Small commands snap together like <span v-mark="{ at: 3, color: '#d97706', type: 'highlight' }">LEGO bricks</span>. All of DevOps builds on this.
-</div>
-
-<div v-click="4" class="mark-safe mt-4 text-center text-xl">
-This is why pros <span v-mark="{ at: 4, color: '#d97706', type: 'underline' }">live in the terminal</span>.
+<div v-click="3" class="mark-safe mt-10 text-center text-lg opacity-85">
+Small commands snap together like <span v-mark="{ at: 3, color: '#d97706', type: 'highlight' }">LEGO bricks</span>.
 </div>
 
 <!--
+Landing lines to say out loud: all of DevOps builds on this one idea. And this is why pros live in the terminal: nothing else gives this much control per keystroke.
+
 DEMO SCRIPT (~7 min): run both one-liners on the server (prepare an app.log beforehand).
 Segment finale: btop. "This is mission control for a machine; sysadmins stare at this instead of Task Manager." Let it breathe on screen for 30 seconds.
 Beat after btop: breathe, invite chat reactions. Around the 55-minute mark; offer a 2-minute stretch if energy dips.

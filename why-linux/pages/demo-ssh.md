@@ -18,24 +18,29 @@ transition: slide-left
 </TermWindow>
 </div>
 
-<div class="space-y-6">
-  <div v-click="2" class="note-row">
+<div class="space-y-7">
+  <div v-click="2" class="note-row items-center">
     <mdi-map-marker-radius class="note-ico text-amber-600 dark:text-amber-400" />
-    <p>A <b>real computer in a Singapore datacenter</b>. A few ringgit a month.</p>
+    <p><b>a real Singapore server</b></p>
   </div>
-  <div v-click="3" class="note-row">
+  <div v-click="3" class="note-row items-center">
     <mdi-monitor-off class="note-ico text-amber-600 dark:text-amber-400" />
-    <p>No screen. No mouse. <b>Text is the only door in.</b></p>
+    <p><b>no screen, no mouse</b></p>
   </div>
-  <div v-click="4" class="note-row">
+  <div v-click="4" class="note-row items-center">
     <mdi-key-variant class="note-ico text-amber-600 dark:text-amber-400" />
-    <p><b>SSH</b> is how pros walk into any server on Earth. One command, secured by keys.</p>
+    <p><b>SSH</b> <span class="opacity-60">&middot; one command in</span></p>
   </div>
 </div>
 
 </div>
 
 <!--
+Labels to narrate:
+[click] that's a real computer in a Singapore datacenter, rented for a few ringgit a month.
+[click] it has no screen, no mouse, no desktop; text is the only way in.
+[click] SSH is how professionals walk into any server on Earth: one command, secured by keys.
+
 DEMO SCRIPT (~5 min): switch to the real terminal.
 1. ssh into the demo VM
 2. fastfetch   (the server introduces itself)

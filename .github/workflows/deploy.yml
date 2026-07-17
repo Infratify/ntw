@@ -36,6 +36,11 @@ jobs:
       - name: Install deck dependencies
         run: pnpm install --frozen-lockfile
 
+      - name: Lint decks
+        # Enforces the authoring laws in CLAUDE.md (title/word budgets,
+        # banned phrasing, mandatory presenter notes) on every pages/*.md.
+        run: pnpm lint:decks
+
       - name: Build all decks
         run: pnpm build
 

@@ -13,7 +13,7 @@ transition: slide-left
   <mdi-cash-remove class="text-3xl text-green-600 dark:text-green-400 flex-shrink-0 mt-1" />
   <div>
     <p class="font-700 text-lg m-0">no price tag</p>
-    <p class="text-sm opacity-70 mt-1 mb-0">No licence, no trial, no expiry. Commercial use included.</p>
+    <p class="text-sm opacity-70 mt-1 mb-0">no licence, no expiry</p>
   </div>
 </div>
 
@@ -21,7 +21,7 @@ transition: slide-left
   <mdi-code-tags class="text-3xl text-green-600 dark:text-green-400 flex-shrink-0 mt-1" />
   <div>
     <p class="font-700 text-lg m-0">open source</p>
-    <p class="text-sm opacity-70 mt-1 mb-0">The recipe is public. Anyone can read it and fix it.</p>
+    <p class="text-sm opacity-70 mt-1 mb-0">the recipe is public</p>
   </div>
 </div>
 
@@ -29,7 +29,7 @@ transition: slide-left
   <mdi-account-group-outline class="text-3xl text-green-600 dark:text-green-400 flex-shrink-0 mt-1" />
   <div>
     <p class="font-700 text-lg m-0">built by everyone</p>
-    <p class="text-sm opacity-70 mt-1 mb-0">Anyone can contribute. Google and Microsoft do.</p>
+    <p class="text-sm opacity-70 mt-1 mb-0">Google and Microsoft contribute</p>
   </div>
 </div>
 
@@ -37,16 +37,17 @@ transition: slide-left
   <mdi-lock-open-variant-outline class="text-3xl text-green-600 dark:text-green-400 flex-shrink-0 mt-1" />
   <div>
     <p class="font-700 text-lg m-0">no lock-in</p>
-    <p class="text-sm opacity-70 mt-1 mb-0">Nobody can take it away or raise the price.</p>
+    <p class="text-sm opacity-70 mt-1 mb-0">nobody can take it away</p>
   </div>
 </div>
 
 </div>
 
 <div v-click="5" class="mt-12 text-center text-base opacity-80">
-You already trust free software every day: <b>Firefox</b>, <b>VLC</b>, <b>Android</b>.
+You already trust free software: <b>Firefox</b>, <b>VLC</b>, <b>Android</b>.
 </div>
 
 <!--
+Narrate the quadrants: no licence fees, no trial that expires, commercial use included. The source code is public, anyone can read and fix it. Volunteers and giants both contribute. And nobody can take it away, raise the price, or shut it down.
 Optional aside: "free" as in freedom and "free" as in price; both apply here. Don't go deeper into licences.
 -->

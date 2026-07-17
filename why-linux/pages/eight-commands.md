@@ -26,8 +26,7 @@ transition: slide-left
 </div>
 
 <div v-click="5" class="mark-safe mt-8 text-center text-lg opacity-85">
-Eight words replace a file manager.
-<span v-mark="{ at: 5, color: '#d97706', type: 'underline' }">Screenshot this one.</span> It's your starter pack.
+Eight words replace a file manager, so <span v-mark="{ at: 5, color: '#d97706', type: 'underline' }">screenshot this one</span>.
 </div>
 
 <!--

@@ -13,6 +13,15 @@ implementation; copy patterns from there, not from scratch.
   `pages/<slug>.md` (the first page is imported via `src:` inside the
   headmatter itself). Slide content, per-slide frontmatter (layout,
   transition, clicks) and presenter notes live in the page file.
+- **Every slide starts from an archetype in `templates/`** (title, beat, map,
+  icon-grid, diagram, demo-signpost, terminal-content, split, quadrants,
+  prompt-paths, thanks). Map each outline beat to an archetype, copy the
+  file, fill the `{{SLOT}}`s within their stated budgets. Don't invent a new
+  layout mid-deck; if no archetype fits, design it once and add it to
+  `templates/` first.
+- `scripts/lint-deck.mjs` machine-checks the laws below on every page
+  (`pnpm lint:decks`); it runs in CI before the build, so a violation fails
+  the deploy. Run it before calling any slide done.
 - Presenter notes carry the demo scripts (steps, prep commands, fallbacks)
   and timing hints. Never delete them when editing a slide.
 - Shared pieces: `components/` (LayerStack, RequestPath, FlowGraph,
@@ -29,10 +38,27 @@ Card captions ~6 words. Icons carry meaning; sentences are for payoff lines.
 No section-divider slides: segment openers get an `.eyebrow` part chip
 (`part N · theme`) instead.
 
-**Copy.** Spoken register, aimed at a beginner listening, not reading.
-No em or en dashes anywhere in visible copy. No Title Case headers. No
-rule-of-three padding, no "it's not X, it's Y" constructions. Every claim on
-a slide must be provable in the live demo.
+**Copy: the show/tell law.** The slide shows, the trainer tells. On-slide
+text is labels of 4 words or fewer; at most ONE full sentence per slide (the
+payoff), and it must state an observable fact ("a real Singapore server"),
+never a verdict or punchline ("the terminal proved it"). Every sentence the
+audience should hear goes in the presenter notes, which are mandatory on
+every page and carry the spoken script (`[click]`-prefixed lines for
+click-timed narration). Every claim must be provable in the live demo.
+
+**Copy: banned rhetorical moves.** These are the structural tells that
+survive word-level cleanup, so they are banned outright:
+- meta-narrative about the session, poster, or deck ("the poster made three
+  promises", "we test each one live") — state what happens, don't narrate
+  the deck as a story;
+- personification of artifacts (posters that promise, terminals that prove);
+- setup→payoff callback arcs and victory-lap recaps — a recap lists facts;
+- staccato punchlines and drama-by-negation ("It moved in.", "didn't lie",
+  "not X, it's Y");
+- fake-candid hooks and marketing register ("the deal", "cool again",
+  "superpowers", "magic");
+- em/en dashes, Title Case headers, rule-of-three padding.
+The lint enforces the mechanical subset; the rest is on the author.
 
 **Visual.** Must pass BOTH color schemes; verify with screenshots in dark
 and light at final click state before calling a deck done (jump clicks via
@@ -70,7 +96,10 @@ watch for real.
 
 1. Copy `components/`, `style.css`, `global-bottom.vue`, `public/logo*.svg`
    from `why-linux/`; match its `package.json` (adjust `--base`).
-2. Write `pages/<slug>.md` files; wire them in `slides.md`.
-3. `pnpm dev`, screenshot every slide in both color schemes, fix contrast.
-4. `pnpm build` must pass. Grep pages for `border-l-` and `—` (both must be
-   absent) before finishing.
+2. Map the session outline to archetypes, copy each from `templates/` into
+   `pages/<slug>.md`, fill the slots; wire them in `slides.md`.
+3. `pnpm lint:decks` must pass (titles, prose budget, banned phrasing,
+   notes present).
+4. `pnpm dev`, screenshot every slide in both color schemes at final click
+   state, fix contrast; re-check v-mark slides at natural click pacing.
+5. `pnpm build` must pass.

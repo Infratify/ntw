@@ -18,27 +18,31 @@ transition: slide-left
 </TermWindow>
 </div>
 
-<div class="space-y-6">
-  <div v-click="2" class="note-row">
+<div class="space-y-7">
+  <div v-click="2" class="note-row items-center">
     <mdi-robot-outline class="note-ico text-purple-600 dark:text-purple-400" />
-    <p>Every serious <b>AI coding agent</b> ships as a terminal app first. Not a website.</p>
+    <p><b>terminal apps first</b></p>
   </div>
-  <div v-click="3" class="note-row">
+  <div v-click="3" class="note-row items-center">
     <mdi-microsoft-windows class="note-ico text-purple-600 dark:text-purple-400" />
-    <p>Windows developers install <b>WSL, a Linux inside Windows</b>, largely to run these well.</p>
+    <p><b>WSL</b> <span class="opacity-60">&middot; Linux inside Windows</span></p>
   </div>
-  <div v-click="4" class="note-row">
+  <div v-click="4" class="note-row items-center">
     <mdi-lightning-bolt class="note-ico text-purple-600 dark:text-purple-400" />
-    <p>Agents work by <b>running commands</b>. The same ones you just learned.</p>
+    <p><b>agents type commands</b></p>
   </div>
 </div>
 
 </div>
 
 <div v-click="5" class="mark-safe mt-8 text-center text-lg opacity-85">
-AI didn't replace the terminal. <span v-mark="{ at: 5, color: '#7c3aed', type: 'highlight' }">It moved in.</span>
+These agents type <span v-mark="{ at: 5, color: '#7c3aed', type: 'underline' }">the same commands you just learned</span>.
 </div>
 
 <!--
+Labels to narrate:
+[click] every serious AI coding agent ships as a terminal app first, not a website.
+[click] Windows developers install WSL, a Linux inside Windows, largely to run these tools well.
+[click] agents work by running commands, the same ones from earlier today.
 The pitch to career-switchers: the skill that unlocks AI-assisted development is exactly the one this session previews. This is the "why now" argument for learning Linux in 2026.
 -->
