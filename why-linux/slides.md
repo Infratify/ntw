@@ -5,6 +5,7 @@ info: |
   ## Why Linux?
   National Training Week 2026 · Infratify
 mdc: true
+routerMode: hash
 download: false
 lineNumbers: false
 highlighter: shiki

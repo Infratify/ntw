@@ -5,6 +5,7 @@ title: Why Git & GitHub? — National Training Week 2026
 class: text-center
 transition: fade-out
 mdc: true
+routerMode: hash
 download: false
 lineNumbers: false
 info: |
