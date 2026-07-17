@@ -32,11 +32,11 @@ DEMO SCRIPT (~15 min), pace it like a fireworks show:
 1. figlet "FREE FOREVER" | lolcat    ← open with the banner
 2. curl wttr.in/kuala-lumpur         ← then take 2-3 cities from the chat
 3. curl cheat.sh/tar
-4. telnet mapscii.me                 ← zoom into Malaysia
+4. mapscii                           ← zoom into Malaysia
 5. ffmpeg -i clip.mp4 clip.gif       ← prepare clip.mp4 beforehand
 6. tldr rsync
 7. curl qrenco.de/https://infratify.github.io/ntw/    ← "even our registration QR comes from the terminal"
 8. asciiquarium                      ← leave running while transitioning
 FALLBACK: pre-record the sequence with asciinema in case wttr.in or mapscii are down.
-The night before: sudo apt install figlet lolcat tldr ffmpeg, and npm i -g mapscii.
+The night before: sudo apt install figlet lolcat tldr ffmpeg asciiquarium, and npm i -g mapscii (needs Node.js on the server).
 -->

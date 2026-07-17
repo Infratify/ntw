@@ -16,7 +16,7 @@ The printed-poster QR code (`ml.my/infratify-ntw`) redirects to that hub page.
 | --- | --- |
 | Shape | Series of **5 standalone sessions**, one topic each |
 | Format | **Instructor live demo** — attendees watch, zero setup |
-| Channel | **Zoom webinar** |
+| Channel | **Zoom webinar**, up to **300 participants** per session |
 | Audience | **Absolute beginners** ("FOR BEGINNERS" on every banner) |
 | Naming | Per-session **"Why X?"** convention (motivation-first) |
 | Brand | **Infratify** · Instructor **Ts. Ariff Azman** (Course Instructor) |
@@ -119,9 +119,10 @@ installed on their side. Because each session is a short introduction, it concen
 idea and a live demonstration rather than exhaustive coverage of the topic.
 
 **Program details (shared)**
-Platform: Zoom (joining link provided on registration). Fee: free, offered as part of National
-Training Week 2026. Duration: 2 hours per session. Language: mixed (English and Bahasa Malaysia).
-Level: beginner. Per-session dates and times are listed in each block below.
+Platform: Zoom (joining link provided on registration). Capacity: up to 300 participants per
+session. Fee: free, offered as part of National Training Week 2026. Duration: 2 hours per session.
+Language: mixed (English and Bahasa Malaysia). Level: beginner. Per-session dates and times are
+listed in each block below.
 
 ### 1. Why Linux? (Monday, 20 July 2026, 10:30 AM MYT)
 

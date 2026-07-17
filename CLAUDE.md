@@ -2,10 +2,20 @@
 
 Slidev decks for the five National Training Week "Why X?" taster webinars.
 `README.md` holds the locked facts: schedule, banner copy per session, session
-blurbs, audience (absolute beginners, max 100 pax on Zoom), and the
-demo-is-the-proof rule (every "Why?" is answered by a live demo, never argued
-in slides). Read it before authoring a deck. `why-linux/` is the reference
-implementation; copy patterns from there, not from scratch.
+blurbs, audience, and the demo-is-the-proof rule (every "Why?" is answered by
+a live demo, never argued in slides). Read it before authoring a deck.
+`why-linux/` is the reference implementation; copy patterns from there, not
+from scratch.
+
+**Who is watching (write for them, always).** Each deck serves a ~2-hour
+free live introduction session on Zoom with up to 300 participants:
+absolute beginners and career-switchers, many non-technical, from any
+industry. Assume zero prior IT background — someone who has never opened a
+terminal must be able to follow every slide and every spoken line. Gloss
+jargon the first time it is spoken, anchor concepts to everyday things
+(file managers, WhatsApp, Ctrl+F), and never lean on knowledge a slide
+hasn't introduced. Attendees install nothing and only watch; questions
+arrive through Zoom chat and are batched at breaks.
 
 ## Deck anatomy
 
@@ -45,6 +55,10 @@ never a verdict or punchline ("the terminal proved it"). Every sentence the
 audience should hear goes in the presenter notes, which are mandatory on
 every page and carry the spoken script (`[click]`-prefixed lines for
 click-timed narration). Every claim must be provable in the live demo.
+Notes narrate the same example the slide shows (payoff says WhatsApp →
+script says WhatsApp, not TikTok), and gloss any jargon the audience will
+hear ("the green 200 OK means done, here you go") — the spoken script is
+for absolute beginners too.
 
 **Copy: banned rhetorical moves.** These are the structural tells that
 survive word-level cleanup, so they are banned outright:
@@ -62,7 +76,13 @@ The lint enforces the mechanical subset; the rest is on the author.
 
 **Visual.** Must pass BOTH color schemes; verify with screenshots in dark
 and light at final click state before calling a deck done (jump clicks via
-`?clicks=N`, but confirm v-mark slides at natural click pacing too).
+`?clicks=N`, but confirm v-mark slides at natural click pacing too —
+rough-notation marks often skip drawing on URL jumps; step with arrow keys).
+In a scripted browser, force a scheme with
+`localStorage.setItem('slidev-color-schema', 'dark'|'light')` then reload.
+`mdi-*`/`logos-*` icon components render a **1.2em box**; a custom inline
+SVG sharing an icon row must use `width="1.2em" height="1.2em"` plus the
+same `text-<size>` class, or its labels sit off-baseline.
 Never use `border-l-*` accent bars. Vary container treatments across slides
 (typographic beats, icon medallions, terminal-as-content, split screens,
 ghost numerals) instead of repeating one rounded tinted card. Diagram colors
@@ -90,7 +110,12 @@ plus a plug for the next day's session on the closing slide.
 
 **Demo slides.** Open with `<LiveBadge />` + title in a flex row. The
 TermWindow shows a signpost transcript of what the audience is about to
-watch for real.
+watch for real. The notes' DEMO SCRIPT ends with a night-before prep line
+that installs every tool the script runs — verify each package exists in
+the demo server's Ubuntu release (fastfetch is NOT in 24.04; use the
+GitHub .deb) — plus a fallback. A transcript caption states what the
+command really prints; run it first (`du -ah | sort -rh` surfaces
+directories, not just files).
 
 ## Scaffold checklist for a new deck
 

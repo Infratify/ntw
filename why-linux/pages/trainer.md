@@ -64,7 +64,7 @@ const base = import.meta.env.BASE_URL
        :enter="{ x: 0, y: 0, opacity: 1, transition: { type: 'spring', stiffness: 100, delay: 550 } }"
        class="absolute left-[3%] bottom-[8%] flex items-center gap-2 bg-gray-500/10 rounded-full px-4 py-2">
     <mdi-rocket-launch class="text-red-600 dark:text-red-400 text-xl flex-shrink-0" />
-    <span class="text-sm">Founder &middot; Infratify</span>
+    <span class="text-sm">Founder &middot; Double A Digital</span>
   </div>
 
   <div v-motion

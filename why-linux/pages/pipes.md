@@ -13,7 +13,7 @@ transition: fade-out
 <div v-click="1">
 <TermWindow title="the pipe | passes output to the next command">
 <div><span class="text-green-400">$</span> du -ah . <span class="text-purple-400">|</span> sort -rh <span class="text-purple-400">|</span> head -5</div>
-<div class="opacity-50 text-xs mt-1">the five biggest files in here, instantly</div>
+<div class="opacity-50 text-xs mt-1">the five biggest things in here, instantly</div>
 </TermWindow>
 </div>
 
@@ -33,7 +33,7 @@ Small commands snap together like <span v-mark="{ at: 3, color: '#d97706', type:
 <!--
 Landing lines to say out loud: all of DevOps builds on this one idea. And this is why pros live in the terminal: nothing else gives this much control per keystroke.
 
-DEMO SCRIPT (~7 min): run both one-liners on the server (prepare an app.log beforehand).
+DEMO SCRIPT (~7 min): run both one-liners on the server (prep the night before: an app.log with some "error" lines in it, and sudo apt install btop).
 Segment finale: btop. "This is mission control for a machine; sysadmins stare at this instead of Task Manager." Let it breathe on screen for 30 seconds.
 Beat after btop: breathe, invite chat reactions. Around the 55-minute mark; offer a 2-minute stretch if energy dips.
 -->

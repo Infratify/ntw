@@ -1,7 +1,11 @@
 <!-- RequestPath — a request hops through service boxes (rounded rectangles). The packet rides a
      rail BELOW the boxes (never overlapping an icon); each box lights on arrival, the last returns
      200 OK. local = cyan, remote = blue. Click-staged off $clicks; page needs `clicks: <hops-1>`.
-     For AWS / Cloudflare / networking flows. -->
+     For AWS / Cloudflare / networking flows.
+
+     Optional `group` draws a fieldset-style zone behind hops [from..to] with a legend on its top
+     border, for saying "these hops are all the same kind of thing" without spending a sentence.
+     The zone makes the diagram taller, so the ungrouped geometry is left untouched. -->
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useSlideContext } from '@slidev/client'
@@ -9,28 +13,63 @@ import DiagIcon from './DiagIcon.vue'
 import { hex } from './diagram-icons'
 
 interface Hop { label: string; icon: string; color: string }
-const props = withDefaults(defineProps<{ hops?: Hop[] }>(), {
+interface Group { from: number; to: number; label: string; at?: number }
+const props = withDefaults(defineProps<{ hops?: Hop[]; group?: Group | null }>(), {
   hops: () => [
     { label: 'Browser', icon: 'laptop', color: 'cyan' },
     { label: 'DNS', icon: 'dns', color: 'blue' },
     { label: 'Load Balancer', icon: 'scale-balance', color: 'blue' },
     { label: 'EC2', icon: 'server', color: 'blue' },
   ],
+  group: null,
 })
 
 const { $clicks } = useSlideContext()
 const s = computed(() => $clicks.value)
 
-const y = 26, w = 136, h = 58, hw = 68, railY = 112, x0 = 92, step = 190
+const w = 136, h = 58, hw = 68, x0 = 92, step = 190
 const cx = (i: number) => x0 + i * step
 const last = computed(() => props.hops.length - 1)
-const vbW = computed(() => cx(last.value) + 78)
 const green = hex('green')
-const tokenPos = computed(() => [cx(Math.min(s.value, last.value)), railY])
+
+// The zone needs headroom above the boxes (legend) and below the rail (bottom border),
+// so grouped diagrams sit 14px lower and run 14px taller.
+const gr = computed(() => props.group)
+const y = computed(() => (gr.value ? 40 : 26))
+const railY = computed(() => (gr.value ? 126 : 112))
+const vbH = computed(() => (gr.value ? 148 : 134))
+
+const GPAD = 14, ZTOP = 28, ZR = 18
+const zx0 = computed(() => cx(gr.value!.from) - hw - GPAD)
+const zx1 = computed(() => cx(gr.value!.to) + hw + GPAD)
+const zOn = computed(() => s.value >= (gr.value?.at ?? 1))
+// Legend width is estimated from the glyph count — SVG text can't self-size, and this only has
+// to size the gap in the border. Covering the border with a canvas-filled rect instead would
+// paint a visible patch: --canvas is the component's box fill, not the slide's background.
+const legW = computed(() => gr.value!.label.length * 5.7 + 18)
+const legX = computed(() => (zx0.value + zx1.value) / 2)
+
+// Rounded rect traced counterclockwise (so every corner sweeps 0), broken either side of the
+// legend. Left open on purpose: fill closes the gap implicitly, stroke doesn't.
+const zonePath = computed(() => {
+  const a = zx0.value, b = zx1.value, t = ZTOP, u = vbH.value - 6, r = ZR
+  const gL = legX.value - legW.value / 2, gR = legX.value + legW.value / 2
+  return `M${gL} ${t} H${a + r} A${r} ${r} 0 0 0 ${a} ${t + r} V${u - r} A${r} ${r} 0 0 0 ${a + r} ${u}`
+    + ` H${b - r} A${r} ${r} 0 0 0 ${b} ${u - r} V${t + r} A${r} ${r} 0 0 0 ${b - r} ${t} H${gR}`
+})
+
+const vbW = computed(() => Math.max(cx(last.value) + 78, gr.value ? zx1.value + 8 : 0))
+const tokenPos = computed(() => [cx(Math.min(s.value, last.value)), railY.value])
 </script>
 
 <template>
-  <svg class="dia rq" :viewBox="`0 0 ${vbW} 134`" :style="{ maxWidth: vbW + 'px' }">
+  <svg class="dia rq" :viewBox="`0 0 ${vbW} ${vbH}`" :style="{ maxWidth: vbW + 'px' }">
+    <!-- the grouping zone, behind everything: the rail crosses its border, so the packet is
+         visibly outside the zone and then inside it -->
+    <g v-if="gr" class="rq-zone" :class="{ on: zOn }">
+      <path :d="zonePath" />
+      <text class="rq-leg" :x="legX" :y="ZTOP + 4" text-anchor="middle">{{ gr.label }}</text>
+    </g>
     <!-- the rail (drawn segment-by-segment as the packet advances) -->
     <path
       v-for="(hop, i) in hops.slice(1)" :key="'r' + i"
@@ -79,6 +118,11 @@ html.dark .dia { --canvas: #0f151d; --ink: #dbe3ee; --muted: #97a3b4; --track: #
 .rq-node.is-in .rq-lbl { fill: var(--ink); font-weight: 600; }
 .rq-stub { stroke: var(--track); stroke-width: 1.8; opacity: 0; transition: opacity .4s, stroke .4s; }
 .rq-stub.is-in { opacity: 1; stroke: var(--nc); }
+
+.rq-zone { opacity: 0; transition: opacity .5s ease; }
+.rq-zone.on { opacity: 1; }
+.rq-zone path { fill: color-mix(in srgb, var(--track) 7%, transparent); stroke: var(--track); stroke-width: 1.5; stroke-dasharray: 5 4; }
+.rq-zone .rq-leg { fill: var(--muted); font-size: 11px; }
 .badge { opacity: 0; transition: opacity .45s ease; }
 .badge.on { opacity: 1; }
 .token { transition: transform .55s cubic-bezier(.45,0,.25,1); }
