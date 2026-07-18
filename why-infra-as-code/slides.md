@@ -1,41 +1,79 @@
 ---
 theme: apple-basic
-background: https://cover.sli.dev
-title: Why Infrastructure as Code? — National Training Week 2026
-class: text-center
-transition: fade-out
+title: Why Infrastructure as Code? · National Training Week 2026
+info: |
+  ## Why Infrastructure as Code?
+  National Training Week 2026 · Infratify
 mdc: true
 routerMode: hash
 download: false
 lineNumbers: false
-info: |
-  ## Why Infrastructure as Code?
-  National Training Week 2026 — Infratify
 highlighter: shiki
 drawings:
   persist: false
 fonts:
   sans: Poppins
+  mono: JetBrains Mono
+transition: slide-left
+src: ./pages/title.md
 ---
 
-<script setup>
-const base = import.meta.env.BASE_URL
-</script>
+---
+src: ./pages/trainer.md
+---
 
-<div class="flex justify-center mb-8">
-<img :src="`${base}logo-dark.svg`" class="h-10" alt="Infratify" />
-</div>
+---
+src: ./pages/plan.md
+---
 
-# Why Infrastructure as Code?
+---
+src: ./pages/by-hand.md
+---
 
-<div class="mt-6 text-lg opacity-60">
-Friday 24 July 2026 &middot; 10:00 AM MYT
-</div>
+---
+src: ./pages/what-is-iac.md
+---
 
-<div class="mt-8 text-xl opacity-80">
-perfectly repeatable &middot; rebuild anytime &middot; fully automated
-</div>
+---
+src: ./pages/two-tools.md
+---
 
-<div class="mt-6 text-lg opacity-80">
-<i>Ts. Ariff Azman &middot; Infratify</i>
-</div>
+---
+src: ./pages/demo-code.md
+---
+
+---
+src: ./pages/snowflake.md
+---
+
+---
+src: ./pages/demo-build.md
+---
+
+---
+src: ./pages/demo-destroy.md
+---
+
+---
+src: ./pages/two-minutes.md
+---
+
+---
+src: ./pages/pr-merge.md
+---
+
+---
+src: ./pages/demo-fleet.md
+---
+
+---
+src: ./pages/proof.md
+---
+
+---
+src: ./pages/start-tonight.md
+---
+
+---
+src: ./pages/thanks.md
+---
