@@ -14,7 +14,8 @@ const base = import.meta.env.BASE_URL
 
     <!-- Right side: event info -->
     <div class="footer-text opacity-100">
-      National Training Week 2026 | www.infratify.com
+      National Training Week 2026 |
+      <a href="https://www.infratify.com" target="_blank" class="footer-link">www.infratify.com</a>
     </div>
   </div>
 </template>
@@ -29,6 +30,16 @@ div {
   font-size: 0.6rem;
   line-height: 1.2;
   color: white;
+}
+
+.footer-link {
+  pointer-events: auto;
+  color: white;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+.footer-link:hover {
+  border-bottom-color: currentColor;
 }
 
 /* Make the logo and text even smaller on smaller screens */
