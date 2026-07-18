@@ -17,7 +17,7 @@ const base = import.meta.env.BASE_URL
          :initial="{ scale: 0.8, opacity: 0 }"
          :enter="{ scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 120, delay: 100 } }">
       <img :src="`${base}photos/ariff.png`"
-           class="w-40 h-40 rounded-full object-cover border-4 border-amber-400/40 shadow-lg mx-auto" />
+           class="w-40 h-40 rounded-full object-cover border-4 border-red-400/40 shadow-lg mx-auto" />
       <a href="https://trainer.opariffazman.com" target="_blank"
          class="inline-flex items-center gap-1.5 mt-3 text-xl !border-none group">
         Ts. Ariff Azman
@@ -78,5 +78,5 @@ const base = import.meta.env.BASE_URL
 </div>
 
 <!--
-30 seconds max; the demos carry the credibility. Mention: I teach the full DevOps bootcamp, and today is a free taster of its very first topic.
+30 seconds max; the demos carry the credibility. Mention: I teach the full DevOps bootcamp, and today is a free taster of its Git and GitHub sessions.
 -->

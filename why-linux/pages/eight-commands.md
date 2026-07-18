@@ -33,5 +33,5 @@ Eight words replace a file manager, so <span v-mark="{ at: 5, color: '#d97706', 
 DEMO SCRIPT (~10 min), on the server:
 pwd → ls → cd /var/log → ls → cd ~ → mkdir ntw-demo → cd ntw-demo → touch hello.txt →
 echo "hello NTW" > hello.txt → cat hello.txt → mv hello.txt greeting.txt → ls → rm greeting.txt
-Narrate each as the GUI action it replaces. Emphasise Tab completion and the up-arrow history: the two comfort tricks.
+Narrate each as the GUI action it replaces. echo and the > arrow are extras beyond the eight; narrate them as "put this text into the file" and move on. Emphasise Tab completion and the up-arrow history: the two comfort tricks.
 -->
