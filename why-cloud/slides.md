@@ -5,6 +5,7 @@ info: |
   ## Why Cloud?
   National Training Week 2026 · Infratify
 mdc: true
+colorSchema: dark
 routerMode: hash
 download: false
 lineNumbers: false
@@ -16,6 +17,10 @@ fonts:
   mono: JetBrains Mono
 transition: slide-left
 src: ./pages/title.md
+---
+
+---
+src: ./pages/cli-notice.md
 ---
 
 ---
