@@ -1,12 +1,11 @@
 ---
 layout: default
-transition: slide-down
+transition: slide-left
 ---
 
-<div class="flex items-center gap-3 mb-2">
-  <LiveBadge />
-  <h3 class="!m-0">Eight commands</h3>
-</div>
+<p class="eyebrow font-mono"><span class="text-amber-600 dark:text-amber-400">part 3</span> &middot; full control</p>
+
+### Eight commands
 
 <div class="term-print max-w-2xl mx-auto mt-8">
 <TermWindow title="cheatsheet.txt">
@@ -30,8 +29,5 @@ Eight words replace a file manager, so <span v-mark="{ at: 5, color: '#d97706', 
 </div>
 
 <!--
-DEMO SCRIPT (~10 min), on the server:
-pwd → ls → cd /var/log → ls → cd ~ → mkdir ntw-demo → cd ntw-demo → touch hello.txt →
-echo "hello NTW" > hello.txt → cat hello.txt → mv hello.txt greeting.txt → ls → rm greeting.txt
-Narrate each as the GUI action it replaces. echo and the > arrow are extras beyond the eight; narrate them as "put this text into the file" and move on. Emphasise Tab completion and the up-arrow history: the two comfort tricks.
+This is the whole vocabulary for today; every file-manager action maps to one of these words. Read them across: pwd is where am I, ls is what's here, cd is go somewhere, cat is read a file, mkdir is make a folder, touch is make an empty file, mv is move or rename, rm is delete with no recycle bin so it is gone for good. Reassure them: nobody memorises everything, pros know about 20 commands well and look up the rest (we'll meet tldr and cheat.sh soon). Tell them to screenshot this slide; we type exactly these words live in the next demo.
 -->

@@ -52,11 +52,11 @@ src: ./pages/demo-ssh.md
 ---
 
 ---
-src: ./pages/click-vs-type.md
+src: ./pages/eight-commands.md
 ---
 
 ---
-src: ./pages/eight-commands.md
+src: ./pages/click-vs-type.md
 ---
 
 ---
