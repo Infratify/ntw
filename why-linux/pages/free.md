@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-left
+transition: slide-right
 ---
 
 <p class="eyebrow font-mono"><span class="text-amber-600 dark:text-amber-400">part 4</span> &middot; free forever</p>

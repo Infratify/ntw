@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-left
+transition: slide-down
 ---
 
 <p class="eyebrow font-mono"><span class="text-purple-600 dark:text-purple-400">part 2</span> &middot; rebuild anytime</p>

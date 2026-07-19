@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-left
+transition: slide-up
 ---
 
 <div class="flex items-center gap-3 mb-2">

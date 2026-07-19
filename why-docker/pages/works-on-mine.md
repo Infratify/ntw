@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-left
+transition: slide-up
 ---
 
 <p class="eyebrow font-mono"><span class="text-blue-600 dark:text-blue-400">part 1</span> &middot; works everywhere</p>

@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-left
+transition: slide-up
 ---
 
 <p class="eyebrow font-mono"><span class="text-purple-600 dark:text-purple-400">part 3</span> &middot; fully automated</p>

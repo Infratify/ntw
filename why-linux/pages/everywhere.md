@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-left
+transition: slide-down
 ---
 
 <p class="eyebrow font-mono"><span class="text-amber-600 dark:text-amber-400">part 2</span> &middot; powers everything</p>

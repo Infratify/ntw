@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-left
+transition: slide-down
 clicks: 4
 ---
 

@@ -95,7 +95,9 @@ theme color; accents use `text-<color>-600 dark:text-<color>-400`.
 **Motion.** Every slide gets one deliberate reveal: `v-click` with the
 `style.css` reveal grammar (`.pop`, `.from-left/right`, `.term-print`),
 `v-motion` for on-enter beats, `v-switch` for content swaps. Transitions:
-`slide-left` inside a segment, `fade-out` on beats and segment closers.
+rotate `slide-left`/`slide-right`/`slide-up`/`slide-down` inside a segment
+(never the same direction twice in a row), `fade-out` on beats and segment
+closers.
 Gotchas: `v-mark` highlight only on spans of 3 words or fewer; any v-click
 element containing a `v-mark` needs the `mark-safe` class (translate
 transforms break the annotation's position); content inside a `v-switch`

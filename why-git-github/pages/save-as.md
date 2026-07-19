@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-left
+transition: slide-right
 ---
 
 <p class="eyebrow font-mono"><span class="text-red-600 dark:text-red-400">part 1</span> &middot; never forget</p>

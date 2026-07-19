@@ -1,6 +1,6 @@
 ---
 layout: default
-transition: slide-left
+transition: slide-down
 ---
 
 <p class="eyebrow font-mono"><span class="text-orange-600 dark:text-orange-400">part 1</span> &middot; no hardware</p>
