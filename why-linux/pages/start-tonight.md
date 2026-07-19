@@ -18,7 +18,7 @@ transition: slide-right
 <div v-click="2" class="flex items-center gap-6">
   <logos-apple class="text-4xl flex-shrink-0 dark:invert" />
   <div>
-    <div class="font-mono text-base"><span class="text-gray-500 dark:text-gray-400">~ %</span> <span class="type-line">open Terminal</span></div>
+    <div class="font-mono text-base"><span class="text-gray-500 dark:text-gray-400">&#8984; space</span> <span class="type-line">terminal</span></div>
     <p class="text-sm opacity-65 mt-1 mb-0">macOS is Unix underneath</p>
   </div>
 </div>
@@ -38,7 +38,7 @@ Repeat the eight commands until they feel <span v-mark="{ at: 4, color: '#d97706
 </div>
 
 <!--
-Captions to narrate: one command in PowerShell installs a full, official, free Ubuntu inside Windows. macOS is Unix underneath, so today's commands already work in its Terminal. And Linux loves old hardware: a 10-year-old laptop makes a great lab.
+Captions to narrate: one command in PowerShell installs a full, official, free Ubuntu inside Windows. On a Mac, press command-space and type "terminal": the app is already there, because macOS is built on Unix, the older system Linux was modelled on, so today's commands already work in it. And Linux loves old hardware: a 10-year-old laptop makes a great lab.
 Landing line to say out loud: boring means fluent.
 Lean on WSL hard: most of this audience is on Windows and doesn't know Linux is one command away. "Will it break my Windows?" No, WSL doesn't touch it.
 -->

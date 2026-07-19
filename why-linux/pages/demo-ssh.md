@@ -42,9 +42,10 @@ Labels to narrate:
 [click] SSH is how professionals walk into any server on Earth: one command, secured by keys.
 
 DEMO SCRIPT (~5 min): switch to the real terminal.
-Prep the night before: fastfetch is not in the Ubuntu 24.04 repos; install the .deb from its GitHub releases page.
-1. ssh into the demo VM
+1. ssh ariff@my-server   (typed exactly as the slide shows)
 2. fastfetch   (the server introduces itself)
 3. uptime      ("this machine has been awake for X days")
 4. Point out: everything for the rest of the session happens inside this machine.
+Prep the night before: fastfetch is not in the Ubuntu 24.04 repos; install the .deb from its GitHub releases page. Add a Host my-server alias for the VM in ~/.ssh/config on the laptop so the typed line matches the slide exactly (and the real IP stays off screen).
+FALLBACK: keep a second box ready (another cheap VM or a local multipass Ubuntu); if both are down, play the pre-recorded asciinema of this login and say so honestly.
 -->

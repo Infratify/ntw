@@ -47,8 +47,8 @@ DEMO SCRIPT (~7 min), on the server:
 1. ls | grep txt
 2. find . -name "*.txt"
 3. top                     ← let it sit for a few seconds, then press q
-Prep the night before: a couple of .txt files sitting in the home directory (e.g. notes.txt, todo.txt) so ls | grep and find return real matches; sudo apt install btop for the finale.
+Prep the night before: a couple of .txt files sitting in the home directory (notes.txt and todo.txt, already placed for the eight-commands demo) so ls | grep and find return real matches; sudo apt install btop for the finale.
 Segment finale: btop. "This is mission control for a machine; sysadmins stare at this instead of Task Manager." Let it breathe on screen for 30 seconds.
 Beat after btop: breathe, invite chat reactions. Around the 55-minute mark; offer a 2-minute stretch if energy dips.
-FALLBACK: if the .txt files are missing, touch one live first (ties back to slide 11) or search for something guaranteed present, like find . -name "*.md".
+FALLBACK: if the .txt files are missing, touch one live first (the same touch from the eight-commands demo) or search somewhere guaranteed to match, like find /etc -name "*.conf".
 -->

@@ -132,6 +132,6 @@ DEMO SCRIPT (~8 min), on the server:
 2. vlc --version                 (prints the VLC version banner: proof it installed and runs; run as the normal user, vlc refuses to launch playback as root)
 3. optional if a sound file is present: cvlc --play-and-exit sample.mp3   (headless servers usually have no audio device; only do this if you tested it the night before, else skip)
 Point made out loud: found and installed with one typed line, no website, no wizard, no mouse.
-Night before / prep: run sudo apt update so the install resolves instantly; vlc is in Ubuntu's universe repo on every current release (22.04 / 24.04), package name is simply vlc. Pre-download the .deb set (apt-get install --download-only vlc) as an offline safety net. Do a dry run of vlc --version so you know the exact output.
+Night before / prep: run sudo apt update so the install resolves instantly; vlc is in Ubuntu's universe repo on every current release (22.04 / 24.04), package name is simply vlc. Pre-download the .deb sets for both vlc and the htop fallback (apt-get install --download-only vlc htop) as an offline safety net; cached debs install even if the network stalls mid-demo. Do a dry run of vlc --version so you know the exact output.
 FALLBACK: if vlc is slow or the network stalls, kill it and install a tiny package live instead (e.g. sudo apt install htop, then run htop) and narrate it as the same one-line idea; the point is the single command, not the specific app.
 -->

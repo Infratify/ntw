@@ -24,5 +24,8 @@ Watch the log; it runs <span v-mark="{ at: 3, color: '#7c3aed', type: 'underline
 
 <!--
 DEMO SCRIPT (~8 min): run opencode with a free-tier model, give it the one prompt above, let everyone watch it create and serve, then open the page in a browser.
-Point at the tool-use log every time a familiar command scrolls by. Rehearse beforehand; keep the finished page ready as a fallback.
+Point at the tool-use log every time a familiar command scrolls by. Gloss "free-tier model" when it comes up: an AI model whose provider lets you use it at no cost, which is why today's bill stays at RM0.
+Prep the night before: install opencode on the server (curl -fsSL https://opencode.ai/install | bash), sign in and select a free-tier model, confirm python3 --version works (preinstalled on Ubuntu), then do one full dry run of the exact prompt so the timing is known.
+IMPORTANT: localhost:8000 lives on the server, not the laptop. Connect the morning session with ssh -L 8000:localhost:8000 ariff@my-server; the tunnel makes http://localhost:8000 in the laptop browser show the server's page, exactly as the transcript says.
+FALLBACK: keep the finished index.html from the dry run; if the model stalls live, serve that copy with python3 -m http.server 8000 and walk through the rehearsal log instead.
 -->

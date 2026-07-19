@@ -26,7 +26,8 @@ transition: slide-up
 </div>
 
 <!--
-What each line is, to narrate as it appears: live weather (take 2-3 cities from the chat!), a cheatsheet for any command, a zoomable world map in text, convert any video with one command, man pages for humans, rainbow banners for pure joy, QR codes in the terminal, and an aquarium because why not.
+Gloss "package" first, before the lines appear: a package is just an app from Ubuntu's free catalogue, the same store apt pulled VLC from earlier.
+What each line is, to narrate as it appears: live weather (take 2-3 cities from the chat!), the cheat.sh lookup from the eight-commands demo, now for tar, a zoomable world map in text, convert any video with one command, man pages for humans, rainbow banners for pure joy, QR codes in the terminal, and an aquarium because why not.
 
 DEMO SCRIPT (~15 min), pace it like a fireworks show:
 1. figlet "FREE FOREVER" | lolcat    ← open with the banner
@@ -38,5 +39,5 @@ DEMO SCRIPT (~15 min), pace it like a fireworks show:
 7. curl qrenco.de/https://infratify.github.io/ntw/    ← "even our registration QR comes from the terminal"
 8. asciiquarium                      ← leave running while transitioning
 FALLBACK: pre-record the sequence with asciinema in case wttr.in or mapscii are down.
-The night before: sudo apt install figlet lolcat tldr ffmpeg asciiquarium, and npm i -g mapscii (needs Node.js on the server).
+The night before: sudo apt install curl figlet lolcat tldr ffmpeg asciiquarium asciinema nodejs npm, then npm i -g mapscii. Dry-run every line once end to end: tldr downloads its page cache on first run, and the dry run doubles as the asciinema recording for the fallback.
 -->
