@@ -95,6 +95,42 @@ html.dark .slidev-layout a {
   max-width: 0;
 }
 
+/* ---- type-mount: mono line types itself on slide mount, no v-click needed.
+       Animates max-width between two fixed values (0 and 34ch), same technique
+       as .type-line above; CSS cannot tween width to/from "auto" so that always
+       snaps instantly instead of stepping. ::after is a solid block cursor sized
+       like a real terminal cell, not a hairline caret, so it reads at a glance
+       even on the dim mono footer. ---- */
+@keyframes type-mount-reveal {
+  to { max-width: 34ch; }
+}
+.type-mount {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.type-mount .type-mount-text {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  vertical-align: bottom;
+  max-width: 0;
+  animation: type-mount-reveal 0.9s steps(26, end) forwards;
+}
+.type-mount::after {
+  content: '';
+  display: inline-block;
+  width: 0.62em;
+  height: 1.3em;
+  margin-left: 0.15em;
+  vertical-align: -0.28em;
+  background: currentColor;
+  box-shadow: 0 0 8px currentColor;
+  animation: caret-blink 0.9s step-end infinite;
+}
+@keyframes caret-blink {
+  50% { opacity: 0; }
+}
+
 /* ---- check stamp: stroke draws itself when its v-click fires ---- */
 .check-path {
   stroke-dasharray: 48;
