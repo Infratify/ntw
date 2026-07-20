@@ -58,27 +58,47 @@ Two edits at once, <span v-mark="{ at: 5, color: '#dc2626', type: 'underline' }"
 </div>
 
 <!--
-Now the team question: two people, one project, same afternoon. Copies over email would fork into chaos. git's answer is branches.
+Setup:
+- the team question: two people, one project, same afternoon
+- copies over email fork into chaos; git's answer = branches
+- walk the graph: blue line = main, the version of the stall page everyone agrees on
 
-Walk the graph: the blue line is main, the version of the stall page everyone agrees on.
-[click] main moves forward as I commit.
-[click] my teammate Ali wants to redesign the menu without breaking the page, so he starts a branch: his own line of snapshots, split off from main. On his branch he can experiment freely; main never notices.
-[click] meanwhile I keep committing to main. Both lines grow at the same time; that's the parallel part.
-[click] when Ali's menu is ready, merge weaves his line back into main. git combines both sets of changes into one history.
-[click] if we both changed the very same line, git pauses and asks a human to pick; that's called a conflict, and it's a conversation, never lost work. Good chat question for the break.
-Then switch screens: this drawing is about to draw itself. Say it plainly once, so nobody leaves confused: this next tool is a practice sandbox that runs in a browser tab, and real git on a real laptop behaves the same way. It is still a terminal, just one with the picture attached.
+- [click] main moves forward as I commit
+- [click] teammate Ali wants to redesign the menu without breaking the page: starts a branch
+  - his own line of snapshots, split off from main; experiments freely, main never notices
+- [click] meanwhile I keep committing to main; both lines grow at the same time = the parallel part
+- [click] Ali's menu ready: merge weaves his line back into main, both change-sets in one history
+- [click] both changed the very same line? git pauses, asks a human to pick
+  - called a conflict; a conversation, never lost work; good chat question for the break
+- then switch screens: this drawing is about to draw itself
+  - say plainly once: practice sandbox in a browser tab; real git on a real laptop behaves the same
+  - still a terminal, just one with the picture attached
 
-ACTIVITY: two chat moments inside the script. At step 5, let the chat pick Ali's dish: "type one dish for the menu", and echo the most-typed one instead of rendang. At step 7, with both lines grown and the merge typed but not run, ask them to predict: "two separate lines on screen. Type in the chat what you think happens to them now." Run it and point at the green dot as the answer.
-DEMO SCRIPT (~6 min), gitverse in a shared browser tab, graph and terminal both visible. Say what it is before typing: the same stall page from part 1, rebuilt small, so the shape of the work is visible while it happens.
+ACTIVITY (two chat moments inside the script):
+- step 5: chat picks Ali's dish ("type one dish for the menu"), echo the most-typed instead of rendang
+- step 7: merge typed, not run: "two separate lines on screen. Type in the chat what happens to them now"
+  - run it, point at the green dot as the answer
+
+DEMO SCRIPT (~6 min), gitverse in a shared browser tab, graph + terminal both visible.
+Say first: same stall page from part 1, rebuilt small, so the shape of the work is visible while it happens.
 1. git init   (prompt shows main, graph empty)
 2. echo "nasi lemak stall" > index.html → git add index.html → git commit -m "draft"
 3. echo "open 7am" >> index.html → git commit -am "add hours"   (two dots on the blue line)
-4. git switch -c ali/menu   (name it out loud as Ali's own line; the graph has not split yet, nothing has changed on main)
-5. echo "menu: rendang" >> index.html → git commit -am "add menu"   (the purple line splits off, live)
-6. git switch main → echo "promo" >> index.html → git commit -am "add promo"   (both lines now grow; this is the parallel part, pause here)
-7. git merge ali/menu   ("Merge made by the 'ort' strategy"); the green dot joins both lines back together
-8. git log --oneline   (Ali's commit and mine sit in one history)
-Point at the picture on this slide and the picture in the browser and name them as the same shape. Only these commands run; the -am shorthand is the commit from the part 1 cheatsheet.
-Night before: open https://opariffazman.com/gitverse/ in a pinned tab, run the whole script once, reset the sandbox so the live run starts empty, and zoom the browser to about 150% so the terminal is readable at 300 seats.
-FALLBACK: it is an offline-capable page, so a dropped connection still loads the pinned tab; if it misbehaves anyway, stay on this slide, walk the diagram click by click, and run the same branch and merge in the plain terminal on the part 1 repo, narrating the graph from this slide.
+4. git switch -c ali/menu   (name it aloud as Ali's own line; graph not split yet, main unchanged)
+5. echo "menu: rendang" >> index.html → git commit -am "add menu"   (purple line splits off, live)
+6. git switch main → echo "promo" >> index.html → git commit -am "add promo"   (both lines grow; the parallel part, pause here)
+7. git merge ali/menu   ("Merge made by the 'ort' strategy"); green dot joins both lines
+8. git log --oneline   (Ali's commit and mine in one history)
+- point at the slide picture and the browser picture: same shape
+- only these commands run; -am shorthand = the commit from the part 1 cheatsheet
+
+Night before:
+- open https://opariffazman.com/gitverse/ in a pinned tab, run the whole script once
+- reset the sandbox so the live run starts empty
+- zoom browser to ~150% (terminal readable at 300 seats)
+
+FALLBACK:
+- offline-capable page: a dropped connection still loads the pinned tab
+- misbehaves anyway: stay on this slide, walk the diagram click by click,
+  run the same branch + merge in the plain terminal on the part 1 repo, narrating the graph from this slide
 -->

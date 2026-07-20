@@ -41,11 +41,15 @@ Today's page ends up on the public internet.
 </div>
 
 <!--
-Session map; the recap slide mirrors it at the end. Housekeeping to SAY, not show: nothing to install on their side, they just watch; questions go in the Zoom chat anytime and I batch them at each break.
+Session map; the recap slide mirrors it at the end.
+Housekeeping to SAY, not show:
+- nothing to install on their side, they just watch
+- questions go in the Zoom chat anytime; batched at each break
 
-[click] First, git: a tool that keeps every version of your work so nothing is ever lost.
-[click] Then GitHub: the website where teams share that work and build together.
-[click] And the finish: your work as public proof, ending with a page anyone in the world can open.
-[click] plus a short bonus at the end, once the three parts are done: what changes when an AI agent is the one editing your files, and why today's commands are what keep you in charge of it.
-[click] One small web page, a menu page for a nasi lemak stall, travels through all three parts, and by the end of the session it is live on the internet. About 5 minutes in at this point.
+- [click] first, git: a tool that keeps every version of your work so nothing is ever lost
+- [click] then GitHub: the website where teams share that work and build together
+- [click] the finish: your work as public proof, ending with a page anyone in the world can open
+- [click] plus a short bonus once the three parts are done: an AI agent editing your files, and why today's commands keep you in charge of it
+- [click] one small web page (a nasi lemak stall menu) travels through all three parts; by session end it is live on the internet
+- timing: about 5 minutes in at this point
 -->

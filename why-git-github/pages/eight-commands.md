@@ -29,14 +29,18 @@ These eight run today's whole demo, so <span v-mark="{ at: 5, color: '#dc2626', 
 </div>
 
 <!--
-This is the whole vocabulary for today, and every one of them starts with the word git. Reassure them the way a driving instructor would: nobody memorises this, you look it up for a week and then your fingers know it. Tell them to screenshot this slide; we type these words live, right now.
+Setup:
+- the whole vocabulary for today; every one starts with the word git
+- reassure like a driving instructor: nobody memorises this; look it up for a week, then your fingers know it
+- tell them: screenshot this slide; we type these words live, right now
 
 Narrate in pairs as they print:
-[click] init starts the history for a folder, once. status answers "what changed since my last save?"; it's the command you'll type most.
-[click] add picks which changes go into the next snapshot, like choosing what's in the photo. commit takes the snapshot and attaches your note.
-[click] log lists every snapshot. diff shows the exact edited lines before you save them.
-[click] restore is the time travel: bring any file back to the last saved version. And push is the odd one out, the only word here that needs the internet; it sends your saved work to GitHub. We meet it properly after the break, in part 2.
-[click] seven of these eight get typed in the next few minutes, slowly.
+- [click] init: starts the history for a folder, once. status: "what changed since my last save?"; the command you'll type most
+- [click] add: picks which changes go into the next snapshot (choosing what's in the photo). commit: takes the snapshot + attaches your note
+- [click] log: lists every snapshot. diff: the exact edited lines before you save them
+- [click] restore: the time travel, bring any file back to the last saved version
+  - push: the odd one out, only word needing the internet; sends saved work to GitHub; properly after the break, part 2
+- [click] seven of these eight get typed in the next few minutes, slowly
 
 DEMO SCRIPT (~12 min), on the demo laptop, terminal + editor side by side:
 1. mkdir stall-page && cd stall-page && git init
@@ -47,8 +51,16 @@ DEMO SCRIPT (~12 min), on the demo laptop, terminal + editor side by side:
 6. git log --oneline   (three lines, read the messages aloud, newest on top)
 7. sabotage: delete half the file in the editor, save, show the broken page in the browser
 8. git diff   (red minus lines: git saw everything) → git restore index.html → file is whole again
-ACTIVITY: at step 8, with the broken page on screen and git restore typed but not yet run, ask the chat to predict: "half the file is gone. Type in the chat what you think this command brings back." Read a few guesses aloud, press Enter, let the screen settle it.
-Narrate 8 as the "never forget" proof and name each command as it appears on this cheatsheet.
-Night before: sudo apt install git gh (both in Ubuntu 24.04); git config --global user.name + user.email; gh auth login on the demo GitHub account (parts 2 and 3 need it).
-FALLBACK: keep a finished twin repo (stall-page-backup) one cd away; if live typing derails, switch and continue from its log.
+- narrate step 8 as the "never forget" proof; name each command as it appears on this cheatsheet
+
+ACTIVITY (step 8, broken page on screen, git restore typed but not yet run):
+- chat: "half the file is gone. Type in the chat what you think this command brings back"
+- read a few guesses aloud, press Enter, let the screen settle it
+
+Night before:
+- sudo apt install git gh   (both in Ubuntu 24.04)
+- git config --global user.name + user.email
+- gh auth login on the demo GitHub account (parts 2 and 3 need it)
+
+FALLBACK: finished twin repo (stall-page-backup) one cd away; live typing derails: switch, continue from its log
 -->

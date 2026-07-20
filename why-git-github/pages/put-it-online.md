@@ -39,23 +39,36 @@ transition: slide-down
 </div>
 
 <!--
-Start with the first two lines, before any click, because they answer "what do I have to install?": git is already on this machine. Ubuntu and most Linux systems ship with it, and asking any program for its version is how you check it is there at all.
+Before any click (the first two lines answer "what do I have to install?"):
+- git is already on this machine; Ubuntu and most Linux systems ship with it
+- asking any program for its version = how you check it is there at all
 
 Labels to narrate:
-[click] this second one is new, so introduce it plainly: gh is GitHub's own command, made by GitHub, and it is the only thing today that needs installing. apt is Ubuntu's app store from the terminal, so this line is the same as tapping install on a phone. On Windows and Mac it is one command too, and it is optional: everything gh does can also be done by clicking around the website.
-[click] now the payoff of having it: one command sends the stall page up, the files AND every commit from part 1, messages included. GitHub calls this online home a repository, repo for short; you'll hear that word constantly from here on.
-[click] once it's up, changes travel both directions: I can edit on the website, a teammate can push from their laptop, and pull syncs everyone.
-[click] adding a collaborator is sending a link; no USB sticks, no "which version do you have?".
+- [click] gh is new, introduce plainly: GitHub's own command, made by GitHub, the only thing today that needs installing
+  - gloss apt: Ubuntu's app store from the terminal; this line = tapping install on a phone
+  - Windows and Mac: one command too; optional, everything gh does can be clicked on the website
+- [click] the payoff: one command sends the stall page up, the files AND every commit from part 1, messages included
+  - gloss: GitHub calls this online home a repository, repo for short; constant word from here on
+- [click] once up, changes travel both directions: edit on the website, teammate pushes from their laptop, pull syncs everyone
+- [click] adding a collaborator = sending a link; no USB sticks, no "which version do you have?"
 
-ACTIVITY: at step 5, with git pull typed but not run, ask the chat to predict: "the promo line exists only on the website so far. Type in the chat what you think this command does to the file on my laptop." Run it, then cat the file so the screen answers.
+ACTIVITY (step 5, git pull typed but not run):
+- chat: "the promo line exists only on the website so far. Type in the chat what you think this command does to the file on my laptop"
+- run it, then cat the file so the screen answers
+
 DEMO SCRIPT (~8 min), same repo from the part 1 demo:
-0. git --version, then sudo apt install gh, then gh auth login if the login has expired; narrate that this is the only install of the day
+0. git --version, then sudo apt install gh, then gh auth login if the login has expired; narrate: the only install of the day
 1. gh repo create stall-page --public --source=. --push
-2. browser: open the new repo page; show the files and the commit list: the same messages we typed in part 1, now online
+2. browser: open the new repo page; files + commit list = the same messages we typed in part 1, now online
 3. click a commit: GitHub shows the exact changed lines, the web version of git diff
-4. play the teammate: edit index.html in the browser (pencil icon), add a promo line, commit it from the web with a message
+4. play the teammate: edit index.html in the browser (pencil icon), add a promo line, commit from the web with a message
 5. terminal: git pull → the promo line lands in the local file; cat index.html to prove it
 6. git log --oneline → the web commit is part of the one history
-Night before: gh auth login on the demo account with access to the Infratify org; gh repo delete Infratify/stall-page --yes if a rehearsal copy exists, so the create is fresh. Leave gh genuinely installed but be ready to narrate the apt line rather than run it, so the session does not stall on a download.
-FALLBACK: keep a rehearsal twin (stall-page-rehearsal) already on GitHub in a pinned tab; if network or auth misbehaves, walk the same steps on it and narrate the push output from the rehearsal.
+
+Night before:
+- gh auth login on the demo account with access to the Infratify org
+- gh repo delete Infratify/stall-page --yes if a rehearsal copy exists (the create must be fresh)
+- leave gh genuinely installed; be ready to narrate the apt line rather than run it (no download stall)
+
+FALLBACK: rehearsal twin (stall-page-rehearsal) already on GitHub in a pinned tab; network or auth misbehaves: walk the same steps on it, narrate the push output from the rehearsal
 -->

@@ -25,10 +25,14 @@ const base = import.meta.env.BASE_URL
 </div>
 
 <!--
-Last thing before we close, and it takes ten seconds: point your phone camera at this code, a link pops up, tap it, fill in your name and email. That is the attendance record for today's session.
-This code is for today only, the Git and GitHub session; anyone who was here yesterday scanned a different one, so scanning Monday's again will not count for today.
-Leave this slide up while the last questions come in, and say the instruction twice: some people are watching on the same phone they need to scan with. For those, tell them the form link is also being dropped in the Zoom chat right now, so they can tap it there instead.
-The white panel behind the code is deliberate: phone scanners fail on a dark or low-contrast code.
-PREP: paste the form link into Zoom chat at the start of Q&A so phone-only viewers are covered.
-FALLBACK: if the projected code will not scan, read out the Zoom chat link and keep the chat message pinned.
+Say:
+- last thing before close, ten seconds: phone camera at the code, link pops up, tap, name + email
+- that is the attendance record for TODAY's session
+- code is today-only (Git and GitHub); Monday's code will not count for today
+- leave slide up while last questions come in; say the instruction twice
+- watching on the same phone they need to scan with: form link also dropping in Zoom chat, tap it there
+- white panel behind the code is deliberate: phone scanners fail on dark or low-contrast codes
+
+PREP: paste the form link into Zoom chat at the start of Q&A (covers phone-only viewers)
+FALLBACK: projected code will not scan: read the Zoom chat link aloud, keep the message pinned
 -->

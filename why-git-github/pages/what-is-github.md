@@ -47,11 +47,18 @@ git runs on your laptop; GitHub keeps the <span v-mark="{ at: 4, color: '#dc2626
 </div>
 
 <!--
-ASK: before the first click, spoken vote: "where does your team keep the one true copy of a shared file? A, on someone's laptop. B, in a WhatsApp or email thread. C, on a shared drive." Read the top letter back; whichever wins, the pain is the same, nobody is ever sure which copy is real, and this slide is the developers' answer to it.
-The session title has two names for a reason, and this diagram is the whole difference.
+ASK (before the first click), spoken vote: "where does your team keep the one true copy of a shared file?"
+- A: someone's laptop / B: a WhatsApp or email thread / C: a shared drive
+- read the top letter back; whichever wins, same pain: nobody is ever sure which copy is real
+- this slide = the developers' answer to it
 
-[click] GitHub is a website. You make a free account, and it stores a copy of your project's folder plus its entire history, online, around the clock. Think of the jump from a Word file on one laptop to a Google Doc everyone can open.
-[click] push is you sending your newest commits up to that shared copy.
-[click] pull is you bringing down whatever teammates sent up while you were away.
-[click] so: git is the tool on your machine, GitHub is the place where the copies meet. Numbers for the curious, spoken only: GitHub started in 2008, belongs to Microsoft, and passed 100 million accounts years ago. Alternatives like GitLab and Bitbucket work the same way, which is why learning this one transfers.
+Setup: the session title has two names for a reason; this diagram is the whole difference.
+
+- [click] GitHub is a website: free account stores a copy of your project's folder + its entire history, online, around the clock
+  - anchor: the jump from a Word file on one laptop to a Google Doc everyone can open
+- [click] push = you sending your newest commits up to that shared copy
+- [click] pull = you bringing down whatever teammates sent up while you were away
+- [click] so: git = the tool on your machine; GitHub = the place where the copies meet
+  - numbers for the curious, spoken only: started 2008, belongs to Microsoft, passed 100 million accounts years ago
+  - GitLab and Bitbucket work the same way; learning this one transfers
 -->

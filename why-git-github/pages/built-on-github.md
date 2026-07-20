@@ -62,13 +62,24 @@ Their code sits on GitHub for <span v-mark="{ at: 5, color: '#dc2626', type: 'un
 </div>
 
 <!--
-Zoom out from our little stall page: the same site hosts the world's software, in the open.
-Every name here is a live link to its actual repo. Click one or two while talking, ideally VS Code or Bitcoin, and just scroll: real files, real commit messages, real people arguing in the history. Say it plainly, because beginners assume otherwise: none of this needs an account, and nobody is going to stop you reading it.
+Setup:
+- zoom out from our stall page: the same site hosts the world's software, in the open
+- every name = live link to its actual repo; click one or two while talking (ideally VS Code or Bitcoin), just scroll
+  - real files, real commit messages, real people arguing in the history
+- say plainly (beginners assume otherwise): no account needed, nobody stops you reading it
 
-[click] the editor most developers type in, and the browser some of you are using right now: full source code, public.
-[click] WordPress powers roughly 4 in 10 websites on Earth; Telegram publishes the code of its official apps.
-[click] the Python language and Node.js, the engine behind many of the web services you touch daily.
-[click] the Linux kernel, the core program at the heart of yesterday's session, keeps an official live copy on GitHub, and Bitcoin's entire rulebook is a public repo; its money moves because people trust code they can read.
-ASK: after the last name lands, ask the chat: "type the name on this slide that surprises you most." Open the winner's repo and scroll it, even if you already clicked another while talking; the audience's pick lands harder than a rehearsed one.
-[click] most of these accept improvements from outsiders through a review page on GitHub, where a maintainer reads every changed line before it goes in; it is called a pull request, and making your first one is a rite of passage. The kernel keeps its own older process, but the code is there for anyone to study. Spoken numbers: GitHub hosts hundreds of millions of repos from over 100 million people. The tools we used today are the same ones these projects use; there is no separate "professional" git.
+- [click] VS Code: the editor most developers type in; Firefox: the browser some are using right now; full source public
+- [click] WordPress: roughly 4 in 10 websites on Earth; Telegram publishes the code of its official apps
+- [click] Python the language; Node.js: the engine behind many web services you touch daily
+- [click] Linux kernel (core program from yesterday's session) keeps an official live copy on GitHub
+  - Bitcoin: entire rulebook a public repo; its money moves because people trust code they can read
+
+ASK (after the last name lands):
+- chat: "type the name on this slide that surprises you most"
+- open the winner's repo and scroll it, even if you already clicked another; the audience's pick lands harder
+
+- [click] most accept outsider improvements through a review page on GitHub
+  - maintainer reads every changed line before it goes in = a pull request; the first one is a rite of passage
+  - kernel keeps its own older process, but the code is there for anyone to study
+  - spoken numbers: hundreds of millions of repos, 100M+ people; same tools we used today, no separate "professional" git
 -->

@@ -34,9 +34,14 @@ transition: fade-out
 </v-switch>
 
 <!--
-ASK: the question mark is the vote. Spoken, before the click: "putting a page on the real internet, what do you reckon it takes? A, minutes and free. B, a few days and some ringgit. C, you have to buy a server." Let the letters flood the chat, read the split aloud.
-[click] the title is the answer to the vote, and the stopwatch demo on the next slide proves it for real.
-So far the stall page lives on my laptop and on github.com. The last step makes it a real website: a public URL, meaning a web address anyone's phone can open, anywhere on Earth.
-GitHub Pages is a free feature of every repo: tell GitHub "serve this folder as a website" and it does, at no cost, no server to rent.
-I claim the whole thing takes about two minutes, so I'm putting a stopwatch on screen and we'll time it together.
+ASK: the question mark IS the vote. Spoken, before the click:
+- "putting a page on the real internet, what do you reckon it takes?"
+- A: minutes and free / B: a few days and some ringgit / C: you have to buy a server
+- let the letters flood the chat, read the split aloud
+
+- [click] the title answers the vote; the stopwatch demo on the next slide proves it for real
+- so far: the stall page lives on my laptop and on github.com
+- last step makes it a real website: a public URL (gloss: a web address anyone's phone can open, anywhere on Earth)
+- GitHub Pages: a free feature of every repo; tell GitHub "serve this folder as a website" and it does, no cost, no server to rent
+- claim: the whole thing takes about two minutes; stopwatch on screen, we time it together
 -->

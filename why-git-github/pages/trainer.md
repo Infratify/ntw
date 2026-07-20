@@ -78,5 +78,6 @@ const base = import.meta.env.BASE_URL
 </div>
 
 <!--
-30 seconds max; the demos carry the credibility. Mention: I teach the full DevOps bootcamp, and today is a free taster of its Git and GitHub sessions.
+- 30 seconds max; the demos carry the credibility
+- mention: I teach the full DevOps bootcamp; today is a free taster of its Git and GitHub sessions
 -->

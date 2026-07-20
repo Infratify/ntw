@@ -60,13 +60,29 @@ Same three versions: three files, or <span v-mark="{ at: 4, color: '#dc2626', ty
 </div>
 
 <!--
-ASK: before the first click, spoken vote: "how do you keep old versions of an important file today? A, Save As with a new name. B, copies flying around on WhatsApp or email. C, overwrite and hope." Read the top letter back and explore it for a moment; every one of the three is this slide's left window.
-PROP: a printed stack of pages, each sheet titled like the left window (menu_final, menu_final_v2, menu_final_v2_FINAL(3)). Hold the first sheet up at click 1 and add one per click, so the physical pile grows with the on-screen folder.
-Pose the pain first: imagine two weeks on one document. Every time you save a milestone, you Save As with a new name.
+ASK (before the first click), spoken vote: "how do you keep old versions of an important file today?"
+- A: Save As with a new name / B: copies flying around on WhatsApp or email / C: overwrite and hope
+- read the top letter back, explore it for a moment; every one of the three is this slide's left window
 
-[click] version one gets "final" in the name, out of pure optimism.
-[click] then final_v2, because final wasn't.
-[click] thirty versions later the folder is a minefield: no note says what changed, copies fly around on WhatsApp and email, and nobody is sure which file is the real one. Every team invents this system and every team loses a file to it.
-STORY: tell it here, while the minefield is on screen and before the git side answers it. land = one file with a kept history beats a folder of copies. Build: pick a real moment you, or someone you worked with, lost or overwrote the right version; tell it as ordinary day, then the wrong file sent or the good version gone, then what it cost (hours, a deadline, trust), then how the ending changes once every version is kept. 60 to 90 seconds, close by naming the point, then click.
-[click] the right side is the exact same story kept by git: ONE file, and next to it a list of saved versions. Each line is one save: a short ID, and a note in your own words saying what changed. That list is called the history, and reading it is one command. Gloss the terminal for anyone who skipped Monday: the dark window is just a program where you type instructions; today you only watch me type.
+PROP: printed stack of pages, each sheet titled like the left window (menu_final, menu_final_v2, menu_final_v2_FINAL(3))
+- hold the first sheet up at click 1, add one per click; the physical pile grows with the on-screen folder
+
+Pose the pain first: two weeks on one document; every milestone save = Save As with a new name.
+
+- [click] version one gets "final" in the name, out of pure optimism
+- [click] then final_v2, because final wasn't
+- [click] thirty versions later the folder is a minefield
+  - no note says what changed; copies fly around on WhatsApp and email; nobody sure which file is real
+  - every team invents this system, every team loses a file to it
+
+STORY (here, minefield on screen, before the git side answers; 60 to 90 seconds):
+- land = one file with a kept history beats a folder of copies
+- pick: a real moment you, or someone you worked with, lost or overwrote the right version
+- beats: ordinary day, then the wrong file sent or the good version gone, then what it cost (hours, a deadline, trust), then how the ending changes once every version is kept
+- close by naming the point, then click
+
+- [click] the right side = the exact same story kept by git: ONE file + a list of saved versions
+  - each line = one save: a short ID + a note in your own words saying what changed
+  - that list = the history; reading it is one command
+  - gloss the terminal for Monday-skippers: the dark window is just a program where you type instructions; today you only watch me type
 -->

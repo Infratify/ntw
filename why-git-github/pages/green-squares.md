@@ -60,11 +60,22 @@ One square per day; <span v-mark="{ at: 4, color: '#16a34a', type: 'highlight' }
 </div>
 
 <!--
-Part 3 is about what all this work adds up to for YOU.
+Setup: part 3 = what all this work adds up to for YOU.
 
-[click] every GitHub account gets a public profile page, listing the repos you have made public. This is mine, and the address is just github.com plus my username; anyone can open it without logging in, and I will drop the link in the chat.
-[click] and this grid is the famous part: one square for every day of the past year. This is my real graph, not a drawing.
-[click] the counter underneath totals a year of my saved work. It fills up by itself as you commit; there is nothing extra to maintain.
-STORY: land = a public profile with dated commits is proof a CV cannot fake. Build: pick a real hiring-side or job-hunting moment of your own; tell it as the claim on paper, then what the profile showed (or failed to show), then which of the two decided it. 60 to 90 seconds, close by naming the point. If no hiring story is yours to tell, use the day your own graph made a skill visible to someone who mattered.
-[click] a square turns green on any day you committed, and darker green means more. Why this matters for career-switchers: many tech recruiters and hiring managers open a candidate's GitHub. A CV says "I'm learning web development"; a profile with three months of commits and readable messages shows it, with dates. Your account is free, and everything committed from tonight onward starts painting this graph.
+- [click] every GitHub account gets a public profile page listing your public repos
+  - this is mine; address = github.com + username; opens without logging in; drop the link in the chat
+- [click] the grid is the famous part: one square for every day of the past year; my real graph, not a drawing
+- [click] the counter totals a year of my saved work; fills up by itself as you commit, nothing extra to maintain
+
+STORY (60 to 90 seconds):
+- land = a public profile with dated commits is proof a CV cannot fake
+- pick: a real hiring-side or job-hunting moment of your own
+- beats: the claim on paper, then what the profile showed (or failed to show), then which of the two decided it
+- no hiring story yours to tell? use the day your own graph made a skill visible to someone who mattered
+- close by naming the point
+
+- [click] a square turns green on any day you committed; darker green = more
+  - why it matters for career-switchers: many tech recruiters and hiring managers open a candidate's GitHub
+  - a CV says "I'm learning web development"; a profile with three months of commits + readable messages SHOWS it, with dates
+  - account is free; everything committed from tonight onward starts painting this graph
 -->
