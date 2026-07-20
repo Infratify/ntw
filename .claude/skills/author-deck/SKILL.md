@@ -61,6 +61,6 @@ ideas to everyday equivalents, and let the live demo carry the proof.
    - check contrast, label baselines across tiles, and that nothing
      overflows or wraps oddly.
 4. Cross-deck consistency: dates/times/triad wording match `README.md`
-   exactly; the closing slide plugs the NEXT session with its real time
-   (Fri is 10:00 AM, the rest 10:30 AM); hub URL is a styled `<a href>`.
+   exactly; the closing slide is Q&A only (registration closed: no hub link,
+   no next-session plug, no trainer link).
 5. Kill the dev server and delete any screenshots saved into the repo.

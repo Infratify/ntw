@@ -107,8 +107,11 @@ later clicks.
 
 **Links and CTA.** Every visible URL is a styled clickable `<a href>`
 (styling comes from `style.css`), never plain text. No bootcamp hard sell
-anywhere; the single soft CTA is the hub, https://infratify.github.io/ntw/,
-plus a plug for the next day's session on the closing slide.
+anywhere. Registration for the week is closed, so the closing slide carries
+no hub link, no next-session plug and no trainer link: it is Q&A only, with
+the three ways to ask as icon columns. `why-linux` closes on an extra
+attendance slide (Google Form QR in `public/qr-attendance.png`); the other
+decks do not.
 
 **Demo slides.** Open with `<LiveBadge />` + title in a flex row. The
 TermWindow shows a signpost transcript of what the audience is about to
