@@ -16,7 +16,7 @@ transition: slide-up
 <div v-click="2" class="py-0.5 flex items-center justify-between"><span><span class="text-green-400">$</span> ffmpeg -i clip.mp4 clip.gif</span><mdi-movie-open-outline class="text-gray-500" /></div>
 <div v-click="3" class="py-0.5 flex items-center justify-between"><span><span class="text-green-400">$</span> tldr rsync</span><mdi-book-open-variant class="text-gray-500" /></div>
 <div v-click="3" class="py-0.5 flex items-center justify-between"><span><span class="text-green-400">$</span> figlet FREE <span class="text-purple-400">|</span> lolcat</span><mdi-format-color-highlight class="text-gray-500" /></div>
-<div v-click="4" class="py-0.5 flex items-center justify-between"><span><span class="text-green-400">$</span> curl qrenco.de/ntw</span><mdi-qrcode class="text-gray-500" /></div>
+<div v-click="4" class="py-0.5 flex items-center justify-between"><span><span class="text-green-400">$</span> curl qrenco.de/ml.my/op-tp</span><mdi-qrcode class="text-gray-500" /></div>
 <div v-click="4" class="py-0.5 flex items-center justify-between"><span><span class="text-green-400">$</span> asciiquarium</span><mdi-fish class="text-gray-500" /></div>
 </TermWindow>
 </div>
@@ -36,7 +36,7 @@ DEMO SCRIPT (~15 min), pace it like a fireworks show:
 4. mapscii                           ← zoom into Malaysia
 5. ffmpeg -i clip.mp4 clip.gif       ← prepare clip.mp4 beforehand
 6. tldr rsync
-7. curl qrenco.de/https://infratify.github.io/ntw/    ← "even our registration QR comes from the terminal"
+7. curl qrenco.de/https://ml.my/op-tp    ← scannable QR to my page, drawn in the terminal; tell them to scan it off the screen
 8. asciiquarium                      ← leave running while transitioning
 FALLBACK: pre-record the sequence with asciinema in case wttr.in or mapscii are down.
 The night before: sudo apt install curl figlet lolcat tldr ffmpeg asciiquarium asciinema nodejs npm, then npm i -g mapscii. Dry-run every line once end to end: tldr downloads its page cache on first run, and the dry run doubles as the asciinema recording for the fallback.
