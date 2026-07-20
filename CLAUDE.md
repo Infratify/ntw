@@ -109,9 +109,12 @@ later clicks.
 (styling comes from `style.css`), never plain text. No bootcamp hard sell
 anywhere. Registration for the week is closed, so the closing slide carries
 no hub link, no next-session plug and no trainer link: it is Q&A only, with
-the three ways to ask as icon columns. `why-linux` closes on an extra
-attendance slide (Google Form QR in `public/qr-attendance.png`); the other
-decks do not.
+the three ways to ask as icon columns. After it comes one final attendance
+slide (Google Form QR in `public/qr-attendance.png`, white panel behind the
+code so phone scanners can read it). **The QR is per session** — each deck
+carries its own form, so never copy another deck's PNG; decode a candidate
+file (`zbarimg`) before wiring it and confirm the form ID differs from the
+neighbouring decks.
 
 **Demo slides.** Open with `<LiveBadge />` + title in a flex row. The
 TermWindow shows a signpost transcript of what the audience is about to

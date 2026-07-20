@@ -13,7 +13,7 @@ transition: fade-out
 <div>
 <TermWindow title="github pages: every repo can be a website">
 <div><span class="text-green-400">$</span> curl -I <span class="opacity-60">\</span></div>
-<div><span class="opacity-60">&nbsp;&nbsp;</span>https://ariff.github.io/stall-page/</div>
+<div><span class="opacity-60">&nbsp;&nbsp;</span>https://infratify.github.io/stall-page/</div>
 <div v-click="1" class="mt-1 text-green-400">HTTP/2 200</div>
 </TermWindow>
 </div>
@@ -45,7 +45,7 @@ DEMO SCRIPT (~7 min), the timed finale:
 1. start the prepared stopwatch tab, visible on screen
 2. browser: stall-page repo → Settings → Pages → Source: Deploy from a branch → main, / (root) → Save
 3. Actions tab: watch the "pages build and deployment" job run (~1 min); narrate what GitHub is doing
-4. open https://ariff.github.io/stall-page/ → the nasi lemak page from part 1, live; stop the clock and read it out
+4. open https://infratify.github.io/stall-page/ → the nasi lemak page from part 1, live; stop the clock and read it out
 5. terminal: curl -I the URL → HTTP/2 200
 6. paste the URL into the Zoom chat and invite everyone to open it on their phones right now
 7. mention the NTW hub page they registered on is hosted exactly this way, GitHub Pages on a public repo

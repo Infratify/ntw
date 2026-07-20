@@ -5,13 +5,12 @@ transition: fade-out
 
 <div class="flex items-center gap-3 mb-2">
   <LiveBadge />
-  <h3 class="!m-0">Seven commands</h3>
+  <h3 class="!m-0">Eight commands</h3>
 </div>
 
 <div class="term-print max-w-2xl mx-auto mt-8">
-<TermWindow title="cheatsheet.txt">
-<div><span class="text-green-400">$</span> cat cheatsheet.txt</div>
-<div class="grid grid-cols-2 gap-x-8 mt-2">
+<TermWindow title="today's whole vocabulary">
+<div class="grid grid-cols-2 gap-x-10 mt-1">
   <div v-click="1" class="py-1"><span class="text-amber-300 font-700 inline-block w-28">git init</span><span class="text-gray-400">start the history</span></div>
   <div v-click="1" class="py-1"><span class="text-amber-300 font-700 inline-block w-28">git status</span><span class="text-gray-400">what changed?</span></div>
   <div v-click="2" class="py-1"><span class="text-amber-300 font-700 inline-block w-28">git add</span><span class="text-gray-400">choose what to save</span></div>
@@ -19,22 +18,25 @@ transition: fade-out
   <div v-click="3" class="py-1"><span class="text-amber-300 font-700 inline-block w-28">git log</span><span class="text-gray-400">list every snapshot</span></div>
   <div v-click="3" class="py-1"><span class="text-amber-300 font-700 inline-block w-28">git diff</span><span class="text-gray-400">show the edits</span></div>
   <div v-click="4" class="py-1"><span class="text-amber-300 font-700 inline-block w-28">git restore</span><span class="text-gray-400">bring it back</span></div>
+  <div v-click="4" class="py-1"><span class="text-amber-300 font-700 inline-block w-28">git push</span><span class="text-gray-400">send it to GitHub</span></div>
 </div>
 <div v-click="5" class="mt-3"><span class="text-green-400">$</span> <span class="animate-pulse">▌</span></div>
 </TermWindow>
 </div>
 
 <div v-click="5" class="mark-safe mt-8 text-center text-lg opacity-85">
-These seven run today's whole demo, so <span v-mark="{ at: 5, color: '#dc2626', type: 'underline' }">screenshot this one</span>.
+These eight run today's whole demo, so <span v-mark="{ at: 5, color: '#dc2626', type: 'underline' }">screenshot this one</span>.
 </div>
 
 <!--
+This is the whole vocabulary for today, and every one of them starts with the word git. Reassure them the way a driving instructor would: nobody memorises this, you look it up for a week and then your fingers know it. Tell them to screenshot this slide; we type these words live, right now.
+
 Narrate in pairs as they print:
 [click] init starts the history for a folder, once. status answers "what changed since my last save?"; it's the command you'll type most.
 [click] add picks which changes go into the next snapshot, like choosing what's in the photo. commit takes the snapshot and attaches your note.
 [click] log lists every snapshot. diff shows the exact edited lines before you save them.
-[click] and restore is the time travel: bring any file back to the last saved version.
-[click] everything I demo today is these seven, typed slowly.
+[click] restore is the time travel: bring any file back to the last saved version. And push is the odd one out, the only word here that needs the internet; it sends your saved work to GitHub. We meet it properly after the break, in part 2.
+[click] seven of these eight get typed in the next few minutes, slowly.
 
 DEMO SCRIPT (~12 min), on the demo laptop, terminal + editor side by side:
 1. mkdir stall-page && cd stall-page && git init

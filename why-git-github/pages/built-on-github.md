@@ -9,49 +9,49 @@ transition: fade-out
 
 <div v-click="1">
   <logos-visual-studio-code class="text-5xl mx-auto" />
-  <p class="text-base font-700 mt-3 mb-1">VS Code</p>
+  <p class="text-base font-700 mt-3 mb-1"><a href="https://github.com/microsoft/vscode" target="_blank" class="!border-none inline-flex items-center gap-1 group">VS Code<mdi-open-in-new class="text-xs opacity-40 group-hover:opacity-100 transition-opacity" /></a></p>
   <p class="text-xs opacity-60 m-0">the editor itself</p>
 </div>
 
 <div v-click="1">
   <logos-firefox class="text-5xl mx-auto" />
-  <p class="text-base font-700 mt-3 mb-1">Firefox</p>
+  <p class="text-base font-700 mt-3 mb-1"><a href="https://github.com/mozilla-firefox/firefox" target="_blank" class="!border-none inline-flex items-center gap-1 group">Firefox<mdi-open-in-new class="text-xs opacity-40 group-hover:opacity-100 transition-opacity" /></a></p>
   <p class="text-xs opacity-60 m-0">the whole browser</p>
 </div>
 
 <div v-click="2">
   <logos-wordpress-icon class="text-5xl mx-auto dark:invert" />
-  <p class="text-base font-700 mt-3 mb-1">WordPress</p>
+  <p class="text-base font-700 mt-3 mb-1"><a href="https://github.com/WordPress/WordPress" target="_blank" class="!border-none inline-flex items-center gap-1 group">WordPress<mdi-open-in-new class="text-xs opacity-40 group-hover:opacity-100 transition-opacity" /></a></p>
   <p class="text-xs opacity-60 m-0">4 in 10 websites</p>
 </div>
 
 <div v-click="2">
   <logos-telegram class="text-5xl mx-auto" />
-  <p class="text-base font-700 mt-3 mb-1">Telegram</p>
+  <p class="text-base font-700 mt-3 mb-1"><a href="https://github.com/TelegramMessenger/Telegram-iOS" target="_blank" class="!border-none inline-flex items-center gap-1 group">Telegram<mdi-open-in-new class="text-xs opacity-40 group-hover:opacity-100 transition-opacity" /></a></p>
   <p class="text-xs opacity-60 m-0">its official apps</p>
 </div>
 
 <div v-click="3">
   <logos-python class="text-5xl mx-auto" />
-  <p class="text-base font-700 mt-3 mb-1">Python</p>
+  <p class="text-base font-700 mt-3 mb-1"><a href="https://github.com/python/cpython" target="_blank" class="!border-none inline-flex items-center gap-1 group">Python<mdi-open-in-new class="text-xs opacity-40 group-hover:opacity-100 transition-opacity" /></a></p>
   <p class="text-xs opacity-60 m-0">the language itself</p>
 </div>
 
 <div v-click="3">
   <logos-nodejs-icon class="text-5xl mx-auto" />
-  <p class="text-base font-700 mt-3 mb-1">Node.js</p>
+  <p class="text-base font-700 mt-3 mb-1"><a href="https://github.com/nodejs/node" target="_blank" class="!border-none inline-flex items-center gap-1 group">Node.js<mdi-open-in-new class="text-xs opacity-40 group-hover:opacity-100 transition-opacity" /></a></p>
   <p class="text-xs opacity-60 m-0">runs many websites</p>
 </div>
 
 <div v-click="4">
   <logos-linux-tux class="text-5xl mx-auto" />
-  <p class="text-base font-700 mt-3 mb-1">Linux</p>
-  <p class="text-xs opacity-60 m-0">the core of Linux</p>
+  <p class="text-base font-700 mt-3 mb-1"><a href="https://github.com/torvalds/linux" target="_blank" class="!border-none inline-flex items-center gap-1 group">Linux<mdi-open-in-new class="text-xs opacity-40 group-hover:opacity-100 transition-opacity" /></a></p>
+  <p class="text-xs opacity-60 m-0">the core program</p>
 </div>
 
 <div v-click="4">
   <logos-bitcoin class="text-5xl mx-auto" />
-  <p class="text-base font-700 mt-3 mb-1">Bitcoin</p>
+  <p class="text-base font-700 mt-3 mb-1"><a href="https://github.com/bitcoin/bitcoin" target="_blank" class="!border-none inline-flex items-center gap-1 group">Bitcoin<mdi-open-in-new class="text-xs opacity-40 group-hover:opacity-100 transition-opacity" /></a></p>
   <p class="text-xs opacity-60 m-0">every line public</p>
 </div>
 
@@ -63,6 +63,7 @@ Their code sits on GitHub for <span v-mark="{ at: 5, color: '#dc2626', type: 'un
 
 <!--
 Zoom out from our little stall page: the same site hosts the world's software, in the open.
+Every name here is a live link to its actual repo. Click one or two while talking, ideally VS Code or Bitcoin, and just scroll: real files, real commit messages, real people arguing in the history. Say it plainly, because beginners assume otherwise: none of this needs an account, and nobody is going to stop you reading it.
 
 [click] the editor most developers type in, and the browser some of you are using right now: full source code, public.
 [click] WordPress powers roughly 4 in 10 websites on Earth; Telegram publishes the code of its official apps.

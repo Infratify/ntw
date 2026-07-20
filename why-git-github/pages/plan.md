@@ -30,7 +30,13 @@ transition: slide-up
 
 </div>
 
-<div v-click="4" class="mt-14 text-center text-base opacity-80">
+<div v-click="4" class="mt-14 flex justify-center">
+  <span class="inline-flex items-center gap-2 text-base opacity-75">
+    <mdi-robot-outline class="text-purple-600 dark:text-purple-400" /> plus: working with AI agents
+  </span>
+</div>
+
+<div v-click="5" class="mt-5 text-center text-base opacity-80">
 Today's page ends up on the public internet.
 </div>
 
@@ -40,5 +46,6 @@ Session map; the recap slide mirrors it at the end. Housekeeping to SAY, not sho
 [click] First, git: a tool that keeps every version of your work so nothing is ever lost.
 [click] Then GitHub: the website where teams share that work and build together.
 [click] And the finish: your work as public proof, ending with a page anyone in the world can open.
+[click] plus a short bonus at the end, once the three parts are done: what changes when an AI agent is the one editing your files, and why today's commands are what keep you in charge of it.
 [click] One small web page, a menu page for a nasi lemak stall, travels through all three parts, and by the end of the session it is live on the internet. About 5 minutes in at this point.
 -->

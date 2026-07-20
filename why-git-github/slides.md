@@ -40,7 +40,7 @@ src: ./pages/what-is-git.md
 ---
 
 ---
-src: ./pages/seven-commands.md
+src: ./pages/eight-commands.md
 ---
 
 ---
@@ -85,4 +85,8 @@ src: ./pages/start-tonight.md
 
 ---
 src: ./pages/thanks.md
+---
+
+---
+src: ./pages/attendance.md
 ---
