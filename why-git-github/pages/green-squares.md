@@ -54,8 +54,8 @@ One square per day; <span v-mark="{ at: 4, color: '#16a34a', type: 'highlight' }
 <!--
 Part 3 is about what all this work adds up to for YOU.
 
-[click] every GitHub account gets a public profile page. A repository, or repo, is one project: its files plus its history.
+[click] every GitHub account gets a public profile page, listing the repos you have made public.
 [click] and this grid is the famous part: one square for every day of the past year.
-[click] the counter underneath totals your commits, pull requests and reviews. It fills up by itself as you work; there is nothing extra to maintain.
+[click] the counter underneath totals a year of your saved work. It fills up by itself as you commit; there is nothing extra to maintain.
 [click] a square turns green on any day you committed, and darker green means more. Why this matters for career-switchers: many tech recruiters and hiring managers open a candidate's GitHub. A CV says "I'm learning web development"; a profile with three months of commits and readable messages shows it, with dates. Your account is free, and everything committed from tonight onward starts painting this graph.
 -->

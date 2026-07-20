@@ -38,7 +38,7 @@ transition: slide-down
 
 <!--
 Labels to narrate:
-[click] one command sends the stall page up: the files AND every commit from part 1, messages included.
+[click] one command sends the stall page up: the files AND every commit from part 1, messages included. GitHub calls this online home a repository, repo for short; you'll hear that word constantly from here on.
 [click] once it's up, changes travel both directions: I can edit on the website, a teammate can push from their laptop, and pull syncs everyone.
 [click] adding a collaborator is sending a link; no USB sticks, no "which version do you have?".
 

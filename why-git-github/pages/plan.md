@@ -40,5 +40,5 @@ Session map; the recap slide mirrors it at the end. Housekeeping to SAY, not sho
 [click] First, git: a tool that keeps every version of your work so nothing is ever lost.
 [click] Then GitHub: the website where teams share that work and build together.
 [click] And the finish: your work as public proof, ending with a page anyone in the world can open.
-[click] One small web page travels through all three parts, and by the end of the session it is live on the internet. About 5 minutes in at this point.
+[click] One small web page, a menu page for a nasi lemak stall, travels through all three parts, and by the end of the session it is live on the internet. About 5 minutes in at this point.
 -->

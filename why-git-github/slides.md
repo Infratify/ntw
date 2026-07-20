@@ -52,10 +52,6 @@ src: ./pages/branches.md
 ---
 
 ---
-src: ./pages/pull-request.md
----
-
----
 src: ./pages/put-it-online.md
 ---
 
@@ -73,6 +69,10 @@ src: ./pages/two-minutes.md
 
 ---
 src: ./pages/go-live.md
+---
+
+---
+src: ./pages/ai-review.md
 ---
 
 ---

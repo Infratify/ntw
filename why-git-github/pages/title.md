@@ -27,6 +27,6 @@ const base = import.meta.env.BASE_URL
 </div>
 
 <!--
-Welcome everyone as they join. Housekeeping: ~1h45 of sharing and live demos, then Q&A. Questions go in the Zoom chat anytime; I batch them at each break.
+Welcome everyone as they join. Housekeeping: about 90 minutes of sharing and live demos, then Q&A for the rest. Questions go in the Zoom chat anytime; I batch them at each break.
 Today stands alone: anyone who missed Monday's Linux session can follow everything. If you were here yesterday, today's terminal will feel familiar.
 -->

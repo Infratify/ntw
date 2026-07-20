@@ -34,5 +34,7 @@ transition: fade-out
 </div>
 
 <!--
-Recap by pointing back at what actually happened on screen: the stall page went through three commits and came back from sabotage with one restore; it went online, took an edit from the browser and pulled it down; and it ended the session live at a public address that everyone here opened. Keep it factual, no victory lap. Then pivot: "so how do you start tonight?"
+Land the agent segment first, in one sentence, so the recap starts clean: the reason that demo was calm is everything under it, and all of it came from the first two parts.
+
+Recap by pointing back at what actually happened on screen: the stall page went through three commits and came back from sabotage with one restore; it split into two branches that grew at the same time and merged back into one history; it went online, took an edit from the browser and pulled it down; and it ended the session at a public address that everyone here opened on their phones, then changed in front of them when I pushed one more commit. Keep it factual, no victory lap. Then pivot: "so how do you start tonight?"
 -->

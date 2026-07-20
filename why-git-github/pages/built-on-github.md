@@ -46,7 +46,7 @@ transition: fade-out
 <div v-click="4">
   <logos-linux-tux class="text-5xl mx-auto" />
   <p class="text-base font-700 mt-3 mb-1">Linux</p>
-  <p class="text-xs opacity-60 m-0">the kernel, mirrored</p>
+  <p class="text-xs opacity-60 m-0">the core of Linux</p>
 </div>
 
 <div v-click="4">
@@ -67,6 +67,6 @@ Zoom out from our little stall page: the same site hosts the world's software, i
 [click] the editor most developers type in, and the browser some of you are using right now: full source code, public.
 [click] WordPress powers roughly 4 in 10 websites on Earth; Telegram publishes the code of its official apps.
 [click] the Python language and Node.js, the engine behind many of the web services you touch daily.
-[click] the Linux kernel from yesterday's session keeps an official mirror on GitHub, and Bitcoin's entire rulebook is a public repo; its money moves because people trust code they can read.
-[click] most of these take improvements through exactly the pull request page you just saw; the kernel keeps its own older process, but the code is there for anyone to study. Spoken numbers: GitHub hosts hundreds of millions of repos from over 100 million people. The tools we used today are the same ones these projects use; there is no separate "professional" git.
+[click] the Linux kernel, the core program at the heart of yesterday's session, keeps an official live copy on GitHub, and Bitcoin's entire rulebook is a public repo; its money moves because people trust code they can read.
+[click] most of these accept improvements from outsiders through a review page on GitHub, where a maintainer reads every changed line before it goes in; it is called a pull request, and making your first one is a rite of passage. The kernel keeps its own older process, but the code is there for anyone to study. Spoken numbers: GitHub hosts hundreds of millions of repos from over 100 million people. The tools we used today are the same ones these projects use; there is no separate "professional" git.
 -->
