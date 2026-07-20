@@ -68,6 +68,7 @@ Walk the graph: the blue line is main, the version of the stall page everyone ag
 [click] if we both changed the very same line, git pauses and asks a human to pick; that's called a conflict, and it's a conversation, never lost work. Good chat question for the break.
 Then switch screens: this drawing is about to draw itself. Say it plainly once, so nobody leaves confused: this next tool is a practice sandbox that runs in a browser tab, and real git on a real laptop behaves the same way. It is still a terminal, just one with the picture attached.
 
+ACTIVITY: two chat moments inside the script. At step 5, let the chat pick Ali's dish: "type one dish for the menu", and echo the most-typed one instead of rendang. At step 7, with both lines grown and the merge typed but not run, ask them to predict: "two separate lines on screen. Type in the chat what you think happens to them now." Run it and point at the green dot as the answer.
 DEMO SCRIPT (~6 min), gitverse in a shared browser tab, graph and terminal both visible. Say what it is before typing: the same stall page from part 1, rebuilt small, so the shape of the work is visible while it happens.
 1. git init   (prompt shows main, graph empty)
 2. echo "nasi lemak stall" > index.html → git add index.html → git commit -m "draft"

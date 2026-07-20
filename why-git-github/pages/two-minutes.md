@@ -3,21 +3,39 @@ layout: fact
 transition: fade-out
 ---
 
-<div v-motion :initial="{ scale: 0.4, opacity: 0 }" :enter="{ scale: 1, opacity: 1, transition: { type: 'spring', stiffness: 80, delay: 200 } }">
+<v-switch>
+
+<template #0>
+
+<div class="pop-in">
+
+# ?
+
+<div class="text-2xl opacity-70 mt-4">from this laptop to a public URL</div>
+
+</div>
+
+</template>
+
+<template #1>
+
+<div class="pop-in">
 
 # 2 minutes
 
+<div class="text-2xl opacity-70 mt-2">from this laptop to a public URL</div>
+
+<div class="mt-8 text-lg opacity-60">hosted free by GitHub Pages</div>
+
 </div>
 
-<div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 700, duration: 500 } }" class="text-2xl opacity-70 mt-2">
-from this laptop to a public URL
-</div>
+</template>
 
-<div v-motion :initial="{ opacity: 0 }" :enter="{ opacity: 1, transition: { delay: 1100, duration: 500 } }" class="mt-8 text-lg opacity-60">
-hosted free by GitHub Pages
-</div>
+</v-switch>
 
 <!--
+ASK: the question mark is the vote. Spoken, before the click: "putting a page on the real internet, what do you reckon it takes? A, minutes and free. B, a few days and some ringgit. C, you have to buy a server." Let the letters flood the chat, read the split aloud.
+[click] the title is the answer to the vote, and the stopwatch demo on the next slide proves it for real.
 So far the stall page lives on my laptop and on github.com. The last step makes it a real website: a public URL, meaning a web address anyone's phone can open, anywhere on Earth.
 GitHub Pages is a free feature of every repo: tell GitHub "serve this folder as a website" and it does, at no cost, no server to rent.
 I claim the whole thing takes about two minutes, so I'm putting a stopwatch on screen and we'll time it together.

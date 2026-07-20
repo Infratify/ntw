@@ -47,6 +47,7 @@ DEMO SCRIPT (~12 min), on the demo laptop, terminal + editor side by side:
 6. git log --oneline   (three lines, read the messages aloud, newest on top)
 7. sabotage: delete half the file in the editor, save, show the broken page in the browser
 8. git diff   (red minus lines: git saw everything) → git restore index.html → file is whole again
+ACTIVITY: at step 8, with the broken page on screen and git restore typed but not yet run, ask the chat to predict: "half the file is gone. Type in the chat what you think this command brings back." Read a few guesses aloud, press Enter, let the screen settle it.
 Narrate 8 as the "never forget" proof and name each command as it appears on this cheatsheet.
 Night before: sudo apt install git gh (both in Ubuntu 24.04); git config --global user.name + user.email; gh auth login on the demo GitHub account (parts 2 and 3 need it).
 FALLBACK: keep a finished twin repo (stall-page-backup) one cd away; if live typing derails, switch and continue from its log.

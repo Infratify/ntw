@@ -52,6 +52,7 @@ Labels to narrate:
 [click] and the small daily win: it reads the diff and writes the commit message for me, which is the thing beginners freeze on.
 [click] the honest pitch for career-switchers, spoken: agents make a lot of changes quickly, so the skill that keeps you in control is reading a diff and knowing how to undo. That is this session, and it is why git matters more now, not less.
 
+ACTIVITY: at step 4, before running git diff, ask the chat: "the agent added a contact section on its own. Guess how many lines it changed, type a number." Run the diff, count the plus lines aloud, and name the closest guess. The count is unknowable in advance, which is exactly why the diff matters.
 DEMO SCRIPT (~5 min), same stall-page repo, still open from the finale:
 1. opencode, then the prompt: add a contact section with a phone number to index.html
 2. let it work, then quit back to the shell; say out loud that we have not accepted anything yet

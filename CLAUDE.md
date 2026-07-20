@@ -125,6 +125,40 @@ GitHub .deb) — plus a fallback. A transcript caption states what the
 command really prints; run it first (`du -ah | sort -rh` surfaces
 directories, not just files).
 
+## Engagement grammar (the presenter layer)
+
+Seven engagement tools run every session. Content is the deck itself and
+Video is covered by motion beats plus the recorded demo fallback; neither
+needs extra authoring. The other five live in the **presenter notes only**,
+never as slide content — the slide never changes for them. Cadence: at
+least one fires every ~10 minutes so no stretch of the session is
+watch-only.
+
+Uppercase note markers, same register as DEMO SCRIPT / FALLBACK / PREP:
+
+- `ASK:` a spoken chat question — either a pulse check ("type 1 if…") or a
+  spoken A/B/C vote: say the three options aloud, let the letters flood
+  the chat, read the top pick back and explore it for a moment before
+  moving on. The options are never shown on the slide.
+- `PROP:` a physical object held to the camera, cued at the exact beat it
+  lands (the printed `final_v2` paper stack, the presenter's phone
+  refreshing the just-published URL).
+- `STORY:` construction guidance, never a script. Format: `land =` the one
+  point the story must prove, then which kind of real moment from the
+  trainer's own life to pick, and the beat order (ordinary setup → the
+  pain → what it cost → how the tool changes the ending), 60 to 90
+  seconds, closing by naming the point. The trainer supplies the story;
+  the notes only aim it.
+- `ACTIVITY:` the audience does something in chat that the demo then uses:
+  predict the output before Enter is pressed, pick the demo input (a
+  tagline, a dish), open the just-published URL on their phones. Prefer
+  activities whose result the screen verifies seconds later.
+
+A.M.S (analogy, metaphor, simile) has no marker; it is the existing gloss
+rule: every new concept gets one everyday anchor in the spoken script the
+first time it is named (commit = photo-gallery snapshot, GitHub = the jump
+from a Word file to a Google Doc, restore = time travel).
+
 ## Scaffold checklist for a new deck
 
 1. Copy `components/`, `style.css`, `global-bottom.vue`, `public/logo*.svg`

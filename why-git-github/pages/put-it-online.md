@@ -47,6 +47,7 @@ Labels to narrate:
 [click] once it's up, changes travel both directions: I can edit on the website, a teammate can push from their laptop, and pull syncs everyone.
 [click] adding a collaborator is sending a link; no USB sticks, no "which version do you have?".
 
+ACTIVITY: at step 5, with git pull typed but not run, ask the chat to predict: "the promo line exists only on the website so far. Type in the chat what you think this command does to the file on my laptop." Run it, then cat the file so the screen answers.
 DEMO SCRIPT (~8 min), same repo from the part 1 demo:
 0. git --version, then sudo apt install gh, then gh auth login if the login has expired; narrate that this is the only install of the day
 1. gh repo create stall-page --public --source=. --push

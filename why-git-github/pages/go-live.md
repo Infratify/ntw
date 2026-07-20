@@ -41,6 +41,8 @@ Labels to narrate:
 [click] no hosting bill, no server to rent: GitHub Pages serves the page for free.
 [click] and the address is truly public: every phone in this Zoom can open it the moment it exists.
 
+ACTIVITY: two chat moments are already in the script; call both out as things THEY are doing, not watching. Step 6, everyone opens the brand-new URL on their own phones. Steps 8 to 13, the chat picks the new tagline, then watches their own phones update after the push.
+PROP: your own phone, held up to the camera at step 4 or 6, refreshing the new URL. A second physical screen showing the page proves "public" in a way the browser tab on the shared screen cannot.
 DEMO SCRIPT (~7 min), the timed finale:
 1. start the prepared stopwatch tab, visible on screen
 2. browser: stall-page repo → Settings → Pages → Source: Deploy from a branch → main, / (root) → Save

@@ -69,5 +69,6 @@ Every name here is a live link to its actual repo. Click one or two while talkin
 [click] WordPress powers roughly 4 in 10 websites on Earth; Telegram publishes the code of its official apps.
 [click] the Python language and Node.js, the engine behind many of the web services you touch daily.
 [click] the Linux kernel, the core program at the heart of yesterday's session, keeps an official live copy on GitHub, and Bitcoin's entire rulebook is a public repo; its money moves because people trust code they can read.
+ASK: after the last name lands, ask the chat: "type the name on this slide that surprises you most." Open the winner's repo and scroll it, even if you already clicked another while talking; the audience's pick lands harder than a rehearsed one.
 [click] most of these accept improvements from outsiders through a review page on GitHub, where a maintainer reads every changed line before it goes in; it is called a pull request, and making your first one is a rite of passage. The kernel keeps its own older process, but the code is there for anyone to study. Spoken numbers: GitHub hosts hundreds of millions of repos from over 100 million people. The tools we used today are the same ones these projects use; there is no separate "professional" git.
 -->

@@ -47,6 +47,7 @@ git runs on your laptop; GitHub keeps the <span v-mark="{ at: 4, color: '#dc2626
 </div>
 
 <!--
+ASK: before the first click, spoken vote: "where does your team keep the one true copy of a shared file? A, on someone's laptop. B, in a WhatsApp or email thread. C, on a shared drive." Read the top letter back; whichever wins, the pain is the same, nobody is ever sure which copy is real, and this slide is the developers' answer to it.
 The session title has two names for a reason, and this diagram is the whole difference.
 
 [click] GitHub is a website. You make a free account, and it stores a copy of your project's folder plus its entire history, online, around the clock. Think of the jump from a Word file on one laptop to a Google Doc everyone can open.
