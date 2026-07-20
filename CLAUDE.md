@@ -50,7 +50,7 @@ No section-divider slides: segment openers get an `.eyebrow` part chip
 
 **Copy: the show/tell law.** The slide shows, the trainer tells. On-slide
 text is labels of 4 words or fewer; at most ONE full sentence per slide (the
-payoff), and it must state an observable fact ("a real Singapore server"),
+payoff), and it must state an observable fact ("a real remote server"),
 never a verdict or punchline ("the terminal proved it"). Every sentence the
 audience should hear goes in the presenter notes, which are mandatory on
 every page and carry the spoken script (`[click]`-prefixed lines for

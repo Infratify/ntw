@@ -21,7 +21,7 @@ transition: fade-out
 <div class="space-y-7">
   <div v-click="2" class="note-row items-center">
     <mdi-map-marker-radius class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>a real Singapore machine</b></p>
+    <p><b>a real remote machine</b></p>
   </div>
   <div v-click="3" class="note-row items-center">
     <mdi-timer-outline class="note-ico text-orange-600 dark:text-orange-400" />
@@ -37,7 +37,7 @@ transition: fade-out
 
 <!--
 Labels to narrate:
-[click] the transcript shows the finish line: logging into a computer that does not exist yet as I say this sentence. It will live in AWS's Singapore datacenter, the closest region to Malaysia.
+[click] the transcript shows the finish line: logging into a computer that does not exist yet as I say this sentence. It will live in an AWS datacenter, in the region closest to Malaysia.
 [click] from the launch click to a working login is about a minute; we'll watch the state change in the console.
 [click] and it bills by the hour, a few sen for this size; the exact price gets its own slide after the demo.
 

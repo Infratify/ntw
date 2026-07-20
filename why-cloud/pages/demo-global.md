@@ -30,7 +30,7 @@ transition: fade-out
   </div>
   <div v-click="4" class="note-row items-center">
     <mdi-server class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>still one Singapore server</b></p>
+    <p><b>still one remote server</b></p>
   </div>
 </div>
 
@@ -39,7 +39,7 @@ transition: fade-out
 <!--
 Labels to narrate:
 [click] globalping borrows volunteer machines around the world and pings our address from wherever we ask; the real output prints Min, Max and Avg per city, the transcript shows the city and its average.
-[click] single-digit and low double-digit milliseconds, because each probe reaches the Cloudflare copy in its own region, never Singapore.
+[click] single-digit and low double-digit milliseconds, because each probe reaches the Cloudflare copy in its own region, never our own server.
 [click] and behind all of it is still the one t3 machine we rented in part 1.
 
 DEMO SCRIPT (~10 min), Cloudflare dashboard then terminal:

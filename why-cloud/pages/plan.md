@@ -39,6 +39,6 @@ Session map; the recap slide mirrors it at the end. Housekeeping to SAY, not sho
 
 [click] First: what the cloud actually is, and how a real server gets rented in about a minute, with no hardware bought.
 [click] Then scaling: the same server gets four times the processors while we watch, because power in the cloud is a menu choice, spoken plainly a "dropdown".
-[click] And the finish: that one server in Singapore answers visitors from every continent, through a free service called Cloudflare.
+[click] And the finish: that one remote server answers visitors from every continent, through a free service called Cloudflare.
 [click] Everything happens to one machine, born live in part 1. About 5 minutes in at this point.
 -->

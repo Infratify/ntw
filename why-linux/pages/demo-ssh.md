@@ -21,7 +21,7 @@ transition: slide-up
 <div class="space-y-7">
   <div v-click="2" class="note-row items-center">
     <mdi-map-marker-radius class="note-ico text-amber-600 dark:text-amber-400" />
-    <p><b>a real Singapore server</b></p>
+    <p><b>a real remote server</b></p>
   </div>
   <div v-click="3" class="note-row items-center">
     <mdi-monitor-off class="note-ico text-amber-600 dark:text-amber-400" />
@@ -37,7 +37,7 @@ transition: slide-up
 
 <!--
 Labels to narrate:
-[click] that's a real computer in a Singapore datacenter, rented for a few ringgit a month.
+[click] that's a real computer in a datacenter far from this room, rented for a few ringgit a month.
 [click] it has no screen, no mouse, no desktop; text is the only way in.
 [click] SSH is how professionals walk into any server on Earth: one command, secured by keys.
 

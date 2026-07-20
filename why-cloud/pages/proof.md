@@ -34,5 +34,5 @@ transition: fade-out
 </div>
 
 <!--
-Recap by pointing back at what actually happened on screen: a machine that did not exist at 10:30 was rented in Singapore for about a minute of waiting and sen per hour; it served Tuesday's stall page; it was stopped, given four times the cores, and started again with everything intact; and through Cloudflare it answered pings from five continents in milliseconds. Keep it factual, no victory lap. The whole session's rental bill is under two ringgit. Then pivot: "so how do you start tonight?"
+Recap by pointing back at what actually happened on screen: a machine that did not exist at 10:30 was rented in a datacenter overseas for about a minute of waiting and sen per hour; it served Tuesday's stall page; it was stopped, given four times the cores, and started again with everything intact; and through Cloudflare it answered pings from five continents in milliseconds. Keep it factual, no victory lap. The whole session's rental bill is under two ringgit. Then pivot: "so how do you start tonight?"
 -->

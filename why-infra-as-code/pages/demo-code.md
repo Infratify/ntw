@@ -44,7 +44,7 @@ Labels to narrate:
 [click] and a rehearsal is free: reading and planning cost RM 0; money only enters when something is actually built.
 
 DEMO SCRIPT (~8 min), split screen, editor left, terminal right:
-1. Open main.tf in VS Code. Walk it top to bottom: the provider block names AWS and ap-southeast-1, the Singapore region from Wednesday; a key pair for logging in; a security group opening ports 22 and 80, the same two doors clicked open on Wednesday; one server block: Ubuntu 24.04, t3.micro, and a startup script that installs Docker and runs the stall-page container from Thursday.
+1. Open main.tf in VS Code. Walk it top to bottom: the provider block names AWS and the region, the same one Wednesday's server was rented in; a key pair for logging in; a security group opening ports 22 and 80, the same two doors clicked open on Wednesday; one server block: Ubuntu 24.04, t3.micro, and a startup script that installs Docker and runs the stall-page container from Thursday.
 2. Read one line out loud to prove it reads like a list, and ask the chat to guess what instance_type = "t3.micro" means before glossing it.
 3. Terminal: terraform plan. Scroll the output slowly; every planned thing maps to a block we just read. Finish on the counter line: Plan: 3 to add, 0 to change, 0 to destroy.
 4. Point at the console in the other tab: still empty. Nothing was built; that is the whole point of plan.
