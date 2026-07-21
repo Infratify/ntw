@@ -40,7 +40,7 @@ transition: fade-out
 <!--
 Labels to narrate:
 [click] in the Cloudflare dashboard I add one DNS record for our address and flip the proxy toggle to the orange cloud. Grey means just point at our server; orange means stand in front of it, keeping a copy near every visitor.
-[click] the terminal proves the reach: globalping borrows volunteer machines worldwide and pings our address from each city. Single-digit milliseconds everywhere, because each probe hits the nearby Cloudflare copy, never our one server in part 1.
+[click] then the terminal, for proof: globalping borrows volunteer machines worldwide and pings our address from each city. Single-digit milliseconds everywhere, because each probe hits the nearby Cloudflare copy, never our one server in part 1.
 
 DEMO SCRIPT (~10 min), Cloudflare dashboard then terminal:
 1. dashboard: DNS → Add record → type A, name demo, the server's IP, proxy status ON; narrate the orange cloud toggle: grey means "just point", orange means "stand in front"

@@ -41,7 +41,7 @@ transition: fade-out
 <!--
 Labels to narrate:
 [click] in the console I stop the machine, pick a bigger size from the dropdown, and start it again, about two minutes end to end. Nothing is reinstalled; same files, same page, same address.
-[click] the terminal proves the change landed: nproc asks the machine how many processor cores it has. Two before, eight after. After the session it shrinks back the same way, because the big size costs about sixteen times more per hour.
+[click] then the terminal, for proof: nproc asks the machine how many processor cores it has, and it reports two before, eight after. After the session it shrinks back the same way, because the big size costs about sixteen times more per hour.
 
 DEMO SCRIPT (~7 min), console + terminal side by side:
 1. terminal, on ntw-demo: nproc → 2, then free -h → total under 1 GB
