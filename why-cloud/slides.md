@@ -40,6 +40,10 @@ src: ./pages/what-is-cloud.md
 ---
 
 ---
+src: ./pages/landscape.md
+---
+
+---
 src: ./pages/cloud-you-use.md
 ---
 
