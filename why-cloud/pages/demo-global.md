@@ -8,39 +8,39 @@ transition: fade-out
   <h3 class="!m-0">Ping the planet</h3>
 </div>
 
-<div class="grid grid-cols-2 gap-10 mt-10 items-center">
+<div class="grid grid-cols-2 gap-8 mt-8 items-start">
 
 <div>
-<TermWindow title="globalping: test from anywhere">
-<div><span class="text-green-400">$</span> globalping ping demo.infratify.com <span class="opacity-60">\</span></div>
-<div><span class="opacity-60">&nbsp;&nbsp;</span>from Europe,Asia,Oceania <span class="opacity-60">--latency</span></div>
-<div v-click="1" class="mt-1"><span class="text-purple-400">&gt;</span> London, GB &middot; <span class="text-green-400">Avg: 7.2 ms</span></div>
-<div v-click="1"><span class="text-purple-400">&gt;</span> Tokyo, JP &middot; <span class="text-green-400">Avg: 3.8 ms</span></div>
-</TermWindow>
+<ConsoleWindow title="Cloudflare · DNS">
+  <div class="flex items-center gap-3">
+    <mdi-record-circle-outline class="text-lg text-gray-500 flex-shrink-0" />
+    <span class="font-mono text-xs">A &middot; demo</span>
+    <span class="ml-auto font-mono text-xs text-gray-500">13.212.44.7</span>
+  </div>
+  <div v-click="1" class="flex items-center gap-3">
+    <mdi-cloud class="text-lg text-orange-500 flex-shrink-0" />
+    <span>proxy on</span>
+    <span class="ml-auto text-xs bg-orange-500/10 text-orange-700 px-2 py-0.5 rounded">stand in front</span>
+  </div>
+</ConsoleWindow>
+<p class="text-center text-sm opacity-60 mt-3">the click: the orange cloud</p>
 </div>
 
-<div class="space-y-7">
-  <div v-click="2" class="note-row items-center">
-    <mdi-earth class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>five continents, one command</b></p>
-  </div>
-  <div v-click="3" class="note-row items-center">
-    <mdi-map-marker-radius class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>answered nearby</b></p>
-  </div>
-  <div v-click="4" class="note-row items-center">
-    <mdi-server class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>still one remote server</b></p>
-  </div>
+<div v-click="2">
+<TermWindow title="globalping: test from anywhere">
+<div><span class="text-green-400">$</span> globalping ping demo.infratify.com</div>
+<div class="mt-1"><span class="text-purple-400">&gt;</span> London, GB &middot; <span class="text-green-400">7.2 ms</span></div>
+<div><span class="text-purple-400">&gt;</span> Tokyo, JP &middot; <span class="text-green-400">3.8 ms</span></div>
+</TermWindow>
+<p class="text-center text-sm opacity-60 mt-3">the proof: fast everywhere</p>
 </div>
 
 </div>
 
 <!--
 Labels to narrate:
-[click] globalping borrows volunteer machines around the world and pings our address from wherever we ask; the real output prints Min, Max and Avg per city, the transcript shows the city and its average.
-[click] single-digit and low double-digit milliseconds, because each probe reaches the Cloudflare copy in its own region, never our own server.
-[click] and behind all of it is still the one t3 machine we rented in part 1.
+[click] in the Cloudflare dashboard I add one DNS record for our address and flip the proxy toggle to the orange cloud. Grey means just point at our server; orange means stand in front of it, keeping a copy near every visitor.
+[click] the terminal proves the reach: globalping borrows volunteer machines worldwide and pings our address from each city. Single-digit milliseconds everywhere, because each probe hits the nearby Cloudflare copy, never our one server in part 1.
 
 DEMO SCRIPT (~10 min), Cloudflare dashboard then terminal:
 1. dashboard: DNS → Add record → type A, name demo, the server's IP, proxy status ON; narrate the orange cloud toggle: grey means "just point", orange means "stand in front"
