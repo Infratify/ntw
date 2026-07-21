@@ -8,39 +8,40 @@ transition: fade-out
   <h3 class="!m-0">Watch it grow</h3>
 </div>
 
-<div class="grid grid-cols-2 gap-10 mt-10 items-center">
+<div class="grid grid-cols-2 gap-8 mt-8 items-start">
 
 <div>
+<ConsoleWindow title="EC2 · change instance type">
+  <div class="flex items-center gap-3">
+    <mdi-memory class="text-lg text-gray-500 flex-shrink-0" />
+    <span>now: t3.micro</span>
+    <span class="ml-auto font-mono text-xs text-gray-500">2 cores</span>
+  </div>
+  <div v-click="1" class="flex items-center gap-3">
+    <mdi-menu-down class="text-lg text-blue-600 flex-shrink-0" />
+    <span>chosen: t3.2xlarge</span>
+    <span class="ml-auto font-mono text-xs bg-blue-500/10 text-blue-700 px-2 py-0.5 rounded">8 cores</span>
+  </div>
+</ConsoleWindow>
+<p class="text-center text-sm opacity-60 mt-3">the click: a bigger size</p>
+</div>
+
+<div v-click="2">
 <TermWindow title="nproc: count the cores">
 <div><span class="text-green-400">$</span> nproc</div>
 <div class="opacity-80">2</div>
-<div v-click="1" class="mt-1"><span class="text-green-400">$</span> nproc <span class="text-gray-500"># after the resize</span></div>
-<div v-click="1" class="text-orange-300">8</div>
+<div class="mt-1"><span class="text-green-400">$</span> nproc <span class="text-gray-500"># after the resize</span></div>
+<div class="text-orange-300">8</div>
 </TermWindow>
-</div>
-
-<div class="space-y-7">
-  <div v-click="2" class="note-row items-center">
-    <mdi-server class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>the same machine</b></p>
-  </div>
-  <div v-click="3" class="note-row items-center">
-    <mdi-timer-outline class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>about two minutes</b></p>
-  </div>
-  <div v-click="4" class="note-row items-center">
-    <mdi-arrow-down-bold-circle-outline class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>and back down later</b></p>
-  </div>
+<p class="text-center text-sm opacity-60 mt-3">the proof: 2 became 8</p>
 </div>
 
 </div>
 
 <!--
 Labels to narrate:
-[click] nproc asks the machine how many processor cores it has; it prints a single number. Two before, eight after: the transcript is the whole story of this demo.
-[click] same files, same page, same address; only the size changed.
-[click] and after the session it goes back down the same way, because the big size costs about 16 times more per hour. Renting big for one busy afternoon, then shrinking, is the point.
+[click] in the console I stop the machine, pick a bigger size from the dropdown, and start it again, about two minutes end to end. Nothing is reinstalled; same files, same page, same address.
+[click] then the terminal, for proof: nproc asks the machine how many processor cores it has, and it reports two before, eight after. After the session it shrinks back the same way, because the big size costs about sixteen times more per hour.
 
 DEMO SCRIPT (~7 min), console + terminal side by side:
 1. terminal, on ntw-demo: nproc → 2, then free -h → total under 1 GB

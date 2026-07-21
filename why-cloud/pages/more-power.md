@@ -8,31 +8,23 @@ transition: slide-left
 ### Pick a bigger size
 
 <div class="max-w-2xl mx-auto mt-8">
-<div class="rounded-xl overflow-hidden border border-gray-400/40 shadow-lg bg-gray-100 text-gray-700">
-  <div class="flex items-center gap-1.5 px-4 py-2.5 bg-gray-200 border-b border-gray-300">
-    <span class="w-3 h-3 rounded-full bg-red-400"></span>
-    <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-    <span class="w-3 h-3 rounded-full bg-green-400"></span>
-    <span class="ml-3 text-xs text-gray-500">EC2 console &middot; change instance type</span>
+<ConsoleWindow title="EC2 console · change instance type">
+  <div v-click="1" class="flex items-center gap-3">
+    <mdi-memory class="text-lg text-gray-500 flex-shrink-0" />
+    <span>now: t3.micro</span>
+    <span class="ml-auto font-mono text-xs text-gray-500">2 cores &middot; 1 GB</span>
   </div>
-  <div class="px-6 py-5 space-y-4 text-sm">
-    <div v-click="1" class="flex items-center gap-3">
-      <mdi-memory class="text-lg text-gray-500 flex-shrink-0" />
-      <span>now: t3.micro</span>
-      <span class="ml-auto font-mono text-xs text-gray-500">2 cores &middot; 1 GB</span>
-    </div>
-    <div v-click="2" class="flex items-center gap-3">
-      <mdi-menu-down class="text-lg text-blue-600 flex-shrink-0" />
-      <span>choose: t3.2xlarge</span>
-      <span class="ml-auto font-mono text-xs bg-blue-500/10 text-blue-700 px-2 py-0.5 rounded">8 cores &middot; 32 GB</span>
-    </div>
-    <div v-click="3" class="flex items-center gap-3">
-      <mdi-restart class="text-lg text-gray-500 flex-shrink-0" />
-      <span class="px-3 py-1 rounded-md bg-orange-600 text-white text-xs font-700">Apply</span>
-      <span class="ml-auto text-xs text-gray-500">one restart applies it</span>
-    </div>
+  <div v-click="2" class="flex items-center gap-3">
+    <mdi-menu-down class="text-lg text-blue-600 flex-shrink-0" />
+    <span>choose: t3.2xlarge</span>
+    <span class="ml-auto font-mono text-xs bg-blue-500/10 text-blue-700 px-2 py-0.5 rounded">8 cores &middot; 32 GB</span>
   </div>
-</div>
+  <div v-click="3" class="flex items-center gap-3">
+    <mdi-restart class="text-lg text-gray-500 flex-shrink-0" />
+    <span class="px-3 py-1 rounded-md bg-orange-600 text-white text-xs font-700">Apply</span>
+    <span class="ml-auto text-xs text-gray-500">one restart applies it</span>
+  </div>
+</ConsoleWindow>
 </div>
 
 <div v-click="4" class="mark-safe mt-8 text-center text-lg opacity-85">

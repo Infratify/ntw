@@ -20,7 +20,7 @@ src: ./pages/title.md
 ---
 
 ---
-src: ./pages/cli-notice.md
+src: ./pages/console-first.md
 ---
 
 ---
@@ -37,6 +37,10 @@ src: ./pages/server-shopping.md
 
 ---
 src: ./pages/what-is-cloud.md
+---
+
+---
+src: ./pages/landscape.md
 ---
 
 ---

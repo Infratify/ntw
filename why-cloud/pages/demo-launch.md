@@ -8,38 +8,40 @@ transition: fade-out
   <h3 class="!m-0">Rent one live</h3>
 </div>
 
-<div class="grid grid-cols-2 gap-10 mt-10 items-center">
+<div class="grid grid-cols-2 gap-8 mt-8 items-start">
 
 <div>
-<TermWindow title="ssh: into a server born today">
-<div><span class="text-green-400">$</span> ssh ubuntu@13.212.44.7</div>
-<div v-click="1" class="opacity-80 mt-1">Welcome to Ubuntu 24.04 LTS</div>
-<div v-click="1"><span class="text-green-400">ubuntu@ntw-demo</span>:<span class="text-blue-400">~</span>$ <span class="animate-pulse">▌</span></div>
-</TermWindow>
+<ConsoleWindow title="EC2 · launch instance">
+  <div class="flex items-center gap-3">
+    <mdi-ubuntu class="text-lg text-orange-600 flex-shrink-0" />
+    <span>Ubuntu 24.04</span>
+    <span class="ml-auto font-mono text-xs text-gray-500">t3.micro</span>
+  </div>
+  <div v-click="1" class="flex items-center gap-3">
+    <mdi-circle class="text-xs text-green-500 flex-shrink-0" />
+    <span>running</span>
+    <span class="ml-auto font-mono text-xs bg-green-500/10 text-green-700 px-2 py-0.5 rounded">13.212.44.7</span>
+  </div>
+  <div v-click="1" class="text-xs text-gray-500 pl-7">a new public address</div>
+</ConsoleWindow>
+<p class="text-center text-sm opacity-60 mt-3">the click: launch</p>
 </div>
 
-<div class="space-y-7">
-  <div v-click="2" class="note-row items-center">
-    <mdi-map-marker-radius class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>a real remote machine</b></p>
-  </div>
-  <div v-click="3" class="note-row items-center">
-    <mdi-timer-outline class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>running in a minute</b></p>
-  </div>
-  <div v-click="4" class="note-row items-center">
-    <mdi-currency-usd class="note-ico text-orange-600 dark:text-orange-400" />
-    <p><b>rented by the hour</b></p>
-  </div>
+<div v-click="2">
+<TermWindow title="ssh: into a server born today">
+<div><span class="text-green-400">$</span> ssh ubuntu@13.212.44.7</div>
+<div class="opacity-80 mt-1">Welcome to Ubuntu 24.04 LTS</div>
+<div><span class="text-green-400">ubuntu@ntw-demo</span>:<span class="text-blue-400">~</span>$ <span class="animate-pulse">▌</span></div>
+</TermWindow>
+<p class="text-center text-sm opacity-60 mt-3">the proof: a real login</p>
 </div>
 
 </div>
 
 <!--
 Labels to narrate:
-[click] the transcript shows the finish line: logging into a computer that does not exist yet as I say this sentence. It will live in an AWS datacenter, in the region closest to Malaysia.
-[click] from the launch click to a working login is about a minute; we'll watch the state change in the console.
-[click] and it bills by the hour, a few sen for this size; the exact price gets its own slide after the demo.
+[click] the console flips from pending to running in about a minute, and a public IP appears, a brand-new address on the internet for a machine that did not exist when I clicked launch.
+[click] then the terminal is the proof: I log in over ssh, and it answers. It bills by the hour, a few sen for this size; the exact price gets its own slide next.
 
 DEMO SCRIPT (~10 min), in the AWS console then the terminal:
 1. console: EC2 (the rent-a-server service) → Launch instance

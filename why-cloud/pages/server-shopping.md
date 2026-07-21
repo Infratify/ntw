@@ -8,36 +8,28 @@ transition: slide-down
 ### The old way
 
 <div class="max-w-2xl mx-auto mt-8">
-<div class="rounded-xl overflow-hidden border border-gray-400/40 shadow-lg bg-gray-100 text-gray-700">
-  <div class="flex items-center gap-1.5 px-4 py-2.5 bg-gray-200 border-b border-gray-300">
-    <span class="w-3 h-3 rounded-full bg-red-400"></span>
-    <span class="w-3 h-3 rounded-full bg-yellow-400"></span>
-    <span class="w-3 h-3 rounded-full bg-green-400"></span>
-    <span class="ml-3 text-xs text-gray-500">Supplier quotation</span>
+<ConsoleWindow title="Supplier quotation">
+  <div v-click="1" class="flex items-center gap-3">
+    <mdi-server class="text-lg text-gray-500 flex-shrink-0" />
+    <span>1&times; rack server</span>
+    <span class="ml-auto font-mono text-xs text-gray-500">RM 42,000</span>
   </div>
-  <div class="px-6 py-5 space-y-4 text-sm">
-    <div v-click="1" class="flex items-center gap-3">
-      <mdi-server class="text-lg text-gray-500 flex-shrink-0" />
-      <span>1&times; rack server</span>
-      <span class="ml-auto font-mono text-xs text-gray-500">RM 42,000</span>
-    </div>
-    <div v-click="2" class="flex items-center gap-3">
-      <mdi-snowflake class="text-lg text-blue-500 flex-shrink-0" />
-      <span>a cooled server room</span>
-      <span class="ml-auto font-mono text-xs text-gray-500">RM 1,800 / month</span>
-    </div>
-    <div v-click="3" class="flex items-center gap-3">
-      <mdi-account-wrench class="text-lg text-gray-500 flex-shrink-0" />
-      <span>an engineer on call</span>
-      <span class="ml-auto font-mono text-xs text-gray-500">one salary</span>
-    </div>
-    <div v-click="4" class="flex items-center gap-3">
-      <mdi-truck-delivery-outline class="text-lg text-red-500 flex-shrink-0" />
-      <span>delivery</span>
-      <span class="ml-auto text-xs bg-red-500/10 text-red-600 px-2 py-0.5 rounded font-600">six weeks</span>
-    </div>
+  <div v-click="2" class="flex items-center gap-3">
+    <mdi-snowflake class="text-lg text-blue-500 flex-shrink-0" />
+    <span>a cooled server room</span>
+    <span class="ml-auto font-mono text-xs text-gray-500">RM 1,800 / month</span>
   </div>
-</div>
+  <div v-click="3" class="flex items-center gap-3">
+    <mdi-account-wrench class="text-lg text-gray-500 flex-shrink-0" />
+    <span>an engineer on call</span>
+    <span class="ml-auto font-mono text-xs text-gray-500">one salary</span>
+  </div>
+  <div v-click="4" class="flex items-center gap-3">
+    <mdi-truck-delivery-outline class="text-lg text-red-500 flex-shrink-0" />
+    <span>delivery</span>
+    <span class="ml-auto text-xs bg-red-500/10 text-red-600 px-2 py-0.5 rounded font-600">six weeks</span>
+  </div>
+</ConsoleWindow>
 </div>
 
 <div v-click="5" class="mark-safe mt-8 text-center text-lg opacity-85">
