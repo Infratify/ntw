@@ -13,7 +13,7 @@ const base = import.meta.env.BASE_URL
 <div class="pop grid grid-cols-3 gap-x-8 gap-y-8 mt-8 max-w-3xl mx-auto text-center">
 
 <div v-click="1">
-  <div class="h-12 flex items-center justify-center"><logos-aws class="text-5xl dark:invert dark:hue-rotate-180" /></div>
+  <div class="h-12 flex items-center justify-center"><logos-aws class="text-4xl dark:invert dark:hue-rotate-180" /></div>
   <p class="text-sm font-700 mt-3 mb-0">AWS</p>
 </div>
 
@@ -33,12 +33,12 @@ const base = import.meta.env.BASE_URL
 </div>
 
 <div v-click="2">
-  <div class="h-12 flex items-center justify-center"><img :src="`${base}logos/tencent-cloud.svg`" class="max-h-10 max-w-[130px] w-auto" alt="" /></div>
+  <div class="h-12 flex items-center justify-center"><img :src="`${base}logos/tencent-cloud.svg`" class="max-h-12 max-w-[150px] w-auto" alt="" /></div>
   <p class="text-sm font-700 mt-3 mb-0">Tencent Cloud</p>
 </div>
 
 <div v-click="2">
-  <div class="h-12 flex items-center justify-center"><img :src="`${base}logos/alibaba-cloud.svg`" class="max-h-8 max-w-[150px] w-auto" alt="" /></div>
+  <div class="h-12 flex items-center justify-center"><img :src="`${base}logos/alibaba-cloud.svg`" class="max-h-9 max-w-[170px] w-auto" alt="" /></div>
   <p class="text-sm font-700 mt-3 mb-0">Alibaba Cloud</p>
 </div>
 

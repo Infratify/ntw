@@ -5,7 +5,7 @@ transition: slide-right
 
 ### Start tonight
 
-<div class="mt-12 max-w-2xl mx-auto space-y-8">
+<div class="mt-6 max-w-2xl mx-auto space-y-5">
 
 <div v-click="1" class="flex items-center gap-6">
   <logos-aws class="text-4xl flex-shrink-0 dark:invert dark:hue-rotate-180" />
@@ -41,7 +41,7 @@ transition: slide-right
 
 </div>
 
-<div v-click="5" class="mark-safe mt-12 text-center text-lg opacity-85">
+<div v-click="5" class="mark-safe mt-6 text-center text-lg opacity-85">
 Tonight needs a browser and <span v-mark="{ at: 5, color: '#ea580c', type: 'highlight' }">nothing else</span>.
 </div>
 
