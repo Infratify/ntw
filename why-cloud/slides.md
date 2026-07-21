@@ -86,3 +86,7 @@ src: ./pages/start-tonight.md
 ---
 src: ./pages/thanks.md
 ---
+
+---
+src: ./pages/attendance.md
+---
