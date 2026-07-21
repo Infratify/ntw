@@ -20,7 +20,7 @@ src: ./pages/title.md
 ---
 
 ---
-src: ./pages/cli-notice.md
+src: ./pages/console-first.md
 ---
 
 ---
