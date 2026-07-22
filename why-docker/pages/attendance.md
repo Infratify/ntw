@@ -33,7 +33,7 @@ Say:
 - watching on the same phone they need to scan with: form link also dropping in Zoom chat, tap it there
 - white panel behind the code is deliberate: phone scanners fail on dark or low-contrast codes
 
-PREP: the shipped qr-attendance.png is a PLACEHOLDER; before the session export Thursday's Google Form QR over it, decode with zbarimg, and confirm the form ID differs from the other decks
+PREP: qr-attendance.png is the real Thursday form QR (decoded with zbarimg, form ID confirmed unique vs the other decks); if the form ever changes, re-export and re-verify the same way
 PREP: paste the form link into Zoom chat at the start of Q&A (covers phone-only viewers)
 FALLBACK: projected code will not scan: read the Zoom chat link aloud, keep the message pinned
 -->

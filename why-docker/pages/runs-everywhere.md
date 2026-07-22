@@ -50,9 +50,9 @@ transition: slide-up
 </div>
 
 <div v-click="4">
-  <logos-chrome class="text-5xl mx-auto" />
-  <p class="text-base font-700 mt-3 mb-1">the browser</p>
-  <p class="text-xs opacity-60 m-0">no install at all</p>
+  <logos-digital-ocean-icon class="text-5xl mx-auto" />
+  <p class="text-base font-700 mt-3 mb-1">DigitalOcean</p>
+  <p class="text-xs opacity-60 m-0">a smaller cloud</p>
 </div>
 
 </div>
@@ -66,7 +66,7 @@ One image runs on <span v-mark="{ at: 5, color: '#2563eb', type: 'underline' }">
 - the point of the box: the machine stops mattering; same image, top to bottom of this wall
 - [click] Docker Desktop, a free app, puts the engine on Windows and Mac laptops; that is how every laptop demo runs today
 - [click] Linux servers run containers natively, and a palm-sized Raspberry Pi, a computer about the price of a family dinner out, runs the very same images
-- [click] every big cloud takes the same box with zero changes: the AWS VM serving the chat app right now,
-- [click] Google's cloud and Microsoft's too; and a free playground site runs docker entirely in a browser tab, it comes back on the start-tonight slide near the end, nothing to note down yet
+- [click] every big cloud takes the same box with zero changes: the AWS VM serving the chat app right now, and Google's cloud just the same
+- [click] Microsoft's cloud too, and smaller companies like DigitalOcean, which rents simple servers for a few dollars a month; big or small, the same box runs unchanged
 - [click] one image, no versions of it per machine; that is the "works everywhere" from the banner, and the next demo pulls a whole AI off the shelf for real
 -->

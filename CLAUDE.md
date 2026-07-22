@@ -74,12 +74,14 @@ survive word-level cleanup, so they are banned outright:
 - em/en dashes, Title Case headers, rule-of-three padding.
 The lint enforces the mechanical subset; the rest is on the author.
 
-**Visual.** Must pass BOTH color schemes; verify with screenshots in dark
-and light at final click state before calling a deck done (jump clicks via
-`?clicks=N`, but confirm v-mark slides at natural click pacing too —
-rough-notation marks often skip drawing on URL jumps; step with arrow keys).
-In a scripted browser, force a scheme with
-`localStorage.setItem('slidev-color-schema', 'dark'|'light')` then reload.
+**Visual.** Every deck is dark-locked: `colorSchema: dark` in the `slides.md`
+headmatter forces dark at runtime and makes `slidev-color-schema` in
+localStorage a no-op, so light mode never renders and you do NOT screenshot
+or test it. Verify in dark only, at final click state, before calling a deck
+done (jump clicks via `?clicks=N`, but confirm v-mark slides at natural click
+pacing too — rough-notation marks often skip drawing on URL jumps; step with
+arrow keys). Keep authoring the `dark:` half of the accent pair (see below)
+anyway so the deck stays correct if the lock is ever lifted.
 `mdi-*`/`logos-*` icon components render a **1.2em box**; a custom inline
 SVG sharing an icon row must use `width="1.2em" height="1.2em"` plus the
 same `text-<size>` class, or its labels sit off-baseline.
@@ -167,6 +169,7 @@ from a Word file to a Google Doc, restore = time travel).
    `pages/<slug>.md`, fill the slots; wire them in `slides.md`.
 3. `pnpm lint:decks` must pass (titles, prose budget, banned phrasing,
    notes present).
-4. `pnpm dev`, screenshot every slide in both color schemes at final click
-   state, fix contrast; re-check v-mark slides at natural click pacing.
+4. `pnpm dev`, screenshot every slide in dark only (decks are dark-locked;
+   see Visual) at final click state, fix contrast; re-check v-mark slides at
+   natural click pacing.
 5. `pnpm build` must pass.

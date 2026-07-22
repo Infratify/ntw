@@ -51,11 +51,12 @@ ideas to everyday equivalents, and let the live demo carry the proof.
 
 1. `pnpm lint:decks` — must be clean.
 2. `pnpm build` in the deck dir — must pass.
-3. `pnpm dev --port 3031` in the deck dir, then screenshot EVERY slide in
-   BOTH schemes at final click state with the Playwright tools:
+3. `pnpm dev --port 3031` in the deck dir, then screenshot EVERY slide at
+   final click state with the Playwright tools. Decks are dark-locked
+   (`colorSchema: dark` in the headmatter), so dark is the only runtime
+   scheme — screenshot dark ONLY, do not test light (setting
+   `slidev-color-schema` to `light` is a no-op under the lock):
    - slide N is `http://localhost:3031/#/N?clicks=<final>`;
-   - force scheme: `localStorage.setItem('slidev-color-schema', 'dark')`
-     (or `'light'`) via browser_evaluate, then reload;
    - v-mark slides: marks often skip drawing on `?clicks=N` jumps — load
      `?clicks=0` and step with ArrowRight presses, then screenshot;
    - check contrast, label baselines across tiles, and that nothing

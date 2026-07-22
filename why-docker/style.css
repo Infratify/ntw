@@ -137,6 +137,13 @@ html.dark .slidev-layout a {
 .slidev-vclick-hidden .type-line.wide {
   max-width: 0;
 }
+/* a 43-char command ("curl -fsSL https://get.docker.com | sudo sh") needs the widest track */
+.type-line.xwide {
+  max-width: 44ch;
+}
+.slidev-vclick-hidden .type-line.xwide {
+  max-width: 0;
+}
 
 /* ---- check stamp: stroke draws itself when its v-click fires ---- */
 .check-path {
