@@ -22,8 +22,13 @@ transition: fade-out
     <span>chosen: t3.2xlarge</span>
     <span class="ml-auto font-mono text-xs bg-blue-500/10 text-blue-700 px-2 py-0.5 rounded">8 cores</span>
   </div>
+  <div v-click="1" class="flex items-center gap-3">
+    <mdi-restart class="text-lg text-gray-500 flex-shrink-0" />
+    <span>stop, change, start</span>
+    <span class="ml-auto text-xs text-gray-500">about two minutes</span>
+  </div>
 </ConsoleWindow>
-<p class="text-center text-sm opacity-60 mt-3">the click: a bigger size</p>
+<p class="text-center text-sm opacity-60 mt-3">the change: a two-minute restart</p>
 </div>
 
 <div v-click="2">
