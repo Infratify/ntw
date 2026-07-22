@@ -47,7 +47,7 @@ transition: slide-right
 DEMO SCRIPT (~8 min), SSH'd into the cloud VM (any Ubuntu VM works):
 1. docker run hello-world, and read its printed note aloud: docker's own proof the setup works; the pull lines print live, the shelf it fetched from gets a name in part 2
 2. open-webui: "command not found"; the chat app is genuinely not installed here
-3. ASK: spoken vote before Enter: this VM has never seen the chat app, will docker run work? A works, B fails; read the chat, then press Enter
+3. ASK: spoken vote before Enter: nobody ever installed the chat app here, will docker run work? A works, B fails; read the chat, then press Enter
 4. run the slide's command; the box was copied here in prep, about 7 GB, so it starts straight away; gloss -d "run in the background" and -p 80:8080 "connect the VM's front door to the box's door 8080"
 5. browser: http://VM_IP, the same chat page the laptop showed
 6. docker ps: the table of running boxes: ID, image, "Up X seconds", ports

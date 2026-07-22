@@ -67,6 +67,6 @@ One image runs on <span v-mark="{ at: 5, color: '#2563eb', type: 'underline' }">
 - [click] Docker Desktop, a free app, puts the engine on Windows and Mac laptops; that is how every laptop demo runs today
 - [click] Linux servers run containers natively, and a palm-sized Raspberry Pi, a computer about the price of a family dinner out, runs the very same images
 - [click] every big cloud takes the same box with zero changes: the AWS VM serving the chat app right now,
-- [click] Google's cloud and Microsoft's too; and a free playground site runs docker entirely in a browser tab, it is on the last slide of today's deck, nothing to note down yet
+- [click] Google's cloud and Microsoft's too; and a free playground site runs docker entirely in a browser tab, it comes back on the start-tonight slide near the end, nothing to note down yet
 - [click] one image, no versions of it per machine; that is the "works everywhere" from the banner, and the next demo pulls a whole AI off the shelf for real
 -->
