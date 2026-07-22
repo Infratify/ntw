@@ -52,7 +52,7 @@ clicks: 6
 </div>
 
 <div v-click="6" class="mark-safe mt-3 text-center text-lg opacity-85">
-A container carries <span v-mark="{ at: 6, color: '#2563eb', type: 'highlight' }">no operating system</span>.
+Isolation of machines vs isolation of<span v-mark="{ at: 6, color: '#2563eb', type: 'highlight' }">processes</span>.
 </div>
 
 <!--
