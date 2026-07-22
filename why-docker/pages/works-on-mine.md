@@ -25,11 +25,11 @@ transition: slide-up
     </div>
     <div v-click="2" class="flex items-center gap-3">
       <mdi-package-variant class="text-lg text-gray-400 flex-shrink-0" />
-      <span class="font-mono text-xs">flask installed</span>
+      <span class="font-mono text-xs">open-webui installed</span>
     </div>
     <div v-click="3" class="flex items-center gap-3">
       <mdi-check-circle-outline class="text-lg text-green-500 flex-shrink-0" />
-      <span class="font-mono text-xs">the page loads</span>
+      <span class="font-mono text-xs">the chat loads</span>
     </div>
   </div>
 </div>
@@ -44,8 +44,8 @@ transition: slide-up
   <div class="opacity-60">Python 3.8.10</div>
 </div>
 <div v-click="2" class="mt-2">
-  <div><span class="text-green-400">$</span> python3 app.py</div>
-  <div class="text-red-400">ModuleNotFoundError: 'flask'</div>
+  <div><span class="text-green-400">$</span> pip install open-webui</div>
+  <div class="text-red-400">No matching distribution found</div>
 </div>
 <div v-click="3" class="mt-2">
   <div><span class="text-green-400">$</span> curl localhost:8080</div>
@@ -62,10 +62,11 @@ The same code <span v-mark="{ at: 4, color: '#dc2626', type: 'highlight' }">fail
 </div>
 
 <!--
-Pose the pain first: you build a small app on your laptop, a page for the nasi lemak stall from Tuesday, and it runs beautifully. Then you copy it to the office server, or a friend's PC.
-
-[click] the laptop has Python 3.12. Python is the language the app is written in; the server has an older one.
-[click] the laptop has flask, a library, meaning ready-made code the app borrows. Nobody ever installed it on the server.
-[click] so on the laptop the page loads, and on the server the exact same file crashes, and asking the server for the page gets "connection refused". curl is just a way to request a page from the terminal.
-[click] this sentence is famous in software teams: "but it works on my machine". Every team says it, because every machine collects its own versions and settings over time. The app was never broken; the machines disagree. Docker exists to end this argument.
+- ASK: type 1 if you have ever heard, or said, "but it works on my machine"; read the flood back
+- pose the pain: today's running example is Open WebUI, a free ChatGPT-style chat app anyone can run on their own computer; on the laptop it purrs; then try the office server
+- [click] laptop has Python 3.12; Python = the language the app is written in; the server has an older one
+- [click] laptop has open-webui installed via pip, Python's library fetcher; the server's old Python refuses the same install outright
+- [click] laptop: chat loads; server: nothing to start, so asking it for the page gets "connection refused"; curl = a way to request a page from the terminal
+- [click] the famous sentence; every team says it, because every machine collects its own versions and settings over time; the app was never broken, the machines disagree; docker exists to end this argument
+- STORY: land = the machines disagreed, not the code; pick a real moment when something you built ran at home and died in front of someone else (client demo, teammate's laptop, deployment day); beats: ordinary setup, the failure in the moment, what it cost in hours or face, how a container would change the ending; 60 to 90 seconds; close by naming the point
 -->

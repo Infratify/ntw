@@ -27,6 +27,8 @@ const base = import.meta.env.BASE_URL
 </div>
 
 <!--
-Welcome everyone as they join. Housekeeping: ~1h45 of sharing and live demos, then Q&A. Questions go in the Zoom chat anytime; I batch them at each break.
-Today stands alone: anyone who missed the earlier sessions can follow everything. If you were here Wednesday, the cloud server we launched comes back today with a starring role.
+- welcome people as they join; housekeeping: ~1h45 of sharing + live demos, then Q&A
+- questions in Zoom chat anytime, batched at each break
+- today stands alone: no need to have seen the earlier sessions
+- a cloud VM has a starring role today, and an AI runs on an ordinary laptop
 -->

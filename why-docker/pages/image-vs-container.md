@@ -13,7 +13,7 @@ clicks: 4
     :width="340"
     :height="270"
     :nodes="[
-      { shape: 'rect', cx: 170, cy: 55, w: 200, h: 52, icon: 'file-multiple', color: 'blue', label: 'stall-page image', at: 0 },
+      { shape: 'rect', cx: 170, cy: 55, w: 200, h: 52, icon: 'file-multiple', color: 'blue', label: 'chat-app image', at: 0 },
       { shape: 'hexagon', cx: 70, cy: 215, w: 96, h: 56, icon: 'cube-outline', color: 'green', label: 'copy 1', at: 2 },
       { shape: 'hexagon', cx: 170, cy: 215, w: 96, h: 56, icon: 'cube-outline', color: 'green', label: 'copy 2', at: 2 },
       { shape: 'hexagon', cx: 270, cy: 215, w: 96, h: 56, icon: 'cube-outline', color: 'green', label: 'copy 3', at: 3 },
@@ -48,10 +48,10 @@ One image starts as <span v-mark="{ at: 4, color: '#2563eb', type: 'highlight' }
 </div>
 
 <!--
-Two words carry the whole session, and a kuih mould explains both: one acuan, many identical kuih, and the mould itself is never eaten.
-
-[click] the image is the mould: the box's contents written down and frozen. It sits on disk, does nothing, and never changes.
-[click] a container is one kuih pressed from that mould: the image brought to life, actually running. This is the thing that serves the page.
-[click] docker run presses the mould again. Each press takes about a second, every copy comes out identical, and the copies never share anything: stop copy 2 and copies 1 and 3 keep serving.
-[click] why anyone cares: a busy day at the stall means pressing three more copies, not building three more servers. The demo after next does exactly this.
+- two words carry the whole session; a kuih mould explains both: one acuan, many identical kuih, and the mould itself is never eaten
+- [click] the image is the mould: the box's contents written down and frozen; sits on disk, does nothing, never changes
+- [click] a container is one kuih pressed from that mould: the image brought to life, actually running; this is the thing that serves the chat
+- [click] docker run presses the mould again: about a second per press, every copy identical, and the copies never share anything
+- ASK: spoken vote: if we stop copy 2, do copies 1 and 3 keep serving? A yes, B no; read the top pick, then confirm: yes, boxes keep to themselves
+- [click] why anyone cares: a busy day means pressing more copies, not building more servers; and today's finale starts two DIFFERENT images side by side, the chat app and its brain, from one file
 -->

@@ -44,6 +44,10 @@ src: ./pages/image-vs-container.md
 ---
 
 ---
+src: ./pages/manual-way.md
+---
+
+---
 src: ./pages/demo-one-command.md
 ---
 
@@ -60,7 +64,7 @@ src: ./pages/runs-everywhere.md
 ---
 
 ---
-src: ./pages/demo-ship.md
+src: ./pages/ai-shelf.md
 ---
 
 ---
@@ -68,11 +72,11 @@ src: ./pages/light-quick.md
 ---
 
 ---
-src: ./pages/seconds.md
+src: ./pages/vm-vs-container.md
 ---
 
 ---
-src: ./pages/demo-fleet.md
+src: ./pages/demo-stack.md
 ---
 
 ---
@@ -85,4 +89,8 @@ src: ./pages/start-tonight.md
 
 ---
 src: ./pages/thanks.md
+---
+
+---
+src: ./pages/attendance.md
 ---

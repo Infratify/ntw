@@ -33,6 +33,15 @@ Questions? The floor is yours.
 </div>
 
 <!--
-Q&A runs 15-30 min. Expect: "is Docker free?" (the Docker engine is free and open source; Docker Desktop is free for personal use, learning and small companies), "container vs virtual machine again?" (a VM carries a whole spare operating system, a container borrows the machine's own Linux; both matter, and the cloud server itself is a VM), "does my app have to be special?" (anything that runs on Linux can be boxed; Windows containers exist but are niche), "what is Kubernetes?" (a manager for many containers across many machines; docker is the alphabet, learn it first), "is Docker Hub safe?" (prefer the images marked official, like nginx; anyone can upload, the same caution as app stores), "can containers break my laptop?" (they are isolated, and stop plus rm remove them completely; today's fleet left the laptop unchanged).
-Point at the three icons and say how to ask: type it into the Zoom chat, press the raise-hand button, or unmute and speak. Read each chat question out loud before answering it, so everyone hears what was asked.
+- Q&A runs 15-30 min; point at the three icons and say how to ask: type in Zoom chat, press raise-hand, or unmute and speak; read each chat question aloud before answering, so everyone hears what was asked
+- expect:
+  - is Docker free? the engine is free and open source; Docker Desktop is free for personal use, learning and small companies
+  - container vs virtual machine again? a VM carries a whole spare operating system, a container borrows the machine's own Linux; both matter, and today's cloud machine itself was a VM, the diagram slide showed both side by side
+  - does my app have to be special? anything that runs on Linux can be boxed; Windows containers exist but are niche
+  - what is Kubernetes? a manager for many containers across many machines; docker is the alphabet, learn it first
+  - is Docker Hub safe? prefer the images marked official, like python and redis; anyone can upload, the same caution as app stores
+  - can containers break my laptop? they are isolated, and stop plus rm remove them completely; today's stack left the laptop unchanged
+  - was the AI really offline? yes: the model file downloaded the night before, and the answers were computed on this laptop's processor; no account, no subscription, questions never leave the machine
+  - do I need a gaming PC for AI? the 1.3 GB brain from today runs on an ordinary laptop processor at reading speed; bigger brains want a graphics card, start small
+  - is that AI as good as ChatGPT? no, today's brain is a small free one; bigger free models exist for stronger machines, and the point is the packaging: any of them arrives the same one-command way
 -->

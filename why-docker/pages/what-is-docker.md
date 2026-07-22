@@ -11,8 +11,8 @@ clicks: 4
 <div>
   <LayerStack
     :layers="[
-      { ins: 'Your app', sub: 'the stall page', icon: 'application-outline', color: 'green' },
-      { ins: 'Its web server', sub: 'nginx, already set up', icon: 'server', color: 'amber' },
+      { ins: 'Your app', sub: 'the AI chat app', icon: 'application-outline', color: 'green' },
+      { ins: 'Its Python', sub: 'the right version', icon: 'language-python', color: 'amber' },
       { ins: 'Its libraries', sub: 'every piece it borrows', icon: 'package-variant-closed', color: 'blue' },
       { ins: 'Its settings', sub: 'versions · ports · files', icon: 'cog', color: 'slate' },
     ]"
@@ -41,10 +41,11 @@ The box holds the app and <span v-mark="{ at: 4, color: '#2563eb', type: 'underl
 </div>
 
 <!--
-Anchor to the real thing: before steel shipping containers, cargo was loaded loose, piece by piece, and every port did it differently. The sealed box made every ship, crane and truck compatible overnight. Docker is that box, for software. The stack on the left is what gets packed for our stall page.
-
-[click] a container is one sealed box: the app, its web server, its libraries, its settings, all inside. nginx (say it: engine-x) is a small free program whose whole job is handing web pages to browsers; it comes packed and pre-configured.
-[click] because everything travels inside the box, the inside is identical wherever it lands: my laptop, the office server from the last slide, the cloud. The Python-version argument cannot happen; the box brings its own.
-[click] and boxes keep to themselves. Two containers on one machine can use two different Python versions and never meet. Deleting a box leaves the machine exactly as it was.
-[click] that is the whole idea in one line, and part 1's demo puts a real one on a real server.
+- PROP: hold a sealed food container to the camera: lunch packed at home, identical wherever it is opened; the whole slide in one object
+- anchor: before steel shipping containers, cargo was loaded loose and every port did it differently; the sealed box made every ship, crane and truck compatible overnight; docker is that box, for software
+- the stack on the left is what gets packed for the chat app
+- [click] one sealed box: the app, the exact Python it wants, every library, every setting, all inside
+- [click] everything travels inside, so the inside is identical wherever it lands: laptop, the office server from the last slide, the cloud; the Python-version argument from a minute ago cannot happen, the box brings its own
+- [click] boxes keep to themselves: two containers on one machine can use two different Python versions and never meet; deleting a box leaves the machine exactly as it was
+- [click] the whole idea in one line; part 1's demo puts a real one on a real server
 -->

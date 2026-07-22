@@ -31,14 +31,15 @@ transition: slide-right
 </div>
 
 <div v-click="4" class="mt-14 text-center text-base opacity-80">
-One command starts a real web server.
+One command starts the app on a cloud VM.
 </div>
 
 <!--
-Session map; the recap slide mirrors it at the end. Housekeeping to SAY, not show: nothing to install on their side, they just watch; questions go in the Zoom chat anytime and I batch them at each break.
-
-[click] First, the problem: an app that runs on one computer and crashes on another, and the sealed box Docker packs to end that.
-[click] Then shipping: the same box pushed to a public shelf online, and pulled down onto any machine, identical every time.
-[click] And speed: a box starts in about a second, so one ordinary laptop can run a whole fleet of them.
-[click] The headline moment: one typed command gives us a running web server on a real cloud machine, and everyone here opens it live. About 5 minutes in at this point.
+- session map; the recap slide mirrors it at the end
+- housekeeping to SAY, not show: nothing to install, they just watch; questions in Zoom chat, batched at breaks
+- ASK: type 1 if you were here Wednesday for Why Cloud; the volume decides how much a cloud VM needs re-introducing later
+- [click] first the problem: an app that runs on one computer and crashes on another, and the sealed box docker packs to end that; today's example app is a ChatGPT-style chat you run yourself
+- [click] then shipping: boxes live on a public shelf online, pulled onto any machine, identical every time; the shelf ships whole AI programs too, and we pull one live
+- [click] and speed: a box starts in about a second, so the finale starts an entire AI stack, the chat app plus its brain, in one command
+- [click] headline moment: one typed command puts the chat app on a real cloud VM, everyone opens it live on their phones; about 5 minutes in at this point
 -->

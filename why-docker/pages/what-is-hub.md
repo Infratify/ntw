@@ -44,14 +44,14 @@ clicks: 4
 </div>
 
 <div v-click="4" class="mark-safe mt-4 text-center text-lg opacity-85">
-Today's nginx image came from <span v-mark="{ at: 4, color: '#2563eb', type: 'highlight' }">Docker Hub</span>.
+Today's hello-world box came from <span v-mark="{ at: 4, color: '#2563eb', type: 'highlight' }">Docker Hub</span>.
 </div>
 
 <!--
-Tuesday, GitHub kept our code online. Docker Hub does the same job for boxes.
-
-[click] Docker Hub is a free website: a public shelf of ready-made images, uploaded by their makers. nginx is there, databases are there, whole app kits are there.
-[click] push uploads an image you built, from your laptop to the shelf. One account, one command.
-[click] pull downloads it onto any machine: a teammate's laptop, an office server, a cloud machine. The box arrives byte-for-byte identical, which is why "works on mine" stops being an argument.
-[click] and you have already seen the shelf in action: when docker run couldn't find nginx on our server this morning, it pulled it from Docker Hub by itself.
+- ASK: Tuesday folks: which website kept our code online? type it in the chat; read the GitHubs back
+- Docker Hub does that same job for boxes
+- [click] a free website: a public shelf of ready-made images, uploaded by their makers; databases are there, web servers are there, and ollama, the AI runtime a later demo runs, is there; GitHub runs a sister shelf called ghcr.io, the address on the chat-app command, same idea
+- [click] push uploads an image you built, from your laptop to the shelf; one account, one command
+- [click] pull downloads it onto any machine: a teammate's laptop, an office server, a cloud machine; the box arrives byte-for-byte identical, which is why "works on mine" stops being an argument
+- [click] the shelf already acted today: when docker run could not find hello-world on the VM, it pulled it from Docker Hub by itself, and we watched those pull lines print
 -->

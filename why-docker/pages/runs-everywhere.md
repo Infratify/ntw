@@ -32,9 +32,9 @@ transition: slide-up
 </div>
 
 <div v-click="3">
-  <logos-aws class="text-5xl mx-auto dark:invert" />
+  <logos-aws class="text-5xl mx-auto dark" />
   <p class="text-base font-700 mt-3 mb-1">AWS</p>
-  <p class="text-xs opacity-60 m-0">Wednesday's cloud</p>
+  <p class="text-xs opacity-60 m-0">today's rented VM</p>
 </div>
 
 <div v-click="3">
@@ -62,11 +62,11 @@ One image runs on <span v-mark="{ at: 5, color: '#2563eb', type: 'underline' }">
 </div>
 
 <!--
-The point of the box is that the machine stops mattering. Same image, top to bottom of this wall.
-
-[click] Docker Desktop, a free app, puts the engine on Windows and Mac laptops; that is how the build demo runs later today.
-[click] Linux servers run containers natively, and a palm-sized Raspberry Pi, a computer about the price of a family dinner out, runs the very same images.
-[click] every big cloud takes the same box with zero changes: the AWS machine we launched Wednesday,
-[click] Google's cloud and Microsoft's too. And a free playground site runs docker entirely in a browser tab; it is on the last slide of today's deck, so nobody needs to note anything down yet.
-[click] one image, no versions of it per machine. That is the "works everywhere" from the banner, and the next demo ships one for real.
+- ASK: what are you watching on? type W Windows, M Mac, L Linux; read the split back: every answer on this wall runs the same box
+- the point of the box: the machine stops mattering; same image, top to bottom of this wall
+- [click] Docker Desktop, a free app, puts the engine on Windows and Mac laptops; that is how every laptop demo runs today
+- [click] Linux servers run containers natively, and a palm-sized Raspberry Pi, a computer about the price of a family dinner out, runs the very same images
+- [click] every big cloud takes the same box with zero changes: the AWS VM serving the chat app right now,
+- [click] Google's cloud and Microsoft's too; and a free playground site runs docker entirely in a browser tab, it is on the last slide of today's deck, nothing to note down yet
+- [click] one image, no versions of it per machine; that is the "works everywhere" from the banner, and the next demo pulls a whole AI off the shelf for real
 -->

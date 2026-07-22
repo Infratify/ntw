@@ -21,7 +21,7 @@ transition: slide-left
   <mdi-feather class="text-3xl text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
   <div>
     <p class="font-700 text-lg m-0">light to move</p>
-    <p class="text-sm opacity-70 mt-1 mb-0">an image is megabytes</p>
+    <p class="text-sm opacity-70 mt-1 mb-0">no spare OS inside</p>
   </div>
 </div>
 
@@ -44,10 +44,9 @@ transition: slide-left
 </div>
 
 <!--
-Part 3 explains why the demos have felt instant, then measures it.
-
-[click] a container doesn't boot an operating system, because it borrows the one already running underneath. Starting a box is closer to opening an app than to switching on a computer.
-[click] images are small. The nginx box is a few dozen megabytes, about one WhatsApp video, which is why the pull this morning took seconds.
-[click] the engine underneath is the machine's own Linux kernel, the core program from Monday's session. The heavier alternative, a virtual machine, carries an entire spare operating system per app, gigabytes each, minutes to boot.
-[click] and because each box is so light, one ordinary laptop happily runs dozens side by side. The final demo starts a small fleet and then wipes it clean.
+- part 3 explains why the demos have felt instant, then measures it
+- [click] a container does not boot an operating system, because it borrows the one already running underneath; starting a box is closer to opening an app than to switching on a computer
+- [click] a box carries the app and its needs, nothing more: the hello-world box is a few kilobytes, smaller than one photo; the AI chat box is a few gigabytes, because a whole app rides inside; neither carries an operating system
+- [click] the engine underneath is the machine's own Linux kernel, the core program from Monday's session; the heavier alternative, a virtual machine, carries an entire spare operating system per app, gigabytes MORE on top, minutes to boot
+- [click] and because a box borrows the running engine, one ordinary laptop happily runs many side by side; the finale starts a two-box AI stack and wipes it clean after
 -->

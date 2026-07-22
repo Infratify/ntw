@@ -21,6 +21,7 @@ transition: fade-out
 </div>
 
 <!--
-Reassure them straight away: nobody needs to memorise commands, and this is not real coding, it is just typing short instructions instead of clicking buttons. Almost everything today, both the explaining and the live demos, happens inside a black window like this one, because that is simply how Docker gets driven: a handful of typed commands instead of clicking through an app.
-One fair warning, said with a smile: once friends and family see a black screen with green text and fast typing, they will assume this is hacking, or that we have stepped straight into the Matrix. Let them think that.
+- reassure straight away: nobody memorises commands, this is not real coding, just typing short instructions instead of clicking buttons
+- almost everything today, explaining and demos, happens in a black window like this one: that is simply how docker gets driven
+- fair warning, with a smile: family sees green text and fast typing, assumes hacking or the Matrix; let them think that
 -->

@@ -38,7 +38,10 @@ The first command tonight is <span v-mark="{ at: 4, color: '#2563eb', type: 'hig
 </div>
 
 <!--
-Captions to narrate: play-with-docker is a free playground run by Docker itself: sign in with a free Docker Hub account and a Linux machine appears in the browser tab for a few hours. Nothing to install, works on any laptop, including the one you are watching this on.
-On Windows, one PowerShell command installs Docker Desktop, the app with the whale icon; it bundles everything used today. On a Mac, the same Docker Desktop comes from the download page; both Apple Silicon and Intel are fine.
-Landing line to say out loud: wherever you land, type docker run hello-world. It fetches a tiny image and prints a short note confirming everything works, the exact box that opened today's first demo. Tonight's setup is one account or one install.
+- captions to narrate: play-with-docker is a free playground run by Docker itself: sign in with a free Docker Hub account and a Linux machine appears in the browser tab for a few hours; nothing to install, works on any laptop, including the one you are watching this on
+- on Windows, one PowerShell command installs Docker Desktop, the app with the whale icon; it bundles everything used today; on a Mac, the same Docker Desktop comes from the download page, Apple Silicon and Intel both fine
+- for the AI from today: ollama and open-webui are both free and open source on GitHub; the exact commands from today's slides work on any machine with docker; the brain file downloads once, then everything runs offline
+- landing line to say out loud: wherever you land, type docker run hello-world; it fetches a tiny image and prints a short note confirming everything works; tonight's setup is one account or one install
+- honest sizing note to say with it: the hello-world box is tiny; the AI boxes from today are several gigabytes, so start those on home wifi, not a hotspot
+- ASK: type 1 if you will open play-with-docker tonight; read the count back warmly
 -->
