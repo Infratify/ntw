@@ -33,7 +33,18 @@ Questions? The floor is yours.
 </div>
 
 <!--
-Q&A runs 15-30 min; this was the finale, so also thank the people who came all week. Expect: "Terraform or Ansible first?" (Terraform; it builds the machines, Ansible configures their insides, and today's whole demo was Terraform), "is destroy dangerous?" (it only touches what its own folder describes, lists every item, and waits for a typed yes; the rest of the account is untouched), "do companies really work like this?" (open any DevOps job ad and count how often Terraform appears; the console stays useful for exploring, code is for anything that must be rebuilt), "is Terraform free?" (free to download and use; the paid products are team conveniences), "what if someone edits the server by hand afterwards?" (the next plan flags the difference between file and reality, called drift, and apply puts the file back in charge), "I missed the earlier sessions" (each stands alone). If asked what to learn after the week: Linux and Git first, then the cloud session's material.
-Point at the three icons and say how to ask: type it into the Zoom chat, press the raise-hand button, or unmute and speak. Read each chat question out loud before answering it, so everyone hears what was asked.
-Close the week factually: Monday a terminal, Tuesday a page with history, Wednesday a rented server, Thursday a container, Friday all of it as code. Thank them and end the call.
+- Q&A runs 15-30 min; this was the finale = also thank the people who came all week
+- point at the three icons for how to ask: Zoom chat, raise-hand button, or unmute + speak; read each chat question aloud before answering
+
+Expect:
+- "Terraform or Ansible first?" = Terraform builds the machines, Ansible configures their insides; today was all Terraform
+- "is destroy dangerous?" = only touches what its own folder describes, lists every item, waits for a typed yes; the rest of the account untouched
+- "do companies really work like this?" = open any DevOps job ad, count the Terraform; console for exploring, code for anything that must be rebuilt
+- "is Terraform free?" = free to download + use; paid products are team conveniences
+- "what if someone edits the server by hand after?" = next plan flags file vs reality (drift), apply puts the file back in charge
+- "I missed the earlier sessions" = each stands alone
+- what to learn after the week: Linux + Git first, then the cloud session's material
+
+- close the week factually: Monday a terminal, Tuesday a page with history, Wednesday a rented server, Thursday a container, Friday all of it as code
+- thank them, end the call
 -->

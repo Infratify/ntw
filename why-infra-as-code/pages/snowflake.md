@@ -48,13 +48,17 @@ Ops teams call this a snowflake server.
 </div>
 
 <!--
-Nearly every company has one, so describe it and watch the chat light up with recognition.
+- nearly every company has one; describe it, watch the chat light up with recognition
 
-ASK: pulse check, "type 1 if your workplace has a machine nobody dares to restart." The wall of 1s is the recognition; name it back as the snowflake we just described.
+ASK: pulse check
+- "type 1 if your workplace has a machine nobody dares to restart"
+- the wall of 1s = the recognition; name it back as the snowflake
 
-[click] a server someone set up by hand years ago and has been patched by hand ever since.
-[click] hundreds of small changes over the years: a setting here, a workaround there, none of them written down anywhere.
-[click] the person who built it has moved on, and every unwritten detail moved on with them.
-[click] so the day its disk dies, there is no runbook, no recipe, no way to make a faithful copy. The business finds out how much lived on that one machine.
-[click] the industry name is a snowflake server: unique like a snowflake, and once it melts, that exact one never exists again. Gloss ops: the team that keeps systems running. Ask everyone to picture the one office machine nobody dares to restart; that is a snowflake. If the machine is described in a file, the fear simply disappears, because any machine becomes rebuildable. We prove it now by killing ours on purpose.
+- [click] a server set up by hand years ago, patched by hand ever since
+- [click] hundreds of small changes over the years: a setting here, a workaround there, none written down
+- [click] the person who built it moved on; every unwritten detail went with them
+- [click] disk dies = no runbook, no recipe, no faithful copy; the business finds out how much lived on that one machine
+- [click] the industry name = snowflake server: unique like a snowflake, once it melts that exact one never exists again
+  - gloss ops: the team that keeps systems running
+  - if the machine is described in a file, the fear disappears, any machine becomes rebuildable; we prove it now by killing ours on purpose
 -->

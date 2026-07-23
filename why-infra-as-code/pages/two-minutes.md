@@ -18,7 +18,11 @@ repeat as many times as needed
 </div>
 
 <!--
-Name the number honestly: both applies today took about two minutes end to end, and we timed them together. Put it next to the other numbers from this week: the forty-step runbook that has to be followed by a careful human, and Wednesday's click-through, which filled a whole demo segment.
+- name the number honestly: both applies today took ~2 min end to end, timed together
+- put it next to the week's other numbers: the 40-step runbook a careful human must follow, Wednesday's click-through that filled a whole demo segment
 
-Two minutes changes behaviour, and that is the real lesson of part 2. A dead server at 3 am stops being a crisis and becomes one command and a short wait. A test environment stops being precious: teams destroy theirs every evening and rebuild it every morning, because rebuilding costs two minutes and RM 0 while it is off. Spell the connection out: cheap rebuilds only exist because the environment is written down; the file is the insurance policy.
+- two minutes changes behaviour = the real lesson of part 2
+  - dead server at 3 am = one command + a short wait, not a crisis
+  - test environment stops being precious: teams destroy every evening, rebuild every morning; ~2 min + RM 0 while off
+  - spell it out: cheap rebuilds only exist because the environment is written down; the file is the insurance policy
 -->

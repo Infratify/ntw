@@ -78,5 +78,6 @@ const base = import.meta.env.BASE_URL
 </div>
 
 <!--
-30 seconds max; the demos carry the credibility. Mention: I teach the full DevOps bootcamp, and today is a free taster of its infrastructure-as-code topic, the one that ties the whole week together.
+- 30 seconds max; the demos carry the credibility
+- I teach the full DevOps bootcamp; today = free taster of its infrastructure-as-code topic, the one that ties the whole week together
 -->

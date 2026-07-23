@@ -45,10 +45,11 @@ A <span v-mark="{ at: 4, color: '#7c3aed', type: 'highlight' }">text file</span>
 </div>
 
 <!--
-The fix for the runbook is almost silly in its simplicity: instead of writing instructions for a human to follow, write the end state in a file and let a program make it true. Anchor it to the kitchen: a recipe. Cook nasi lemak from memory and every batch drifts; hand the written recipe to any cook and the dish comes out the same. Infrastructure as Code, IaC for short, is exactly that recipe idea aimed at servers.
+- the runbook fix is almost silly: instead of instructions for a human, write the end state in a file, let a program make it true
+- anchor to the kitchen: a recipe. Nasi lemak from memory = every batch drifts; written recipe to any cook = same dish. IaC (Infrastructure as Code) = that recipe idea aimed at servers
 
-[click] the file lists real things that should exist: one server, its firewall, its public address, its startup script. Plain text, a screenful long.
-[click] one command, apply, reads the list and makes the cloud match it. Run it once, run it fifty times: the same setup comes out, because a program never skips step 23.
-[click] and the same tool can remove every single thing the file created, cleanly, with one opposite command. Nothing else on the account is touched.
-[click] that is the whole idea of today. The tool doing it is called Terraform; meet it properly on the next slide.
+- [click] the file lists real things that should exist: server, firewall, public address, startup script; plain text, a screenful long
+- [click] one command, apply, reads the list, makes the cloud match it; run once or fifty times = same setup, a program never skips step 23
+- [click] the same tool removes every single thing the file created, one opposite command; nothing else on the account touched
+- [click] that is the whole idea of today; the tool = Terraform, meet it next slide
 -->

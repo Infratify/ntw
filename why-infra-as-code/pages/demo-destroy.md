@@ -69,15 +69,22 @@ clicks: 1
 
 <!--
 Labels to narrate:
-ASK: spoken A/B/C vote before typing destroy, "how long until the server is completely gone: A a few seconds, B about a minute, C five minutes?" Say the three aloud, let the letters flood in, read the top pick, then let the live unwind settle it, about forty seconds.
+ASK: spoken A/B/C vote before typing destroy
+- "how long until the server is completely gone: A a few seconds, B about a minute, C five minutes?"
+- say the three aloud, let the letters flood in, read the top pick; the live unwind settles it (~40s)
 
-Base screen, destroy: destroy is the mirror of the build. It unwinds the same three resources and ends on its own summary. Watch the console with me: the server flips to terminated, its address is released, the page URL stops answering. A terminated server bills nothing, which is why teams tear whole test environments down every evening and rebuild them every morning. Run apply again and two minutes later the same page is up at a fresh address. Destroyed on purpose, rebuilt on demand, no runbook, no memory, no fear.
-[click] the drift wow: someone opens the console and changes the server by hand, off the record. The next terraform plan compares the file against reality and flags the difference; the industry word is drift. apply pulls reality back to match the file, so the written recipe always wins.
+- base screen, destroy: the mirror of the build; unwinds the same three resources, ends on its own summary
+  - watch the console: server flips to terminated, address released, page URL stops answering
+  - terminated = bills nothing = teams tear whole test environments down every evening, rebuild every morning
+  - apply again = ~2 min later the same page is up at a fresh address; destroyed on purpose, rebuilt on demand, no runbook, no memory, no fear
+- [click] the drift wow: someone changes the server by hand in the console, off the record
+  - next terraform plan compares file vs reality, flags the difference; industry word = drift
+  - apply pulls reality back to match the file; the written recipe always wins
 
 DEMO SCRIPT (~10 min), same terminal and console tab:
-1. terraform destroy. Read the confirmation aloud: it lists exactly what will die and waits for a typed yes. Type yes. Narrate the unwind; the instance is the slow one at about forty seconds. Console refresh: terminated. Reload the page URL: it times out.
-2. terraform apply, yes, and talk over the two-minute rebuild: this is the snowflake slide's fear, deleted. A 3 am disk failure now means running one command, not reconstructing years of undocumented tweaks. Refresh the console: a fresh instance running at a new address, the same server rebuilt from the file.
-3. The drift screen: in the AWS console, change the running instance by hand, for example stop it or edit a tag. Back in the terminal, terraform plan: it reports the resource changed outside Terraform and offers to fix it. terraform apply, yes: reality is pulled back to match the file.
-Night before: covered by the plan-demo prep; nothing extra to install. Rehearse one destroy-apply cycle, then rehearse a console hand-edit and the plan that catches it, so the drift output and timings match the account.
-FALLBACK: the backup workspace from the rehearsal can be destroyed live instead if the main folder misbehaves; the tmux transcript of the morning cycle, including the drift plan, covers a network failure.
+1. terraform destroy. Read the confirmation aloud: lists exactly what dies, waits for a typed yes. Type yes. Narrate the unwind; the instance is the slow one (~40s). Console refresh: terminated. Reload the page URL: times out
+2. terraform apply, yes; talk over the ~2 min rebuild: the snowflake slide's fear, deleted. A 3 am disk failure = one command, not reconstructing years of undocumented tweaks. Refresh the console: a fresh instance at a new address, same server rebuilt from the file
+3. the drift screen: in the AWS console change the running instance by hand (stop it, or edit a tag). Terminal, terraform plan: reports the resource changed outside Terraform, offers to fix. terraform apply, yes: reality pulled back to match the file
+Night before: covered by the plan-demo prep; nothing extra to install. Rehearse one destroy-apply cycle, then a console hand-edit + the plan that catches it, so drift output + timings match the account
+FALLBACK: the backup workspace from the rehearsal can be destroyed live instead if the main folder misbehaves; the tmux transcript of the morning cycle (including the drift plan) covers a network failure
 -->

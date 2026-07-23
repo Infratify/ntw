@@ -21,6 +21,7 @@ transition: fade-out
 </div>
 
 <!--
-Reassure them straight away: nobody needs to memorise commands, and this is not real coding, it is just typing short instructions instead of clicking buttons. Almost everything today, both the explaining and the live demos, happens inside a black window like this one, because that is simply how Infrastructure as Code works: the servers get described and built through typed commands, not clicks.
-One fair warning, said with a smile: once friends and family see a black screen with green text and fast typing, they will assume this is hacking, or that we have stepped straight into the Matrix. Let them think that.
+- reassure straight away: nobody memorises commands; not real coding, just typing short instructions instead of clicking buttons
+- almost everything today (explaining + live demos) happens in a black window like this; that is how IaC works, servers described + built through typed commands, not clicks
+- one warning said with a smile: friends + family see green text + fast typing = they assume hacking, or the Matrix; let them think that
 -->

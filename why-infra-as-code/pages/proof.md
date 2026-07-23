@@ -34,5 +34,9 @@ transition: fade-out
 </div>
 
 <!--
-Recap by pointing back at what actually happened on screen: the folder was read, rehearsed with plan, and applied, and the same three resources came out every time; the environment was destroyed live, the console emptied, and one command brought it back in about two minutes; and a one-number edit became two extra servers before the whole fleet was removed for the weekend. Keep it factual, no victory lap. Then pivot: "so how do you start tonight?"
+- recap by pointing back at what happened on screen; keep it factual, no victory lap
+  - the folder was read, rehearsed with plan, applied; the same three resources came out every time
+  - the environment destroyed live, console emptied, one command brought it back in ~2 min
+  - a one-number edit became two extra servers before the whole fleet was removed for the weekend
+- pivot: "so how do you start tonight?"
 -->

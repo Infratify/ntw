@@ -38,9 +38,11 @@ Both tools read <span v-mark="{ at: 3, color: '#7c3aed', type: 'highlight' }">pl
 </div>
 
 <!--
-Two names come up in every job ad for this field, and they split the work like a construction site.
+- two names in every job ad for this field; they split the work like a construction site
 
-[click] Terraform, the purple one, is the builder: it reads the recipe and makes machines, firewalls and addresses exist in the cloud. Think architect plus contractor in one. Ansible is the fit-out crew: it steps inside machines that already exist and installs and configures the software, the same way on every machine. Today's demos are Terraform end to end, standing the server itself up; configuring what runs inside it is Ansible's job, and that inside work is the same at company scale.
-[click] because both read plain text files, the recipe lives in Git, Tuesday's tool: every change has an author, a date and a reason, and teammates review it before it happens. And both tools cost nothing: free to download, free to run, from any laptop.
-[click] plain text is the part that matters most, so say it carefully: no clicking, no screenshots, just short lines anyone can read out loud. We do exactly that right now, with the real file.
+- [click] Terraform (purple) = the builder: reads the recipe, makes machines, firewalls, addresses exist in the cloud; architect + contractor in one
+  - Ansible = the fit-out crew: steps inside existing machines, installs + configures software the same way every time
+  - today's demos are Terraform end to end (standing the server up); the inside work is Ansible's job, same at company scale
+- [click] both read plain text = the recipe lives in Git (Tuesday's tool): every change has author, date, reason; teammates review before it happens. Both free: download + run from any laptop
+- [click] plain text is the part that matters most: no clicking, no screenshots, short lines anyone reads out loud; we do exactly that now with the real file
 -->

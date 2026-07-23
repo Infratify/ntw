@@ -43,18 +43,20 @@ Every block comes straight from the <span v-mark="{ at: 4, color: '#7c3aed', typ
 
 <!--
 Labels to narrate:
-[click] install is one line; the link is the official installer, and it covers every operating system. Prove it is already on this machine with terraform -version.
-[click] the registry is the public catalogue of ready-made building blocks; open it and search ec2.
-[click] the official AWS module for a server; open its page and copy the usage example. It is maintained in the open, it is free, and it has been installed millions of times.
-[click] nothing on this slide is hand-written; every block is copied out of that catalogue.
+- [click] install is one line; link = the official installer, covers every OS. Prove it is here already: terraform -version
+- [click] the registry = public catalogue of ready-made building blocks; open it, search ec2
+- [click] the official AWS module for a server; open its page, copy the usage example. Maintained in the open, free, installed millions of times
+- [click] nothing here is hand-written; every block copied out of that catalogue
 
-ACTIVITY: before pressing plan, ask the chat to predict how many real things this one copied block will create, 1, 3, or 10. Let the guesses land, then run plan and read the counter line back against them.
+ACTIVITY: before pressing plan
+- chat predicts how many real things this one copied block creates: 1, 3, or 10
+- let guesses land, run plan, read the counter line back against them
 
 DEMO SCRIPT (~8 min), split screen, browser left, terminal right:
-1. terminal: terraform -version, proves it is installed. Say how it got here: on this Ubuntu machine it is the official HashiCorp apt repo, a couple of lines copied from the install page linked on the slide.
-2. browser: open registry.terraform.io, search "ec2-instance", open terraform-aws-modules/ec2-instance. Point at the download count (millions) and the open-source authors: the whole world runs this same file, for free. This is the registry-leverage moment.
-3. copy the usage example from the module's Provision Instructions. Paste it into main.tf. Keep name, instance_type = t3.micro, and the subnet; delete what we do not need. Say it plainly: I wrote none of this.
-4. terraform plan: it prints the resources this module will create, then the counter line. Nothing is built yet.
-Night before: install Terraform via the official HashiCorp apt repo on the demo laptop (Terraform is not in Ubuntu 24.04's own repos); the AWS provider needs >= 6.37 and the module needs Terraform >= 1.5.7; run terraform init once so the module and provider are cached; export the demo AWS credentials; rehearse plan, apply, destroy in ap-southeast-1.
-FALLBACK: a tmux session from the morning rehearsal holds the full transcript of every command; if the network or the registry is slow, scroll it and narrate; the module is already cached locally from last night's init.
+1. terminal: terraform -version, proves it is installed. How it got here: official HashiCorp apt repo, a couple of lines from the install page linked on the slide
+2. browser: registry.terraform.io, search "ec2-instance", open terraform-aws-modules/ec2-instance. Point at download count (millions) + open-source authors: the whole world runs this file, free. The registry-leverage moment
+3. copy the usage example from Provision Instructions. Paste into main.tf. Keep name, instance_type = t3.micro, subnet; delete the rest. Say plainly: I wrote none of this
+4. terraform plan: prints the resources this module will create, then the counter line. Nothing built yet
+Night before: install Terraform via official HashiCorp apt repo (not in Ubuntu 24.04's repos); AWS provider needs >= 6.37, module needs Terraform >= 1.5.7; terraform init once so module + provider cached; export demo AWS credentials; rehearse plan, apply, destroy in ap-southeast-1
+FALLBACK: tmux session from the morning rehearsal holds every command's transcript; network/registry slow = scroll + narrate; module already cached from last night's init
 -->

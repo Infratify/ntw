@@ -45,13 +45,18 @@ One skipped step builds a <span v-mark="{ at: 5, color: '#7c3aed', type: 'underl
 </div>
 
 <!--
-On Wednesday a real server was set up by clicking through the AWS console: pick a size, open the doors, paste a script. Live, once, with everyone watching, that was fine. Now picture a company that runs twenty of those and rebuilds them every few months. The clicks have to live somewhere, and they live in a document like this one. Gloss runbook: a step-by-step instruction document, usually a wiki page, sometimes a Word file with screenshots.
+- Wednesday: a real server set up by clicking through the AWS console (pick a size, open the doors, paste a script); live + once = fine
+- now picture a company running twenty of those, rebuilt every few months; the clicks have to live somewhere = a document like this
+  - gloss runbook: a step-by-step instruction doc, usually a wiki page, sometimes a Word file with screenshots
 
-[click] forty-plus steps of menus and text boxes. Step 14 of this one picks the machine size.
-[click] step 23 opens the firewall, the two doors from Wednesday: 22 for logging in, 80 for the web.
-[click] step 31 pastes in a setup script by hand. Miss the paste, and the server sits there empty.
-[click] and the date at the bottom is the quiet problem: the console's screens changed since this was written, so the screenshots no longer match what the person doing the setup actually sees.
-[click] two careful people following the same forty steps still produce two slightly different servers, and the difference surfaces weeks later as a bug nobody can explain. Hold that; the fix is the next slide.
+- [click] forty-plus steps of menus + text boxes; step 14 picks the machine size
+- [click] step 23 opens the firewall, Wednesday's two doors: 22 to log in, 80 for the web
+- [click] step 31 pastes a setup script by hand; miss the paste, the server sits empty
+- [click] the date at the bottom = the quiet problem: the console's screens changed since this was written, screenshots no longer match what the person sees
+- [click] two careful people, same forty steps, two slightly different servers; the difference surfaces weeks later as a bug nobody can explain. Hold that; the fix is next slide
 
-STORY: land = a hand-followed setup doc silently produces a different machine. Pick a real moment you set something up from a wiki runbook whose screenshots no longer matched the screen, or handed one to a colleague who got a subtly different result. Beat order: the ordinary task (stand up one more server) into the doc that looked fine into the step that had quietly changed into the bug days later nobody could place. 60 to 90 seconds, close by naming it: the instructions drifted from reality, and no one noticed.
+STORY: land = a hand-followed setup doc silently produces a different machine
+- pick a real moment: a wiki runbook whose screenshots no longer matched the screen, or one handed to a colleague who got a subtly different result
+- beat order: ordinary task (stand up one more server) into the doc that looked fine into the step that had quietly changed into the bug days later nobody could place
+- 60-90s, close by naming it: the instructions drifted from reality, no one noticed
 -->

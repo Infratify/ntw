@@ -41,13 +41,16 @@ Every server change leaves a <span v-mark="{ at: 5, color: '#7c3aed', type: 'hig
 </div>
 
 <!--
-Because the environment is a text file, it travels the way Tuesday's code travelled: a branch, a pull request, a review, a merge. This screen is how a real infrastructure change looks at work.
+- the environment is a text file = it travels like Tuesday's code: branch, pull request, review, merge; this screen = how a real infra change looks at work
 
-ASK: pulse check, "type 1 if a change you made has ever gone live without anyone else looking at it first." Most will; that is exactly the risk this step removes, one teammate reads it before a real machine changes.
+ASK: pulse check
+- "type 1 if a change you made has ever gone live without anyone else looking first"
+- most will; that is exactly the risk this step removes, one teammate reads it before a real machine changes
 
-[click] someone asks for two more web servers before a busy week; the request is a pull request, Tuesday's word for "please take my change".
-[click] and the entire change is one number. Nobody rewrites a runbook; count goes from 1 to 3.
-[click] a teammate reads the change before anything happens to a real machine. Compare reviewing this one line against reviewing forty console clicks that nobody else saw.
-[click] on merge, an automation runs terraform apply with nobody at a keyboard. Gloss it plainly: the same GitHub machinery that published Tuesday's page can run commands after every merge; that is what "fully automated" means in a job ad.
-[click] and Git keeps the whole story forever: who changed the servers, when, and why. In the demo we now make this exact edit ourselves and watch what the pipeline would watch.
+- [click] someone asks for two more web servers before a busy week; the request = a pull request, Tuesday's word for "please take my change"
+- [click] the entire change is one number; nobody rewrites a runbook, count goes 1 to 3
+- [click] a teammate reads the change before anything happens to a real machine; compare this one line vs forty console clicks nobody else saw
+- [click] on merge, an automation runs terraform apply, nobody at a keyboard
+  - gloss: the same GitHub machinery that published Tuesday's page runs commands after every merge; that is "fully automated" in a job ad
+- [click] Git keeps the whole story forever: who changed the servers, when, why; in the demo we now make this exact edit + watch what the pipeline would watch
 -->

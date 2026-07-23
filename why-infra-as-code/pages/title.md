@@ -27,7 +27,13 @@ const base = import.meta.env.BASE_URL
 </div>
 
 <!--
-Welcome everyone as they join. Note the earlier start: today runs at 10:00 am, half an hour before the rest of the week, and it is the last session of the five. Housekeeping: about 1h45 of sharing and live demos, then Q&A. Questions go in the Zoom chat anytime; I batch them at each break. Nothing to install; everything happens on my screen.
+- welcome everyone as they join
+- earlier start: today runs 10:00 am, half an hour before the rest of the week; last of the five sessions
+- housekeeping: ~1h45 sharing + live demos, then Q&A
+- questions go in the Zoom chat anytime; batched at each break
+- nothing to install; everything on my screen
 
-ASK: as they settle in, a pulse check, "type 1 in the chat if you have never typed a command into a black terminal window." Read the flood of 1s back and reassure them: today is built for exactly that person, nobody needs to memorise anything.
+ASK: pulse check as they settle
+- "type 1 if you have never typed a command into a black terminal window"
+- read the flood of 1s back; today is built for exactly that person, nobody memorises anything
 -->

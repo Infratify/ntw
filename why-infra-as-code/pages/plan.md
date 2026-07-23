@@ -35,10 +35,12 @@ Everything today comes from one folder of text.
 </div>
 
 <!--
-Session map; the recap slide mirrors it at the end. Housekeeping to SAY, not show: nothing to install on their side, they just watch; questions go in the Zoom chat anytime and I batch them at each break.
+- session map; recap slide mirrors it at the end
+- housekeeping to SAY, not show: nothing to install, they just watch; questions in Zoom chat anytime, batched at breaks
 
-[click] First: what it means to write infrastructure down as code, and why the written form beats memory and clicking. We read the code that describes a real server, live.
-[click] Then the wow of the week's poster: the entire environment gets built from that code in about two minutes, destroyed in front of everyone, and rebuilt again.
-[click] And the finish: changing one number in the file and watching the change do the work of many hands, three servers appearing on their own.
-[click] One small folder of text files sits on my screen the entire session; every single thing you will see comes out of it. About 5 minutes in at this point.
+- [click] first: writing infrastructure down as code, why written beats memory + clicking; we read the code for a real server, live
+- [click] then the poster's wow: whole environment built from that code in ~2 min, destroyed in front of everyone, rebuilt
+- [click] the finish: change one number in the file, three servers appear on their own
+- [click] one small folder of text files on my screen all session; every single thing comes out of it
+- timing: ~5 minutes in at this point
 -->
