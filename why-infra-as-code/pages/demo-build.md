@@ -29,8 +29,8 @@ clicks: 2
       <p><b>module pulled from the registry</b></p>
     </div>
     <div class="note-row items-center">
-      <mdi-web class="note-ico text-purple-600 dark:text-purple-400" />
-      <p><b>the stall page returns</b></p>
+      <mdi-cloud-check-outline class="note-ico text-purple-600 dark:text-purple-400" />
+      <p><b>a real server appears</b></p>
     </div>
     <div class="note-row items-center">
       <mdi-timer-outline class="note-ico text-purple-600 dark:text-purple-400" />
@@ -57,15 +57,17 @@ clicks: 2
 
 <!--
 Labels to narrate:
-[click] init reaches out to the registry and downloads the module we copied; that download line is the leverage made real, the maintained code arriving on the machine. apply then reads it and ends on the green summary, three resources added: the server, its firewall, its key. The startup script installs Docker and starts a container serving the stall page, so the week's nasi lemak page comes back to life on a machine that did not exist a minute earlier. For anyone new today: it is a one-page site built on Tuesday, hosted on a rented server on Wednesday, and packaged with Docker, Thursday's tool. End to end, about two minutes.
-[click] terraform graph turns the same text file into a picture: the server and the three things it depends on. The file is a blueprint, and this is the blueprint drawn.
+[click] init reaches out to the registry and downloads the module we copied; that download line is the leverage made real, the maintained code arriving on the machine. apply then reads it and ends on the green summary: a real server exists that did not a minute ago, along with the firewall and key the module set up, and nobody opened a single console wizard. End to end, about two minutes, most of it the machine booting.
+[click] terraform graph turns the same text file into a picture: the server and the things it depends on. The file is a blueprint, and this is the blueprint drawn.
+
+PROP: at the apply beat, turn the shared screen to the live AWS console, or hold up a phone on it, and refresh as the instance flips to running; the machine appearing with nobody touching the launch wizard is the proof, shown not told.
 
 DEMO SCRIPT (~10 min), terminal, console tab ready:
 1. terraform init: narrate the module and provider downloading from the registry, then terraform apply. Read the printed plan aloud; it asks for a typed yes before touching anything. Type yes.
-2. Narrate the create order as it scrolls: key pair instantly, security group in seconds, then the instance, about forty seconds. The startup script runs for another minute after that.
+2. Narrate the create order as it scrolls: the supporting pieces first, then the instance, about forty seconds; the machine takes another moment to finish booting.
 3. While it boots, refresh the EC2 console: an instance appears, born from code; nobody opened the launch wizard.
-4. The outputs print web_url. Open it in the browser: the stall page, served again.
+4. The outputs print the instance's public address. Point at it, then back at the console: a real server, its firewall and its key, every one traceable to a line in the copied module.
 5. Second screen, the graph wow: terraform graph | dot -Tsvg > graph.svg, then open graph.svg. The slide shows a tidy version; the real one proves the same file is a dependency map. Point at the server and the firewall, key and subnet it needs.
-Night before: same prep as the plan demo (Terraform via the HashiCorp apt repo, terraform init cached so the registry module and AWS provider are local, credentials exported, full rehearsal in ap-southeast-1); also apt install graphviz so terraform graph | dot renders; the startup script installs docker.io and git from Ubuntu 24.04's default repos and pulls the nginx image, so allow the full two minutes.
-FALLBACK: the morning rehearsal's environment is left running in a second folder (workspace "backup"); if the live apply fails, switch terminals, show its page and its transcript in tmux; a pre-rendered graph.svg from the rehearsal covers the graph screen if dot misbehaves.
+Night before: same prep as the plan demo (Terraform via the HashiCorp apt repo, terraform init cached so the registry module and AWS provider are local, credentials exported, full rehearsal in ap-southeast-1); also apt install graphviz so terraform graph | dot renders. Allow the full two minutes for the instance to boot.
+FALLBACK: the morning rehearsal's environment is left running in a second folder (workspace "backup"); if the live apply fails, switch terminals and show its console state and its transcript in tmux; a pre-rendered graph.svg from the rehearsal covers the graph screen if dot misbehaves.
 -->

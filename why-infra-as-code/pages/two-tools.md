@@ -40,7 +40,7 @@ Both tools read <span v-mark="{ at: 3, color: '#7c3aed', type: 'highlight' }">pl
 <!--
 Two names come up in every job ad for this field, and they split the work like a construction site.
 
-[click] Terraform, the purple one, is the builder: it reads the recipe and makes machines, firewalls and addresses exist in the cloud. Think architect plus contractor in one. Ansible is the fit-out crew: it steps inside machines that already exist and installs and configures the software, the same way on every machine. Today's demos are Terraform end to end; our server will configure itself with a small startup script, and at company scale that inside job is exactly what Ansible does.
+[click] Terraform, the purple one, is the builder: it reads the recipe and makes machines, firewalls and addresses exist in the cloud. Think architect plus contractor in one. Ansible is the fit-out crew: it steps inside machines that already exist and installs and configures the software, the same way on every machine. Today's demos are Terraform end to end, standing the server itself up; configuring what runs inside it is Ansible's job, and that inside work is the same at company scale.
 [click] because both read plain text files, the recipe lives in Git, Tuesday's tool: every change has an author, a date and a reason, and teammates review it before it happens. And both tools cost nothing: free to download, free to run, from any laptop.
 [click] plain text is the part that matters most, so say it carefully: no clicking, no screenshots, just short lines anyone can read out loud. We do exactly that right now, with the real file.
 -->

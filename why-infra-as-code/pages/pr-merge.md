@@ -43,6 +43,8 @@ Every server change leaves a <span v-mark="{ at: 5, color: '#7c3aed', type: 'hig
 <!--
 Because the environment is a text file, it travels the way Tuesday's code travelled: a branch, a pull request, a review, a merge. This screen is how a real infrastructure change looks at work.
 
+ASK: pulse check, "type 1 if a change you made has ever gone live without anyone else looking at it first." Most will; that is exactly the risk this step removes, one teammate reads it before a real machine changes.
+
 [click] someone asks for two more web servers before a busy week; the request is a pull request, Tuesday's word for "please take my change".
 [click] and the entire change is one number. Nobody rewrites a runbook; count goes from 1 to 3.
 [click] a teammate reads the change before anything happens to a real machine. Compare reviewing this one line against reviewing forty console clicks that nobody else saw.

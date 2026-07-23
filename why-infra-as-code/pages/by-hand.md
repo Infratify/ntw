@@ -52,4 +52,6 @@ On Wednesday a real server was set up by clicking through the AWS console: pick 
 [click] step 31 pastes in a setup script by hand. Miss the paste, and the server sits there empty.
 [click] and the date at the bottom is the quiet problem: the console's screens changed since this was written, so the screenshots no longer match what the person doing the setup actually sees.
 [click] two careful people following the same forty steps still produce two slightly different servers, and the difference surfaces weeks later as a bug nobody can explain. Hold that; the fix is the next slide.
+
+STORY: land = a hand-followed setup doc silently produces a different machine. Pick a real moment you set something up from a wiki runbook whose screenshots no longer matched the screen, or handed one to a colleague who got a subtly different result. Beat order: the ordinary task (stand up one more server) into the doc that looked fine into the step that had quietly changed into the bug days later nobody could place. 60 to 90 seconds, close by naming it: the instructions drifted from reality, and no one noticed.
 -->

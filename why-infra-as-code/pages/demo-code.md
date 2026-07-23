@@ -48,6 +48,8 @@ Labels to narrate:
 [click] the official AWS module for a server; open its page and copy the usage example. It is maintained in the open, it is free, and it has been installed millions of times.
 [click] nothing on this slide is hand-written; every block is copied out of that catalogue.
 
+ACTIVITY: before pressing plan, ask the chat to predict how many real things this one copied block will create, 1, 3, or 10. Let the guesses land, then run plan and read the counter line back against them.
+
 DEMO SCRIPT (~8 min), split screen, browser left, terminal right:
 1. terminal: terraform -version, proves it is installed. Say how it got here: on this Ubuntu machine it is the official HashiCorp apt repo, a couple of lines copied from the install page linked on the slide.
 2. browser: open registry.terraform.io, search "ec2-instance", open terraform-aws-modules/ec2-instance. Point at the download count (millions) and the open-source authors: the whole world runs this same file, for free. This is the registry-leverage moment.

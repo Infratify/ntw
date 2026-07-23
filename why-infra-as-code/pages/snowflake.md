@@ -50,6 +50,8 @@ Ops teams call this a snowflake server.
 <!--
 Nearly every company has one, so describe it and watch the chat light up with recognition.
 
+ASK: pulse check, "type 1 if your workplace has a machine nobody dares to restart." The wall of 1s is the recognition; name it back as the snowflake we just described.
+
 [click] a server someone set up by hand years ago and has been patched by hand ever since.
 [click] hundreds of small changes over the years: a setting here, a workaround there, none of them written down anywhere.
 [click] the person who built it has moved on, and every unwritten detail moved on with them.
